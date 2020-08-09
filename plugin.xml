@@ -10,5 +10,17 @@
             uri="fragment.e4xmi">
       </fragment>
    </extension>
+   <extension
+         point="org.eclipse.e4.ui.css.swt.theme">
+         <theme
+            basestylesheeturi="themes/css/test.css"
+            id="io.unthrottled.doki.themes.test"
+            label="Doki Test">
+      </theme>
+   </extension>
+ <extension
+   id="product"
+   point="org.eclipse.core.runtime.products">
 
+ </extension>
 </plugin>
