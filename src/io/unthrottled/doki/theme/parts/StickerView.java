@@ -1,15 +1,8 @@
 package io.unthrottled.doki.theme.parts;
 
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-
 import javax.annotation.PostConstruct;
-import javax.imageio.ImageIO;
 import javax.inject.Inject;
 import javax.inject.Named;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 
 import org.eclipse.e4.core.di.annotations.Optional;
 import org.eclipse.e4.ui.di.Focus;
@@ -21,7 +14,7 @@ import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 
-public class SampleView {
+public class StickerView {
 	private Label myLabelInView;
 
 	@PostConstruct
@@ -31,7 +24,6 @@ public class SampleView {
 		Image image = new Image(parent.getDisplay(),
 				"/C:/Users/birdm.DESKTOP-FO92PV5/AppData/Roaming/Hyper/.doki-theme-hyper-config/stickers/reZero/emilia/light/emilia_light.png");
 		myLabelInView.setImage(image);
-
 	}
 
 	@Focus
@@ -74,7 +66,6 @@ public class SampleView {
 	@Inject
 	@Optional
 	public void setSelection(@Named(IServiceConstants.ACTIVE_SELECTION) Object o) {
-
 		// Remove the 2 following lines in pure E4 mode, keep them in mixed mode
 		if (o instanceof ISelection) // Already captured
 			return;
@@ -95,7 +86,6 @@ public class SampleView {
 	@Inject
 	@Optional
 	public void setSelection(@Named(IServiceConstants.ACTIVE_SELECTION) Object[] selectedObjects) {
-
 		// Test if label exists (inject methods are called before PostConstruct)
 		if (myLabelInView != null)
 			myLabelInView.setText("This is a multiple selection of " + selectedObjects.length + " objects");
