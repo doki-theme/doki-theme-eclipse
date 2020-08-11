@@ -1,14 +1,23 @@
 package io.unthrottled.doki.theme.parts;
 
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
 import javax.annotation.PostConstruct;
+import javax.imageio.ImageIO;
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
 import org.eclipse.e4.core.di.annotations.Optional;
 import org.eclipse.e4.ui.di.Focus;
 import org.eclipse.e4.ui.services.IServiceConstants;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 
@@ -18,31 +27,30 @@ public class SampleView {
 	@PostConstruct
 	public void createPartControl(Composite parent) {
 		System.out.println("Enter in SampleE4View postConstruct");
-
 		myLabelInView = new Label(parent, SWT.BORDER);
-		myLabelInView.setText("This is a sample E4 view");
+		Image image = new Image(parent.getDisplay(),
+				"/C:/Users/birdm.DESKTOP-FO92PV5/AppData/Roaming/Hyper/.doki-theme-hyper-config/stickers/reZero/emilia/light/emilia_light.png");
+		myLabelInView.setImage(image);
 
 	}
 
 	@Focus
 	public void setFocus() {
-		myLabelInView.setFocus();
 
 	}
 
 	/**
-	 * This method is kept for E3 compatiblity. You can remove it if you do not
-	 * mix E3 and E4 code. <br/>
-	 * With E4 code you will set directly the selection in ESelectionService and
-	 * you do not receive a ISelection
+	 * This method is kept for E3 compatiblity. You can remove it if you do not mix
+	 * E3 and E4 code. <br/>
+	 * With E4 code you will set directly the selection in ESelectionService and you
+	 * do not receive a ISelection
 	 * 
-	 * @param s
-	 *            the selection received from JFace (E3 mode)
+	 * @param s the selection received from JFace (E3 mode)
 	 */
 	@Inject
 	@Optional
 	public void setSelection(@Named(IServiceConstants.ACTIVE_SELECTION) ISelection s) {
-		if (s==null || s.isEmpty())
+		if (s == null || s.isEmpty())
 			return;
 
 		if (s instanceof IStructuredSelection) {
@@ -55,14 +63,13 @@ public class SampleView {
 	}
 
 	/**
-	 * This method manages the selection of your current object. In this example
-	 * we listen to a single Object (even the ISelection already captured in E3
-	 * mode). <br/>
-	 * You should change the parameter type of your received Object to manage
-	 * your specific selection
+	 * This method manages the selection of your current object. In this example we
+	 * listen to a single Object (even the ISelection already captured in E3 mode).
+	 * <br/>
+	 * You should change the parameter type of your received Object to manage your
+	 * specific selection
 	 * 
-	 * @param o
-	 *            : the current object received
+	 * @param o : the current object received
 	 */
 	@Inject
 	@Optional
@@ -79,11 +86,11 @@ public class SampleView {
 
 	/**
 	 * This method manages the multiple selection of your current objects. <br/>
-	 * You should change the parameter type of your array of Objects to manage
-	 * your specific selection
+	 * You should change the parameter type of your array of Objects to manage your
+	 * specific selection
 	 * 
-	 * @param o
-	 *            : the current array of objects received in case of multiple selection
+	 * @param o : the current array of objects received in case of multiple
+	 *          selection
 	 */
 	@Inject
 	@Optional
