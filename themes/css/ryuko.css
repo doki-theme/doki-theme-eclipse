@@ -1,9 +1,101 @@
 @import url("platform:/plugin/org.eclipse.ui.themes/css/e4-dark_linux.css");
 
 
-
 ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_BG_END {
-    color: #ff0000;
+    color: #282f35; /*active tabs */
     category: '#org-eclipse-ui-presentation-default';
     label: url('platform:/plugin/org.eclipse.ui.themes?message=ACTIVE_TAB_BG_END');
+}
+
+
+ColorDefinition#org-eclipse-ui-workbench-INACTIVE_UNSELECTED_TABS_COLOR_START {
+	color: #515658; /*base background */
+	category: '#org-eclipse-ui-presentation-default';
+	label: url('platform:/plugin/org.eclipse.ui.themes?message=INACTIVE_UNSELECTED_TABS_COLOR_START');
+}
+ColorDefinition#org-eclipse-ui-workbench-INACTIVE_TAB_OUTER_KEYLINE_COLOR {
+	color: #515658;
+	category: '#org-eclipse-ui-presentation-default';
+	label: url('platform:/plugin/org.eclipse.ui.themes?message=INACTIVE_TAB_OUTER_KEYLINE_COLOR');
+}
+ColorDefinition#org-eclipse-ui-workbench-INACTIVE_TAB_INNER_KEYLINE_COLOR {
+	color: #515658;
+	category: '#org-eclipse-ui-presentation-default';
+	label: url('platform:/plugin/org.eclipse.ui.themes?message=INACTIVE_TAB_INNER_KEYLINE_COLOR');
+}
+
+Shell,
+Composite, ScrolledComposite, ExpandableComposite, Canvas, TabFolder, CLabel, Label,
+CoolBar, Sash, Group, RefactoringLocationControl, ChangeParametersControl, Link, FilteredTree,
+ProxyEntriesComposite, NonProxyHostsComposite, DelayedFilterCheckboxTree,
+Splitter, ScrolledPageContent, ViewForm, LaunchConfigurationFilteredTree,
+ContainerSelectionGroup, BrowseCatalogItem, EncodingSettings,
+ProgressMonitorPart, DocCommentOwnerComposite, NewServerComposite,
+NewManualServerComposite, ServerTypeComposite, FigureCanvas,
+DependenciesComposite, ListEditorComposite, WrappedPageBook,
+CompareStructureViewerSwitchingPane, CompareContentViewerSwitchingPane,
+QualifiedNameComponent, RefactoringStatusViewer,
+MessageLine,
+Button /* SWT-BUG: checkbox inner label font color is not accessible */,
+Composite > *,
+Composite > * > *,
+Group > StyledText {
+    background-color:#515658;
+    color:#eeeeee;
+}
+
+Combo,
+List,
+Text,
+Spinner,
+CCombo {
+    background-color:#515658;
+    color:#eeeeee;
+}
+
+Composite > StyledText,
+Shell [style~='SWT.DROP_DOWN'] > StyledText, /* for eg. folded code popup (but it's ignored) */
+SashForm > StyledText {
+	/*	Fix StyledText inside a SashForm */
+    background-color:#515658;
+    color:#eeeeee;
+}
+
+Text[style~='SWT.READ_ONLY'] {
+    background-color: #515658;
+    color: #bbbbbb;
+}
+
+DatePicker,
+DatePicker > Text,
+ScheduleDatePicker,
+ScheduleDatePicker > Text {
+    background-color:#515658;
+    color:#eeeeee;
+}
+
+ScrolledFormText,
+FormText {
+    background-color:#515658;
+    color:#eeeeee;
+}
+
+CatalogSwitcher,
+CatalogSwitcher > ScrolledComposite > Composite > Composite /* ignored because hard-coded */,
+CategoryItem {
+    background-color: #515658;
+    color: #dddddd;
+}
+
+.MPartSashContainer {
+    background-color: #515658;
+    color: #EEEEEE;
+}
+
+TabbedPropertyList {
+	swt-tabNormalShadow-color   : '#org-eclipse-ui-workbench-INACTIVE_TAB_OUTLINE_COLOR';             /* color of shadow lines around the tabs */
+	swt-tabDarkShadow-color     : '#org-eclipse-ui-workbench-ACTIVE_NOFOCUS_TAB_SELECTED_TEXT_COLOR'; /* line color of the tiny scroll triangle (at top / at bottom) */
+	swt-tabAreaBackground-color : #515658;   /*same as canvas*/
+	swt-tabBackground-color     : '#org-eclipse-ui-workbench-ACTIVE_NOFOCUS_TAB_BG_START';
+	color                       : '#org-eclipse-ui-workbench-ACTIVE_NOFOCUS_TAB_SELECTED_TEXT_COLOR'; /* text color in the tab / tab area */
 }
