@@ -21,7 +21,7 @@ public class StickerView {
 	public void createPartControl(Composite parent) {
 		myLabelInView = new Label(parent, SWT.BORDER);
 		Image image = new Image(parent.getDisplay(),
-				"/C:/Users/birdm.DESKTOP-FO92PV5/AppData/Roaming/Hyper/.doki-theme-hyper-config/stickers/reZero/emilia/light/emilia_light.png"
+				"/C:/Users/birdm.DESKTOP-FO92PV5/AppData/Roaming/Hyper/.doki-theme-hyper-config/stickers/killLaKill/ryuko/ryuko.png"
 				);
 		myLabelInView.setImage(image);
 	}
@@ -70,9 +70,7 @@ public class StickerView {
 		if (o instanceof ISelection) // Already captured
 			return;
 
-		// Test if label exists (inject methods are called before PostConstruct)
-		if (myLabelInView != null)
-			myLabelInView.setText("Current single selection class is : " + o.getClass());
+	
 	}
 
 	/**
@@ -86,8 +84,6 @@ public class StickerView {
 	@Inject
 	@Optional
 	public void setSelection(@Named(IServiceConstants.ACTIVE_SELECTION) Object[] selectedObjects) {
-		// Test if label exists (inject methods are called before PostConstruct)
-		if (myLabelInView != null)
-			myLabelInView.setText("This is a multiple selection of " + selectedObjects.length + " objects");
+	
 	}
 }
