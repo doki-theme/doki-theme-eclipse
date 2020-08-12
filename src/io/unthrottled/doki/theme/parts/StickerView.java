@@ -19,10 +19,10 @@ public class StickerView {
 
 	@PostConstruct
 	public void createPartControl(Composite parent) {
-		System.out.println("Enter in SampleE4View postConstruct");
 		myLabelInView = new Label(parent, SWT.BORDER);
 		Image image = new Image(parent.getDisplay(),
-				"/C:/Users/birdm.DESKTOP-FO92PV5/AppData/Roaming/Hyper/.doki-theme-hyper-config/stickers/reZero/emilia/light/emilia_light.png");
+				"/C:/Users/birdm.DESKTOP-FO92PV5/AppData/Roaming/Hyper/.doki-theme-hyper-config/stickers/reZero/emilia/light/emilia_light.png"
+				);
 		myLabelInView.setImage(image);
 	}
 

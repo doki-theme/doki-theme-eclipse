@@ -13,9 +13,9 @@
    <extension
          point="org.eclipse.e4.ui.css.swt.theme">
          <theme
-            basestylesheeturi="themes/css/test.css"
-            id="io.unthrottled.doki.themes.test"
-            label="Doki Test">
+            basestylesheeturi="themes/css/ryuko.css"
+            id="19b65ec8-133c-4655-a77b-13623d8e97d3"
+            label="Ryuko">
       </theme>
    </extension>
  <extension
