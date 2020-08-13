@@ -17,11 +17,7 @@
             id="dark_19b65ec8-133c-4655-a77b-13623d8e97d3"
             label="Ryuko">
       	</theme>
-      	<stylesheet
-         uri="themes/css/e4-dark_preferencestyle.css">
-      		<themeid
-            	refid="dark_19b65ec8-133c-4655-a77b-13623d8e97d3"></themeid>
-   		</stylesheet>
+      	
    </extension>
  <extension
    id="product"
