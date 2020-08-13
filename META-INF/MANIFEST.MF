@@ -13,7 +13,8 @@ Require-Bundle: javax.inject,
  org.eclipse.e4.ui.services,
  org.eclipse.e4.core.di.annotations,
  org.eclipse.core.runtime,
- org.eclipse.e4.ui.css.swt.theme
+ org.eclipse.e4.ui.css.swt.theme,
+ org.eclipse.ui
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Automatic-Module-Name: doki.theme.eclipse
 Import-Package: javax.annotation;version="1.2.0"
