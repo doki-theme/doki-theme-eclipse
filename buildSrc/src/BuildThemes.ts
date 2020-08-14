@@ -243,6 +243,10 @@ function createDokiTheme(
     return {
       path: dokiFileDefinitionPath,
       definition: dokiThemeDefinition,
+      stickers: getStickers(
+        dokiThemeDefinition,
+        dokiFileDefinitionPath
+      ),
       manifest: buildEclipseThemeManifest(
         dokiThemeDefinition,
         dokiTemplateDefinitions,
@@ -297,19 +301,19 @@ function resolveStickerPath(
 
 const getStickers = (
   dokiDefinition: MasterDokiThemeDefinition,
-  dokiTheme: any
+  themePath: string,
 ) => {
   const secondary =
     dokiDefinition.stickers.secondary || dokiDefinition.stickers.normal;
   return {
     default: {
-      path: resolveStickerPath(dokiTheme.path, dokiDefinition.stickers.default),
+      path: resolveStickerPath(themePath, dokiDefinition.stickers.default),
       name: dokiDefinition.stickers.default,
     },
     ...(secondary
       ? {
         secondary: {
-          path: resolveStickerPath(dokiTheme.path, secondary),
+          path: resolveStickerPath(themePath, secondary),
           name: secondary,
         },
       }
@@ -395,7 +399,15 @@ walkDir(eclipseDefinitionDirectoryPath)
       );
   })
   .then(dokiThemes => {
-    console.log(JSON.stringify(dokiThemes, null, 2));
+    fs.writeFileSync(path.resolve(repoDirectory, 'themes', 'themes.json'),
+      JSON.stringify(dokiThemes.reduce((accum, next) => ({
+        ...accum,
+        [next.definition.id]: {
+          stickers: next.stickers
+        }
+      }), {}), null, 2), {
+        encoding: 'utf-8',
+      });
   })
   .then(() => {
     console.log('Theme Generation Complete!');
