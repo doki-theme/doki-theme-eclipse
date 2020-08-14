@@ -1,5 +1,6 @@
 package io.unthrottled.doki.theme.preferences;
 
+import io.unthrottled.doki.theme.ThemeConstants;
 import org.eclipse.jface.preference.*;
 import org.eclipse.ui.IWorkbenchPreferencePage;
 import org.eclipse.ui.IWorkbench;
@@ -32,6 +33,15 @@ public class ThemePreferences extends FieldEditorPreferencePage implements IWork
 	public void createFieldEditors() {
 		addField(new DirectoryFieldEditor(PreferenceConstants.ASSET_PATH_PREFERENCE, "Asset &Directory preference:",
 				getFieldEditorParent()));
+		
+		addField(new RadioGroupFieldEditor(
+				PreferenceConstants.STICKER_TYPE_PREFERENCE,
+				"Sticker Type",
+				1,
+				new String[][] { { "&Primary", ThemeConstants.Stickers.PRIMARY_STICKER}, {
+						"&Secondary", ThemeConstants.Stickers.PRIMARY_STICKER }
+				}, getFieldEditorParent()));
+
 		// TODO: need to read all the themes! 
 		addField(new ComboFieldEditor(PreferenceConstants.CURRENT_THEME_PREFERENCE, "Choose your theme",
 				new String[][] { { "Ryuko", "19b65ec8-133c-4655-a77b-13623d8e97d3" },
@@ -41,3 +51,4 @@ public class ThemePreferences extends FieldEditorPreferencePage implements IWork
 
 	public void init(IWorkbench workbench) {}
 }
+
