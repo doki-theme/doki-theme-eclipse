@@ -1,5 +1,6 @@
 {
   "420b0ed5-803c-4127-97e3-dae6aa1a5972": {
+    "displayName": "Mioda Ibuki Dark",
     "stickers": {
       "default": {
         "path": "/danganronpa/ibuki/dark/ibuki_dark.png",
@@ -8,6 +9,7 @@
     }
   },
   "697e8564-0975-4907-a34c-51f65177ebf3": {
+    "displayName": "Mioda Ibuki Light",
     "stickers": {
       "default": {
         "path": "/danganronpa/ibuki/light/ibuki_light.png",
@@ -16,6 +18,7 @@
     }
   },
   "b93ab4ea-ff96-4459-8fa2-0caae5bc7116": {
+    "displayName": "Kanna",
     "stickers": {
       "default": {
         "path": "/dragonMaid/kanna/dark/kanna_dark.png",
@@ -28,6 +31,7 @@
     }
   },
   "8e8773ee-4bbb-4812-b311-005f04f6bb20": {
+    "displayName": "Misato Katsuragi",
     "stickers": {
       "default": {
         "path": "/eva/misato/dark/misato_dark.png",
@@ -36,6 +40,7 @@
     }
   },
   "c5e92ad9-2fa0-491e-b92a-48ab92d13597": {
+    "displayName": "Rias",
     "stickers": {
       "default": {
         "path": "/highSchoolDxD/rias/dark/rias_dark.png",
@@ -44,6 +49,7 @@
     }
   },
   "19b65ec8-133c-4655-a77b-13623d8e97d3": {
+    "displayName": "Ryuko",
     "stickers": {
       "default": {
         "path": "/killLaKill/ryuko/ryuko.png",
@@ -52,6 +58,7 @@
     }
   },
   "3a78b13e-dbf2-410f-bb20-12b57bff7735": {
+    "displayName": "Satsuki",
     "stickers": {
       "default": {
         "path": "/killLaKill/satsuki/satsuki.png",
@@ -60,6 +67,7 @@
     }
   },
   "774ec7ad-d6a0-4d9c-b195-2f54d72ab664": {
+    "displayName": "Darkness Dark",
     "stickers": {
       "default": {
         "path": "/konoSuba/darkness/dark/darkness_dark.png",
@@ -68,6 +76,7 @@
     }
   },
   "8474d98d-7bb1-462c-82b1-dd7c512142a6": {
+    "displayName": "Darkness Light",
     "stickers": {
       "default": {
         "path": "/konoSuba/darkness/light/darkness_light.png",
@@ -76,6 +85,7 @@
     }
   },
   "63fe4617-4cac-47a5-9b93-6794514c35ad": {
+    "displayName": "Megumin",
     "stickers": {
       "default": {
         "path": "/konoSuba/megumin.png",
@@ -84,6 +94,7 @@
     }
   },
   "dce48196-ff46-470c-b5f9-d1e23f4a79d3": {
+    "displayName": "Monika Dark",
     "stickers": {
       "default": {
         "path": "/literature/monika/dark/just_monika_dark.png",
@@ -96,6 +107,7 @@
     }
   },
   "9a310731-ab2d-40f5-b502-fa5419f799a2": {
+    "displayName": "Monika Light",
     "stickers": {
       "default": {
         "path": "/literature/monika/light/just_monika.png",
@@ -108,6 +120,7 @@
     }
   },
   "a7e0aa28-739a-4671-80ae-3980997e6b71": {
+    "displayName": "Natsuki Dark",
     "stickers": {
       "default": {
         "path": "/literature/natsuki/dark/natsuki_dark.png",
@@ -120,6 +133,7 @@
     }
   },
   "91415015-8fe3-48eb-9951-70a5cd6cbb7f": {
+    "displayName": "Natsuki Light",
     "stickers": {
       "default": {
         "path": "/literature/natsuki/light/natsuki.png",
@@ -132,6 +146,7 @@
     }
   },
   "b0340303-0a5a-4a20-9b9c-fc8ce9880078": {
+    "displayName": "Sayori Dark",
     "stickers": {
       "default": {
         "path": "/literature/sayori/dark/sayori_dark.png",
@@ -144,6 +159,7 @@
     }
   },
   "cb8ef4b7-0844-4a04-b08b-754086598de4": {
+    "displayName": "Sayori Light",
     "stickers": {
       "default": {
         "path": "/literature/sayori/light/sayori.png",
@@ -156,6 +172,7 @@
     }
   },
   "a14733d6-8e15-4e75-b6b8-509f323e5b3b": {
+    "displayName": "Yuri Dark",
     "stickers": {
       "default": {
         "path": "/literature/yuri/dark/yuri_dark.png",
@@ -168,6 +185,7 @@
     }
   },
   "cecf3f92-76d4-4f14-9a9c-3d558b6b3b68": {
+    "displayName": "Yuri Light",
     "stickers": {
       "default": {
         "path": "/literature/yuri/light/yuri.png",
@@ -180,6 +198,7 @@
     }
   },
   "be058474-b967-4afb-b6d9-bda1948b33ec": {
+    "displayName": "Konata",
     "stickers": {
       "default": {
         "path": "/luckyStar/konata/light/konata_light.png",
@@ -192,6 +211,7 @@
     }
   },
   "bc12b380-1f2a-4a9d-89d8-388a07f1e15f": {
+    "displayName": "Hatsune Miku",
     "stickers": {
       "default": {
         "path": "/miscellaneous/miku/miku.png",
@@ -200,6 +220,7 @@
     }
   },
   "35422aa4-1396-4e76-8ec6-c5560884df22": {
+    "displayName": "Beatrice",
     "stickers": {
       "default": {
         "path": "/reZero/beatrice/beatrice.png",
@@ -208,6 +229,7 @@
     }
   },
   "696de7c1-3a8e-4445-83ee-3eb7e9dca47f": {
+    "displayName": "Emilia Dark",
     "stickers": {
       "default": {
         "path": "/reZero/emilia/dark/emilia_dark.png",
@@ -216,6 +238,7 @@
     }
   },
   "e828aaae-aa8c-4084-8993-d64697146930": {
+    "displayName": "Emilia Light",
     "stickers": {
       "default": {
         "path": "/reZero/emilia/light/emilia_light.png",
@@ -224,6 +247,7 @@
     }
   },
   "ecb74f1c-8c84-40c4-916f-601039ba2af0": {
+    "displayName": "Ram",
     "stickers": {
       "default": {
         "path": "/reZero/ram/ram.png",
@@ -232,6 +256,7 @@
     }
   },
   "f770dcfc-f41e-4b49-aa17-66e9ffc208fd": {
+    "displayName": "Rem",
     "stickers": {
       "default": {
         "path": "/reZero/rem/rem.png",
@@ -240,6 +265,7 @@
     }
   },
   "546e8fb8-6082-4ef5-a5e3-44790686f02f": {
+    "displayName": "Asuna",
     "stickers": {
       "default": {
         "path": "/swordArtOnline/asuna/light/asuna_light.png",

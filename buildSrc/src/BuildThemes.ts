@@ -400,10 +400,11 @@ walkDir(eclipseDefinitionDirectoryPath)
   })
   .then(dokiThemes => {
     fs.writeFileSync(path.resolve(repoDirectory, 'themes', 'themes.json'),
-      JSON.stringify(dokiThemes.reduce((accum, next) => ({
+      JSON.stringify(dokiThemes.reduce((accum, dokiTheme) => ({
         ...accum,
-        [next.definition.id]: {
-          stickers: next.stickers
+        [dokiTheme.definition.id]: {
+          displayName: dokiTheme.definition.name,
+          stickers: dokiTheme.stickers
         }
       }), {}), null, 2), {
         encoding: 'utf-8',

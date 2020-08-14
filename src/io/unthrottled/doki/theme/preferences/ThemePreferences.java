@@ -33,7 +33,7 @@ public class ThemePreferences extends FieldEditorPreferencePage implements IWork
 	public void createFieldEditors() {
 		addField(new DirectoryFieldEditor(PreferenceConstants.ASSET_PATH_PREFERENCE, "Asset &Directory preference:",
 				getFieldEditorParent()));
-		
+
 		addField(new RadioGroupFieldEditor(
 				PreferenceConstants.STICKER_TYPE_PREFERENCE,
 				"Sticker Type",
