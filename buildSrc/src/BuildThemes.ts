@@ -1,40 +1,22 @@
 // @ts-ignore
-import {
-  ChromeDokiThemeDefinition,
-  DokiThemeDefinitions,
-  ManifestTemplate,
-  MasterDokiThemeDefinition,
-  StringDictonary
-} from './types';
+import {DokiThemeDefinitions, EclipseDokiThemeDefinition, MasterDokiThemeDefinition, StringDictonary} from './types';
 
 const path = require('path');
 
 const repoDirectory = path.resolve(__dirname, '..', '..');
-
-const generatedThemesDirectory = path.resolve(repoDirectory, 'chromeThemes');
-
-const edgeGeneratedThemesDirectory = path.resolve(repoDirectory, 'edgeThemes');
-
-const hiResGeneratedThemesDirectory = path.resolve(repoDirectory, 'chromeThemes_2560x1440');
 
 const fs = require('fs');
 
 const masterThemeDefinitionDirectoryPath =
   path.resolve(repoDirectory, 'masterThemes');
 
-const chromeTemplateDefinitionDirectoryPath = path.resolve(
+const eclipseTemplateDefinitionDirectoryPath = path.resolve(
   repoDirectory,
   "buildAssets",
   "templates"
 );
 
-const templateDirectoryPath = path.resolve(
-  repoDirectory,
-  "themes",
-  "templates"
-);
-
-const chromeDefinitionDirectoryPath = path.resolve(
+const eclipseDefinitionDirectoryPath = path.resolve(
   repoDirectory,
   "buildAssets",
   "themes",
@@ -216,47 +198,6 @@ function replaceValues<T, R>(itemToReplace: T, valueConstructor: (key: string, v
     .reduce(dictionaryReducer, {});
 }
 
-/**
- * Converts an RGB color value to HSL. Conversion formula
- * adapted from http://en.wikipedia.org/wiki/HSL_color_space.
- * Assumes r, g, and b are contained in the set [0, 255] and
- * returns h, s, and l in the set [0, 1].
- *
- * @param   Number  r       The red color value
- * @param   Number  g       The green color value
- * @param   Number  b       The blue color value
- * @return  Array           The HSL representation
- */
-function rgbToHsl([r, g, b]: [number, number, number]) {
-  r /= 255, g /= 255, b /= 255;
-
-  var max = Math.max(r, g, b), min = Math.min(r, g, b);
-  var h, s, l = (max + min) / 2;
-
-  if (max == min) {
-    h = s = 0; // achromatic
-  } else {
-    var d = max - min;
-    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-
-    switch (max) {
-      case r:
-        h = (g - b) / d + (g < b ? 6 : 0);
-        break;
-      case g:
-        h = (b - r) / d + 2;
-        break;
-      case b:
-        h = (r - g) / d + 4;
-        break;
-    }
-    h = h || 0;
-    h /= 6;
-  }
-
-  return [h, 1, l];
-}
-
 function hexToRGB(s: string | [number, number, number]): [number, number, number] {
   if (typeof s === 'string') {
     const hex = parseInt(s.substr(1), 16)
@@ -270,53 +211,25 @@ function hexToRGB(s: string | [number, number, number]): [number, number, number
 
 }
 
-function buildChromeThemeManifest(
+// todo: dis
+type DokiThemeEclipse = {
+  [k: string]: any
+}
+
+function buildEclipseThemeManifest(
   dokiThemeDefinition: MasterDokiThemeDefinition,
   dokiTemplateDefinitions: DokiThemeDefinitions,
-  dokiThemeChromeDefinition: ChromeDokiThemeDefinition,
-  manifestTemplate: ManifestTemplate,
-): ManifestTemplate {
+  dokiThemeEclipseDefinition: EclipseDokiThemeDefinition,
+): DokiThemeEclipse {
   const namedColors = constructNamedColorTemplate(
     dokiThemeDefinition, dokiTemplateDefinitions
   )
-  const manifestTheme = manifestTemplate.theme;
-  const colorsOverride = dokiThemeChromeDefinition.overrides.theme &&
-    dokiThemeChromeDefinition.overrides.theme.colors || {};
+  const colorsOverride = dokiThemeEclipseDefinition.overrides.theme &&
+    dokiThemeEclipseDefinition.overrides.theme.colors || {};
   return {
-    ...manifestTemplate,
     name: `Doki Theme: ${dokiThemeDefinition.name}`,
     description: `A ${dokiThemeDefinition.dark ? 'dark' : 'light'} theme modeled after ${dokiThemeDefinition.displayName} from ${dokiThemeDefinition.group}`,
-    theme: {
-      ...manifestTheme,
-      images: replaceValues(
-        manifestTheme.images,
-        (_, value) => value || `images/${
-          dokiThemeDefinition.stickers.secondary ||
-          dokiThemeDefinition.stickers.default
-        }`
-      ),
-      colors: replaceValues(
-        manifestTheme.colors,
-        (key: string, color: string) => hexToRGB(resolveColor(
-          colorsOverride[key] || color,
-          namedColors
-        ))
-      ),
-      tints: replaceValues(
-        manifestTheme.tints,
-        (_, color: string) => {
-          const s = resolveColor(color, namedColors);
-          return rgbToHsl(hexToRGB(s));
-        }
-      ),
-      properties: {
-        ...manifestTheme.properties,
-        ntp_background_alignment: dokiThemeChromeDefinition.overrides.theme &&
-          dokiThemeChromeDefinition.overrides.theme.properties &&
-          dokiThemeChromeDefinition.overrides.theme.properties.ntp_background_alignment ||
-          manifestTheme.properties.ntp_background_alignment
-      }
-    }
+    theme: {}
   };
 }
 
@@ -324,18 +237,16 @@ function createDokiTheme(
   dokiFileDefinitionPath: string,
   dokiThemeDefinition: MasterDokiThemeDefinition,
   dokiTemplateDefinitions: DokiThemeDefinitions,
-  dokiThemeChromeDefinition: ChromeDokiThemeDefinition,
-  manifestTemplate: ManifestTemplate
+  dokiThemeEclipseDefinition: EclipseDokiThemeDefinition,
 ) {
   try {
     return {
       path: dokiFileDefinitionPath,
       definition: dokiThemeDefinition,
-      manifest: buildChromeThemeManifest(
+      manifest: buildEclipseThemeManifest(
         dokiThemeDefinition,
         dokiTemplateDefinitions,
-        dokiThemeChromeDefinition,
-        manifestTemplate
+        dokiThemeEclipseDefinition,
       ),
       theme: {}
     };
@@ -406,139 +317,29 @@ const getStickers = (
   };
 };
 
-const jimp = require('jimp');
-const ncp = require('ncp').ncp;
-const omit = require('lodash/omit');
 
 console.log('Preparing to generate themes.');
 
-function buildInactiveTabImage(theme: ChromeDokiTheme, backgroundDirectory: string): Promise<void> {
-  const colors = theme.definition.colors;
-  const highlightColor = jimp.cssColorToHex(colors.baseBackground)
-  return new Promise<void>(((resolve, reject) => {
-    // @ts-ignore
-    new jimp(300, 120, (err, image) => {
-      for (let i = 0; i < 33; i++) {
-        for (let j = 0; j < 300; j++) {
-          image.setPixelColor(highlightColor, j, i);
-        }
-      }
 
-      image.rgba(true)
-      image.write(path.resolve(backgroundDirectory, 'tab_inactive.png'), (err: any) => {
-        if (err) {
-          reject(err)
-        } else {
-          resolve()
-        }
-      })
-    });
-  }));
-}
-
-function buildActiveTabImage(tabHeight: number, highlightColor: number, accentColor: number, backgroundDirectory: string) {
-  return new Promise(((resolve, reject) => {
-    // @ts-ignore
-    new jimp(300, 120, (err, image) => {
-      for (let i = 0; i < tabHeight; i++) {
-        for (let j = 0; j < 300; j++) {
-          image.setPixelColor(highlightColor, j, i);
-        }
-      }
-      for (let i = 0; i < 2; i++) {
-        for (let j = 0; j < 300; j++) {
-          image.setPixelColor(accentColor, j, i + tabHeight);
-        }
-      }
-
-      image.rgba(true)
-      image.write(path.resolve(backgroundDirectory, 'tab_highlight.png'), (err: any) => {
-        if (err) {
-          reject(err)
-        } else {
-          resolve()
-        }
-      })
-    });
-  }));
-}
-
-type ChromeDokiTheme = { path: string; manifest: ManifestTemplate; definition: MasterDokiThemeDefinition; theme: {} }
-
-function buildThemeDirectoryStruct(
-  theme: ChromeDokiTheme,
-  tabHeight: number,
-  backgroundDirectory: string,
-  themeDirectory: string,
-  manifestDecorator: (manifest: ManifestTemplate) => ManifestTemplate = m => m
-): Promise<void> {
-
-  fs.mkdirSync(backgroundDirectory, {recursive: true});
-  //write manifest
-  fs.writeFileSync(
-    path.resolve(themeDirectory, 'manifest.json'),
-    JSON.stringify(manifestDecorator(theme.manifest), null, 2)
-  );
-
-  const colors = theme.definition.colors;
-  const highlightColor = jimp.cssColorToHex(colors.highlightColor)
-  const accentColor = jimp.cssColorToHex(colors.accentColor)
-  return buildActiveTabImage(
-    tabHeight,
-    highlightColor,
-    accentColor,
-    backgroundDirectory
-  )
-    .then(() => buildInactiveTabImage(theme, backgroundDirectory))
-}
-
-function getBackgroundDirectory(themeDirectory: string) {
-  return path.resolve(themeDirectory, 'images');
-}
-
-function overrideVersion(masterExtensionPackageJson: string, masterVersion: any) {
-  fs.writeFileSync(
-    masterExtensionPackageJson,
-    JSON.stringify({
-      ...JSON.parse(fs.readFileSync(masterExtensionPackageJson, {encoding: 'utf-8'})),
-      version: masterVersion.version,
-    }, null, 2)
-  )
-}
-
-
-function preBuild(): Promise<void> {
-  // write versions
-  const masterVersion = JSON.parse(fs.readFileSync(path.resolve(repoDirectory, 'package.json'), {encoding: 'utf-8'}));
-  const themeManifestTemplate = path.resolve(chromeTemplateDefinitionDirectoryPath, 'manifest.template.json');
-  overrideVersion(themeManifestTemplate, masterVersion)
-  const masterExtensionPackageJson = path.resolve(repoDirectory, 'masterExtension', 'package.json');
-  overrideVersion(masterExtensionPackageJson, masterVersion);
-  const masterExtensionManifest = path.resolve(repoDirectory, 'masterExtension', 'public', 'manifest.json');
-  overrideVersion(masterExtensionManifest, masterVersion)
-  return Promise.resolve()
-}
-
-preBuild()
-  .then(() => walkDir(chromeDefinitionDirectoryPath))
+walkDir(eclipseDefinitionDirectoryPath)
   .then((files) =>
-    files.filter((file) => file.endsWith("chrome.definition.json"))
+    files.filter((file) => file.endsWith("eclipse.definition.json"))
   )
-  .then((dokiThemeChromeDefinitionPaths) => {
+  .then((dokiThemeEclipseDefinitionPaths) => {
     return {
-      dokiThemeChromeDefinitions: dokiThemeChromeDefinitionPaths
-        .map((dokiThemeChromeDefinitionPath) =>
-          readJson<ChromeDokiThemeDefinition>(dokiThemeChromeDefinitionPath)
+      dokiThemeEclipseDefinitions: dokiThemeEclipseDefinitionPaths
+        .map((dokiThemeEclipseDefinitionPath) =>
+          readJson<EclipseDokiThemeDefinition>(dokiThemeEclipseDefinitionPath)
         )
         .reduce(
-          (accum: StringDictonary<ChromeDokiThemeDefinition>, def) => {
+          (accum: StringDictonary<EclipseDokiThemeDefinition>, def) => {
             accum[def.id] = def;
             return accum;
           },
           {}
         ),
     };
-  }).then(({dokiThemeChromeDefinitions}) =>
+  }).then(({dokiThemeEclipseDefinitions}) =>
   walkDir(path.resolve(masterThemeDefinitionDirectoryPath, 'templates'))
     .then(readTemplates)
     .then(dokiTemplateDefinitions => {
@@ -546,7 +347,7 @@ preBuild()
         .then(files => files.filter(file => file.endsWith('master.definition.json')))
         .then(dokiFileDefinitionPaths => {
           return {
-            dokiThemeChromeDefinitions,
+            dokiThemeEclipseDefinitions,
             dokiTemplateDefinitions,
             dokiFileDefinitionPaths
           };
@@ -555,25 +356,24 @@ preBuild()
   .then(templatesAndDefinitions => {
     const {
       dokiTemplateDefinitions,
-      dokiThemeChromeDefinitions,
+      dokiThemeEclipseDefinitions,
       dokiFileDefinitionPaths
     } = templatesAndDefinitions;
-    const manifestTemplate = readJson<ManifestTemplate>(path.resolve(chromeTemplateDefinitionDirectoryPath, 'manifest.template.json'))
+
     return dokiFileDefinitionPaths
       .map(dokiFileDefinitionPath => {
         const dokiThemeDefinition = readJson<MasterDokiThemeDefinition>(dokiFileDefinitionPath);
-        const dokiThemeChromeDefinition =
-          dokiThemeChromeDefinitions[dokiThemeDefinition.id];
-        if (!dokiThemeChromeDefinition) {
+        const dokiThemeEclipseDefinition =
+          dokiThemeEclipseDefinitions[dokiThemeDefinition.id];
+        if (!dokiThemeEclipseDefinition) {
           throw new Error(
-            `${dokiThemeDefinition.displayName}'s theme does not have a Chrome Definition!!`
+            `${dokiThemeDefinition.displayName}'s theme does not have a Eclipse Definition!!`
           );
         }
         return ({
           dokiFileDefinitionPath,
           dokiThemeDefinition,
-          dokiThemeChromeDefinition,
-          manifestTemplate,
+          dokiThemeEclipseDefinition,
         });
       })
       .filter(pathAndDefinition =>
@@ -584,129 +384,19 @@ preBuild()
       .map(({
               dokiFileDefinitionPath,
               dokiThemeDefinition,
-              dokiThemeChromeDefinition,
-              manifestTemplate
+              dokiThemeEclipseDefinition,
             }) =>
         createDokiTheme(
           dokiFileDefinitionPath,
           dokiThemeDefinition,
           dokiTemplateDefinitions,
-          dokiThemeChromeDefinition,
-          manifestTemplate,
+          dokiThemeEclipseDefinition,
         )
       );
-  }).then(dokiThemes => {
-  // write things for extension
-  return dokiThemes.reduce((accum, theme: ChromeDokiTheme) =>
-    accum.then(() => {
-      const tabHeight = 31;
-      const stickers = getStickers(theme.definition, theme);
-      const themeDirectoryName = `${theme.definition.name}'s Theme`;
-      const themeDirectory = path.resolve(
-        generatedThemesDirectory,
-        themeDirectoryName
-      );
-      const backgroundDirectory = getBackgroundDirectory(themeDirectory);
-
-      const edgeThemeDirectory = path.resolve(
-        edgeGeneratedThemesDirectory,
-        themeDirectoryName
-      )
-      return buildThemeDirectoryStruct(
-        theme,
-        tabHeight,
-        backgroundDirectory,
-        themeDirectory,
-      )
-        .then(() => buildThemeDirectoryStruct(
-          theme,
-          tabHeight - 2,
-          getBackgroundDirectory(edgeThemeDirectory),
-          edgeThemeDirectory,
-          manifest => ({
-            ...manifest,
-            theme: {
-              ...manifest.theme,
-              images: omit(
-                manifest.theme.images,
-                ['theme_ntp_background', 'theme_ntp_background_incognito']
-              )
-            }
-          })
-        ))
-        .then(() => {
-          // copy asset to directory
-          const storageShedPath = path.resolve(repoDirectory, '..', 'storage-shed', 'doki', 'backgrounds', 'chrome')
-          const highResTheme = [
-            path.resolve(storageShedPath, 'hi-res', stickers.secondary && stickers.secondary.name || 'not_real'),
-            path.resolve(storageShedPath, 'hi-res', stickers.default.name),
-          ].filter(hiResWaifu => fs.existsSync(hiResWaifu))[0];
-          if (highResTheme) {
-            const highResThemeDirectory = path.resolve(hiResGeneratedThemesDirectory, themeDirectoryName);
-            return (fs.existsSync(highResThemeDirectory) ?
-                walkDir(highResThemeDirectory)
-                  .then(items => items.forEach(item => fs.unlinkSync(item))) : Promise.resolve())
-              .then(() => new Promise((resolve, reject) => {
-                  ncp(themeDirectory, highResThemeDirectory, {
-                    clobber: false,
-                  }, (err: Error[] | null) => {
-                    if (err) {
-                      console.log(err)
-                      reject(err)
-                    } else {
-                      const highResBackgroundDirectory = path.resolve(highResThemeDirectory, 'images');
-                      const highResFile = path.resolve(highResBackgroundDirectory, path.basename(highResTheme));
-                      fs.copyFileSync(
-                        highResTheme,
-                        highResFile
-                      )
-                      resolve()
-                    }
-                  })
-                })
-              )
-          } else {
-            return Promise.resolve()
-          }
-        }).then(() => {
-          const backgroundName =
-            stickers.secondary &&
-            stickers.secondary.name ||
-            stickers.default.name;
-          const chromeLowRes = path.resolve(repoDirectory, '..', 'storage-shed', 'doki', 'backgrounds', 'chrome',
-            backgroundName);
-          const src = fs.existsSync(chromeLowRes) ?
-            chromeLowRes : path.resolve(repoDirectory, '..', 'doki-theme-assets', 'backgrounds', backgroundName);
-          fs.copyFileSync(
-            src,
-            path.resolve(backgroundDirectory, backgroundName)
-          )
-        });
-    }), Promise.resolve())
-    .then(() => {
-      // write things for extension
-      const dokiThemeDefinitions = dokiThemes.map(dokiTheme => {
-        const dokiDefinition = dokiTheme.definition;
-        return {
-          information: omit(dokiDefinition, [
-            'colors',
-            'overrides',
-            'ui',
-            'icons'
-          ]),
-          colors: dokiDefinition.colors,
-        };
-      }).reduce((accum: StringDictonary<any>, definition) => {
-        accum[definition.information.id] = definition;
-        return accum;
-      }, {});
-
-      const finalDokiDefinitions = JSON.stringify(dokiThemeDefinitions);
-      fs.writeFileSync(
-        path.resolve(repoDirectory, 'masterExtension', 'src', 'DokiThemeDefinitions.ts'),
-        `export default ${finalDokiDefinitions};`);
-    });
-})
+  })
+  .then(dokiThemes => {
+    console.log(JSON.stringify(dokiThemes, null, 2));
+  })
   .then(() => {
     console.log('Theme Generation Complete!');
   });
