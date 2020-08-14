@@ -1,6 +1,7 @@
 package io.unthrottled.doki.theme.preferences;
 
 import io.unthrottled.doki.theme.definitions.ThemeConstants;
+import io.unthrottled.doki.theme.themes.ThemeManager;
 import org.eclipse.jface.preference.*;
 import org.eclipse.ui.IWorkbenchPreferencePage;
 import org.eclipse.ui.IWorkbench;
@@ -42,13 +43,14 @@ public class ThemePreferences extends FieldEditorPreferencePage implements IWork
 						"&Secondary", ThemeConstants.Stickers.PRIMARY_STICKER }
 				}, getFieldEditorParent()));
 
-		// TODO: need to read all the themes! 
 		addField(new ComboFieldEditor(PreferenceConstants.CURRENT_THEME_PREFERENCE, "Choose your theme",
-				new String[][] { { "Ryuko", "19b65ec8-133c-4655-a77b-13623d8e97d3" },
-						{ "Satsuki", "3a78b13e-dbf2-410f-bb20-12b57bff7735" } },
+				ThemeManager.getInstance().getThemeDefinitions()
+				.map(def -> new String[]{
+					def.getValue().getDisplayName(),
+					def.getKey()
+				}).toArray(String[][]::new),
 				getFieldEditorParent()));
 	}
 
 	public void init(IWorkbench workbench) {}
 }
-
