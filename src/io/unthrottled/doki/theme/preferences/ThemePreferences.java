@@ -24,8 +24,6 @@ public class ThemePreferences extends FieldEditorPreferencePage implements IWork
 		setDescription("Feature configurations for the Doki-Theme");
 	}
 
-	
-	
 	/**
 	 * Creates the field editors. Field editors are abstractions of the common GUI
 	 * blocks needed to manipulate various types of preferences. Each field editor
