@@ -1,6 +1,6 @@
 package io.unthrottled.doki.theme.preferences;
 
-import io.unthrottled.doki.theme.ThemeConstants;
+import io.unthrottled.doki.theme.definitions.ThemeConstants;
 import org.eclipse.jface.preference.*;
 import org.eclipse.ui.IWorkbenchPreferencePage;
 import org.eclipse.ui.IWorkbench;

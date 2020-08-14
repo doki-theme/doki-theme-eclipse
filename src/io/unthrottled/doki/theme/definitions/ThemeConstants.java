@@ -1,4 +1,4 @@
-package io.unthrottled.doki.theme;
+package io.unthrottled.doki.theme.definitions;
 
 public class ThemeConstants {
   public static class Stickers {
