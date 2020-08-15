@@ -1,11 +1,16 @@
 package io.unthrottled.doki.theme.preferences;
 
+import io.unthrottled.doki.theme.Activator;
 import io.unthrottled.doki.theme.definitions.ThemeConstants;
 import io.unthrottled.doki.theme.themes.ThemeManager;
-import org.eclipse.jface.preference.*;
-import org.eclipse.ui.IWorkbenchPreferencePage;
+import org.eclipse.jface.preference.ComboFieldEditor;
+import org.eclipse.jface.preference.DirectoryFieldEditor;
+import org.eclipse.jface.preference.FieldEditorPreferencePage;
+import org.eclipse.jface.preference.RadioGroupFieldEditor;
 import org.eclipse.ui.IWorkbench;
-import io.unthrottled.doki.theme.Activator;
+import org.eclipse.ui.IWorkbenchPreferencePage;
+
+import java.util.Comparator;
 
 /**
  * This class represents a preference page that is contributed to the
@@ -20,37 +25,39 @@ import io.unthrottled.doki.theme.Activator;
 
 public class ThemePreferences extends FieldEditorPreferencePage implements IWorkbenchPreferencePage {
 
-	public ThemePreferences() {
-		super(GRID);
-		setPreferenceStore(Activator.getDefault().getPreferenceStore());
-		setDescription("Feature configurations for the Doki-Theme");
-	}
+  public ThemePreferences() {
+    super(GRID);
+    setPreferenceStore(Activator.getDefault().getPreferenceStore());
+    setDescription("Feature configurations for the Doki-Theme");
+  }
 
-	/**
-	 * Creates the field editors. Field editors are abstractions of the common GUI
-	 * blocks needed to manipulate various types of preferences. Each field editor
-	 * knows how to save and restore itself.
-	 */
-	public void createFieldEditors() {
-		addField(new DirectoryFieldEditor(PreferenceConstants.ASSET_PATH_PREFERENCE, "Asset &Directory preference:",
-				getFieldEditorParent()));
+  /**
+   * Creates the field editors. Field editors are abstractions of the common GUI
+   * blocks needed to manipulate various types of preferences. Each field editor
+   * knows how to save and restore itself.
+   */
+  public void createFieldEditors() {
+    addField(new DirectoryFieldEditor(PreferenceConstants.ASSET_PATH_PREFERENCE, "Asset &Directory preference:",
+        getFieldEditorParent()));
 
-		addField(new RadioGroupFieldEditor(
-				PreferenceConstants.STICKER_TYPE_PREFERENCE,
-				"Sticker Type",
-				1,
-				new String[][] { { "&Primary", ThemeConstants.Stickers.PRIMARY_STICKER}, {
-						"&Secondary", ThemeConstants.Stickers.SECONDARY_STICKER }
-				}, getFieldEditorParent()));
+    addField(new RadioGroupFieldEditor(
+        PreferenceConstants.STICKER_TYPE_PREFERENCE,
+        "Sticker Type",
+        1,
+        new String[][]{{"&Primary", ThemeConstants.Stickers.PRIMARY_STICKER}, {
+            "&Secondary", ThemeConstants.Stickers.SECONDARY_STICKER}
+        }, getFieldEditorParent()));
 
-		addField(new ComboFieldEditor(PreferenceConstants.CURRENT_THEME_PREFERENCE, "Choose your theme",
-				ThemeManager.getInstance().getAvailableThemes()
-				.map(dokiTheme -> new String[]{
-					dokiTheme.getUniqueName(),
-					dokiTheme.getId()
-				}).toArray(String[][]::new),
-				getFieldEditorParent()));
-	}
+    addField(new ComboFieldEditor(PreferenceConstants.CURRENT_THEME_PREFERENCE, "Choose your theme",
+        ThemeManager.getInstance().getAvailableThemes()
+            .map(dokiTheme -> new String[]{
+                dokiTheme.getUniqueName(),
+                dokiTheme.getId()
+            }).sorted(Comparator.comparing(item -> item[0]))
+            .toArray(String[][]::new),
+        getFieldEditorParent()));
+  }
 
-	public void init(IWorkbench workbench) {}
+  public void init(IWorkbench workbench) {
+  }
 }

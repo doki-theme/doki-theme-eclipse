@@ -1,5 +1,6 @@
 // @ts-ignore
 import {DokiThemeDefinitions, EclipseDokiThemeDefinition, MasterDokiThemeDefinition, StringDictonary} from './types';
+import GroupToNameMapping from "./GroupMappings";
 
 const path = require('path');
 
@@ -403,7 +404,8 @@ walkDir(eclipseDefinitionDirectoryPath)
       JSON.stringify(dokiThemes.reduce((accum, dokiTheme) => ({
         ...accum,
         [dokiTheme.definition.id]: {
-          displayName: dokiTheme.definition.name,
+          id: dokiTheme.definition.id,
+          displayName: `${GroupToNameMapping[dokiTheme.definition.group]}${dokiTheme.definition.name}`,
           stickers: dokiTheme.stickers
         }
       }), {}), null, 2), {
