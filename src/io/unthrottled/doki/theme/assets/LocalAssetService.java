@@ -93,8 +93,9 @@ public class LocalAssetService {
 
   private boolean hasBeenCheckedToday(Path localInstallPath) {
     Instant dateChecked = assetChecks.get(getAssetCheckKey(localInstallPath));
-		return dateChecked != null && dateChecked.truncatedTo(ChronoUnit.DAYS) ==
-        Instant.now().truncatedTo(ChronoUnit.DAYS);
+		return dateChecked != null && dateChecked.truncatedTo(ChronoUnit.DAYS).equals(
+				Instant.now().truncatedTo(ChronoUnit.DAYS)
+				);
   }
 
   private void writeCheckedDate(Path localInstallPath) {
