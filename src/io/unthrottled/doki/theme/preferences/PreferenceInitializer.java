@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import io.unthrottled.doki.theme.assets.LocalStorageService;
 import org.eclipse.core.runtime.ILog;
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.preferences.AbstractPreferenceInitializer;
@@ -21,18 +22,10 @@ public class PreferenceInitializer extends AbstractPreferenceInitializer {
 		IPreferenceStore store = Activator.getDefault().getPreferenceStore();
 		Path assetsDirectory = Paths.get(System.getProperty("user.home"), ".eclipse", "dokiThemeAssets")
 				.toAbsolutePath();
-		createDirectoriesIfNeeded(assetsDirectory);
+		LocalStorageService.getInstance().createDirectoriesIfNeeded(assetsDirectory);
 		store.setDefault(PreferenceConstants.ASSET_PATH_PREFERENCE, assetsDirectory.toString());
 		store.setDefault(PreferenceConstants.CURRENT_THEME_PREFERENCE, "19b65ec8-133c-4655-a77b-13623d8e97d3");
 	}
 
-	private void createDirectoriesIfNeeded(Path assetsDirectory) {
-		if (!Files.exists(assetsDirectory)) {
-			try {
-				Files.createDirectories(assetsDirectory);
-			} catch (IOException e) {
-				logger.error("Unable to create asset directories!", e);
-			}
-		}
-	}
+
 }
