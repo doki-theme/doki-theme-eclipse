@@ -15,4 +15,8 @@ public class DokiTheme {
   public String getUniqueName() {
     return themeDefinition.getDisplayName();
   }
+
+  public Stickers getStickers() {
+    return themeDefinition.getStickers();
+  }
 }

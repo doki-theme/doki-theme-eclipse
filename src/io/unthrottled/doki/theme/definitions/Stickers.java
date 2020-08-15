@@ -11,15 +11,8 @@ public class Stickers {
     return primary;
   }
 
-  public void setPrimary(Sticker primary) {
-    this.primary = primary;
-  }
-
   public Sticker getSecondary() {
     return secondary;
   }
 
-  public void setSecondary(Sticker secondary) {
-    this.secondary = secondary;
-  }
 }

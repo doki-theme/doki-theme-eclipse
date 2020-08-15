@@ -5,6 +5,7 @@ import com.google.gson.reflect.TypeToken;
 import io.unthrottled.doki.theme.Activator;
 import io.unthrottled.doki.theme.definitions.DokiTheme;
 import io.unthrottled.doki.theme.definitions.ThemeDefinition;
+import io.unthrottled.doki.theme.preferences.PreferenceConstants;
 import org.eclipse.core.runtime.ILog;
 import org.eclipse.core.runtime.Platform;
 
@@ -37,8 +38,10 @@ public class ThemeManager {
     return themeDefinitions.values().stream();
   }
 
-  public Optional<DokiTheme> getCurrentTheme() {
-    return Optional.empty();
+  public DokiTheme getCurrentTheme() {
+    return themeDefinitions.get(
+        Activator.getDefault().getPreferenceStore().getString(PreferenceConstants.CURRENT_THEME_PREFERENCE)
+    );
   }
 
   private ThemeManager() {
