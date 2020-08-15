@@ -44,10 +44,10 @@ public class ThemePreferences extends FieldEditorPreferencePage implements IWork
 				}, getFieldEditorParent()));
 
 		addField(new ComboFieldEditor(PreferenceConstants.CURRENT_THEME_PREFERENCE, "Choose your theme",
-				ThemeManager.getInstance().getThemeDefinitions()
-				.map(def -> new String[]{
-					def.getValue().getDisplayName(),
-					def.getKey()
+				ThemeManager.getInstance().getAvailableThemes()
+				.map(dokiTheme -> new String[]{
+					dokiTheme.getUniqueName(),
+					dokiTheme.getId()
 				}).toArray(String[][]::new),
 				getFieldEditorParent()));
 	}

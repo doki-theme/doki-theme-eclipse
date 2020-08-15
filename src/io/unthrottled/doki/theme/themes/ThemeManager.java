@@ -3,6 +3,7 @@ package io.unthrottled.doki.theme.themes;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import io.unthrottled.doki.theme.Activator;
+import io.unthrottled.doki.theme.definitions.DokiTheme;
 import io.unthrottled.doki.theme.definitions.ThemeDefinition;
 import org.eclipse.core.runtime.ILog;
 import org.eclipse.core.runtime.Platform;
@@ -10,6 +11,9 @@ import org.eclipse.core.runtime.Platform;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Map;
+import java.util.Optional;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class ThemeManager {
@@ -17,7 +21,7 @@ public class ThemeManager {
   private final Gson gson = new Gson();
   private static final ILog logger = Platform.getLog(Activator.getDefault().getBundle());
 
-  private Map<String, ThemeDefinition> themeDefinitions;
+  private Map<String, DokiTheme> themeDefinitions;
 
   private static ThemeManager instance;
 
@@ -29,17 +33,24 @@ public class ThemeManager {
     return instance;
   }
 
-  public Stream<Map.Entry<String, ThemeDefinition>> getThemeDefinitions() {
-    return themeDefinitions.entrySet().stream();
-}
+  public Stream<DokiTheme> getAvailableThemes() {
+    return themeDefinitions.values().stream();
+  }
 
-private ThemeManager() {
+  public Optional<DokiTheme> getCurrentTheme() {
+    return Optional.empty();
+  }
+
+  private ThemeManager() {
     try (var themeDefJson = getClass().getResourceAsStream("/themes/themes.json")) {
-      themeDefinitions = gson.fromJson(
+      themeDefinitions = gson.<Map<String, ThemeDefinition>>fromJson(
           new BufferedReader(new InputStreamReader(themeDefJson)),
           new TypeToken<Map<String, ThemeDefinition>>() {
           }.getType()
-      );
+      ).values().stream()
+          .map(DokiTheme::new)
+          .collect(Collectors.toMap(DokiTheme::getId, Function.identity()));
+
     } catch (Throwable e) {
 //    	logger.error("Unable to read definitions for reasons", e);
     }

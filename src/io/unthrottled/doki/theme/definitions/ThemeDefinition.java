@@ -1,23 +1,22 @@
 package io.unthrottled.doki.theme.definitions;
 
 public class ThemeDefinition {
+  private String id;
   private String displayName;
   private Stickers stickers;
 
-  public String getDisplayName() {
-    return displayName;
+
+  public String getId() {
+    return id;
   }
 
-  public void setDisplayName(String displayName) {
-    this.displayName = displayName;
+  public String getDisplayName() {
+    return displayName;
   }
 
   public Stickers getStickers() {
     return stickers;
   }
 
-  public void setStickers(Stickers stickers) {
-    this.stickers = stickers;
-  }
 }
 

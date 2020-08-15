@@ -1,5 +1,6 @@
 {
   "420b0ed5-803c-4127-97e3-dae6aa1a5972": {
+    "id": "420b0ed5-803c-4127-97e3-dae6aa1a5972",
     "displayName": "Mioda Ibuki Dark",
     "stickers": {
       "default": {
@@ -9,6 +10,7 @@
     }
   },
   "697e8564-0975-4907-a34c-51f65177ebf3": {
+    "id": "697e8564-0975-4907-a34c-51f65177ebf3",
     "displayName": "Mioda Ibuki Light",
     "stickers": {
       "default": {
@@ -18,6 +20,7 @@
     }
   },
   "b93ab4ea-ff96-4459-8fa2-0caae5bc7116": {
+    "id": "b93ab4ea-ff96-4459-8fa2-0caae5bc7116",
     "displayName": "Kanna",
     "stickers": {
       "default": {
@@ -31,6 +34,7 @@
     }
   },
   "8e8773ee-4bbb-4812-b311-005f04f6bb20": {
+    "id": "8e8773ee-4bbb-4812-b311-005f04f6bb20",
     "displayName": "Misato Katsuragi",
     "stickers": {
       "default": {
@@ -40,6 +44,7 @@
     }
   },
   "c5e92ad9-2fa0-491e-b92a-48ab92d13597": {
+    "id": "c5e92ad9-2fa0-491e-b92a-48ab92d13597",
     "displayName": "Rias",
     "stickers": {
       "default": {
@@ -49,6 +54,7 @@
     }
   },
   "19b65ec8-133c-4655-a77b-13623d8e97d3": {
+    "id": "19b65ec8-133c-4655-a77b-13623d8e97d3",
     "displayName": "Ryuko",
     "stickers": {
       "default": {
@@ -58,6 +64,7 @@
     }
   },
   "3a78b13e-dbf2-410f-bb20-12b57bff7735": {
+    "id": "3a78b13e-dbf2-410f-bb20-12b57bff7735",
     "displayName": "Satsuki",
     "stickers": {
       "default": {
@@ -67,6 +74,7 @@
     }
   },
   "774ec7ad-d6a0-4d9c-b195-2f54d72ab664": {
+    "id": "774ec7ad-d6a0-4d9c-b195-2f54d72ab664",
     "displayName": "Darkness Dark",
     "stickers": {
       "default": {
@@ -76,6 +84,7 @@
     }
   },
   "8474d98d-7bb1-462c-82b1-dd7c512142a6": {
+    "id": "8474d98d-7bb1-462c-82b1-dd7c512142a6",
     "displayName": "Darkness Light",
     "stickers": {
       "default": {
@@ -85,6 +94,7 @@
     }
   },
   "63fe4617-4cac-47a5-9b93-6794514c35ad": {
+    "id": "63fe4617-4cac-47a5-9b93-6794514c35ad",
     "displayName": "Megumin",
     "stickers": {
       "default": {
@@ -94,6 +104,7 @@
     }
   },
   "dce48196-ff46-470c-b5f9-d1e23f4a79d3": {
+    "id": "dce48196-ff46-470c-b5f9-d1e23f4a79d3",
     "displayName": "Monika Dark",
     "stickers": {
       "default": {
@@ -107,6 +118,7 @@
     }
   },
   "9a310731-ab2d-40f5-b502-fa5419f799a2": {
+    "id": "9a310731-ab2d-40f5-b502-fa5419f799a2",
     "displayName": "Monika Light",
     "stickers": {
       "default": {
@@ -120,6 +132,7 @@
     }
   },
   "a7e0aa28-739a-4671-80ae-3980997e6b71": {
+    "id": "a7e0aa28-739a-4671-80ae-3980997e6b71",
     "displayName": "Natsuki Dark",
     "stickers": {
       "default": {
@@ -133,6 +146,7 @@
     }
   },
   "91415015-8fe3-48eb-9951-70a5cd6cbb7f": {
+    "id": "91415015-8fe3-48eb-9951-70a5cd6cbb7f",
     "displayName": "Natsuki Light",
     "stickers": {
       "default": {
@@ -146,6 +160,7 @@
     }
   },
   "b0340303-0a5a-4a20-9b9c-fc8ce9880078": {
+    "id": "b0340303-0a5a-4a20-9b9c-fc8ce9880078",
     "displayName": "Sayori Dark",
     "stickers": {
       "default": {
@@ -159,6 +174,7 @@
     }
   },
   "cb8ef4b7-0844-4a04-b08b-754086598de4": {
+    "id": "cb8ef4b7-0844-4a04-b08b-754086598de4",
     "displayName": "Sayori Light",
     "stickers": {
       "default": {
@@ -172,6 +188,7 @@
     }
   },
   "a14733d6-8e15-4e75-b6b8-509f323e5b3b": {
+    "id": "a14733d6-8e15-4e75-b6b8-509f323e5b3b",
     "displayName": "Yuri Dark",
     "stickers": {
       "default": {
@@ -185,6 +202,7 @@
     }
   },
   "cecf3f92-76d4-4f14-9a9c-3d558b6b3b68": {
+    "id": "cecf3f92-76d4-4f14-9a9c-3d558b6b3b68",
     "displayName": "Yuri Light",
     "stickers": {
       "default": {
@@ -198,6 +216,7 @@
     }
   },
   "be058474-b967-4afb-b6d9-bda1948b33ec": {
+    "id": "be058474-b967-4afb-b6d9-bda1948b33ec",
     "displayName": "Konata",
     "stickers": {
       "default": {
@@ -211,6 +230,7 @@
     }
   },
   "bc12b380-1f2a-4a9d-89d8-388a07f1e15f": {
+    "id": "bc12b380-1f2a-4a9d-89d8-388a07f1e15f",
     "displayName": "Hatsune Miku",
     "stickers": {
       "default": {
@@ -220,6 +240,7 @@
     }
   },
   "35422aa4-1396-4e76-8ec6-c5560884df22": {
+    "id": "35422aa4-1396-4e76-8ec6-c5560884df22",
     "displayName": "Beatrice",
     "stickers": {
       "default": {
@@ -229,6 +250,7 @@
     }
   },
   "696de7c1-3a8e-4445-83ee-3eb7e9dca47f": {
+    "id": "696de7c1-3a8e-4445-83ee-3eb7e9dca47f",
     "displayName": "Emilia Dark",
     "stickers": {
       "default": {
@@ -238,6 +260,7 @@
     }
   },
   "e828aaae-aa8c-4084-8993-d64697146930": {
+    "id": "e828aaae-aa8c-4084-8993-d64697146930",
     "displayName": "Emilia Light",
     "stickers": {
       "default": {
@@ -247,6 +270,7 @@
     }
   },
   "ecb74f1c-8c84-40c4-916f-601039ba2af0": {
+    "id": "ecb74f1c-8c84-40c4-916f-601039ba2af0",
     "displayName": "Ram",
     "stickers": {
       "default": {
@@ -256,6 +280,7 @@
     }
   },
   "f770dcfc-f41e-4b49-aa17-66e9ffc208fd": {
+    "id": "f770dcfc-f41e-4b49-aa17-66e9ffc208fd",
     "displayName": "Rem",
     "stickers": {
       "default": {
@@ -265,6 +290,7 @@
     }
   },
   "546e8fb8-6082-4ef5-a5e3-44790686f02f": {
+    "id": "546e8fb8-6082-4ef5-a5e3-44790686f02f",
     "displayName": "Asuna",
     "stickers": {
       "default": {

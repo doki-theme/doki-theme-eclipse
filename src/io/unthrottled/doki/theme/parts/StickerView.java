@@ -4,6 +4,7 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import io.unthrottled.doki.theme.themes.StickerService;
 import org.eclipse.e4.core.di.annotations.Optional;
 import org.eclipse.e4.ui.di.Focus;
 import org.eclipse.e4.ui.services.IServiceConstants;
@@ -30,8 +31,7 @@ public class StickerView {
 			@Override
 			public void propertyChange(PropertyChangeEvent changeEvent) {
 				if (PreferenceConstants.CURRENT_THEME_PREFERENCE.equals(changeEvent.getProperty())) {
-					var themeId = (String) changeEvent.getNewValue();
-					var imageUrl = getStickerUrl(themeId);
+					var imageUrl = StickerService.getInstance().getCurrentSticker();
 					stickerDisplayLabel.setImage(new Image(parent.getDisplay(), imageUrl));
 				}
 			}
@@ -40,14 +40,5 @@ public class StickerView {
 		Image image = new Image(parent.getDisplay(),
 				getStickerUrl(preferenceStore.getString(PreferenceConstants.CURRENT_THEME_PREFERENCE)));
 		stickerDisplayLabel.setImage(image);
-	}
-
-	protected String getStickerUrl(String themeId) {
-		switch (themeId) {
-		case "3a78b13e-dbf2-410f-bb20-12b57bff7735":
-			return "/C:/Users/birdm.DESKTOP-FO92PV5/AppData/Roaming/Hyper/.doki-theme-hyper-config/stickers/killLaKill/satsuki/satsuki.png";
-		default:
-			return "/C:/Users/birdm.DESKTOP-FO92PV5/AppData/Roaming/Hyper/.doki-theme-hyper-config/stickers/killLaKill/ryuko/ryuko.png";
-		}
 	}
 }
