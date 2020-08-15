@@ -40,7 +40,7 @@ public class ThemePreferences extends FieldEditorPreferencePage implements IWork
 				"Sticker Type",
 				1,
 				new String[][] { { "&Primary", ThemeConstants.Stickers.PRIMARY_STICKER}, {
-						"&Secondary", ThemeConstants.Stickers.PRIMARY_STICKER }
+						"&Secondary", ThemeConstants.Stickers.SECONDARY_STICKER }
 				}, getFieldEditorParent()));
 
 		addField(new ComboFieldEditor(PreferenceConstants.CURRENT_THEME_PREFERENCE, "Choose your theme",

@@ -58,7 +58,7 @@ public class AssetManager {
   private String constructRemoteAssetUrl(
       String assetPath
   ) {
-    return ASSETS_SOURCE + '/' + assetPath;
+    return ASSETS_SOURCE + assetPath;
   }
 
   private Optional<String> resolveTheAssetUrl(Path localAssetPath,
@@ -66,7 +66,7 @@ public class AssetManager {
     if (LocalAssetService.getInstance().hasAssetChanged(localAssetPath, remoteAssetUrl)) {
       return downloadAndGetAssetUrl(localAssetPath, remoteAssetUrl);
     } else {
-      return Optional.ofNullable(localAssetPath.toUri().toString());
+      return Optional.ofNullable(localAssetPath.toString());
     }
   }
 
@@ -98,13 +98,14 @@ public class AssetManager {
              )
         ) {
           IOUtils.copy(inputStream, bufferedWriter);
-          return Optional.ofNullable(localAssetPath.toUri().toString());
+          return Optional.ofNullable(localAssetPath.toString());
         } catch (IOException e) {
         	log.warn("Unable to get remote asset " + remoteAssetUrl, e);
         }
       }
       log.warn("Asset request for "+ remoteAssetUrl + " responded with "+ 
       String.valueOf(remoteAssetRequest.getStatusCode()));
+      // TODO: investigate fallback
       return getFallbackURL(localAssetPath, remoteAssetUrl);
     } catch (Throwable e) {
       log.error("Unable to get remote remote asset "+remoteAssetUrl + " for raisins", e);

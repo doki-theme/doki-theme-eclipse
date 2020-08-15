@@ -16,6 +16,7 @@ import java.nio.file.StandardOpenOption;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
@@ -91,7 +92,8 @@ public class LocalAssetService {
   }
 
   private boolean hasBeenCheckedToday(Path localInstallPath) {
-    return assetChecks.get(getAssetCheckKey(localInstallPath)).truncatedTo(ChronoUnit.DAYS) ==
+    Instant dateChecked = assetChecks.get(getAssetCheckKey(localInstallPath));
+		return dateChecked != null && dateChecked.truncatedTo(ChronoUnit.DAYS) ==
         Instant.now().truncatedTo(ChronoUnit.DAYS);
   }
 
@@ -126,10 +128,10 @@ public class LocalAssetService {
             	logger.warn("Unable to read previous asset checks for raisins.", e);
               return Optional.<Map<String, Instant>>empty();
             }
-          }).orElseGet(Collections::emptyMap);
+          }).orElseGet(HashMap::new);
     } catch (Throwable e) {
       logger.warn("Unable to get local asset checks for raisins", e);
-      return Collections.emptyMap();
+      return new HashMap<>();
     }
   }
 
