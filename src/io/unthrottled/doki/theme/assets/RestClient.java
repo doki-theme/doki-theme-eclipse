@@ -18,18 +18,20 @@ public class RestClient {
     return instance;
   }
 
+  private final HttpClient httpClient = new HttpClient();
+
   private RestClient() {
+    httpClient.getParams().setConnectionManagerTimeout(TimeUnit.MILLISECONDS.convert(5L, TimeUnit.SECONDS));
   }
 
-  private final HttpClient httpClient = new HttpClient();
 //  private var log = Logger.getInstance(this::class.java)
 
   public Optional<String> performGet(String url) {
 //    log.info("Attempting to fetch remote asset: $url")
     var request = createGetRequest(url);
     try {
-      httpClient.getParams().setConnectionManagerTimeout(TimeUnit.MILLISECONDS.convert(5L, TimeUnit.SECONDS));
-      var statusCode = httpClient.executeMethod(request);
+            httpClient.executeMethod(request);
+      var statusCode = request.getStatusCode();
 //      log.info("Asset has responded for remote asset: $url with status code $statusCode")
       if (statusCode == 200) {
         return Optional.ofNullable(request.getResponseBodyAsString());
