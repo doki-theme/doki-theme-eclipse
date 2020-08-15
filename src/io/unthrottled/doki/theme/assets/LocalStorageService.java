@@ -40,7 +40,7 @@ public class LocalStorageService {
       try {
         Files.createDirectories(assetsDirectory);
       } catch (IOException e) {
-//        logger.error("Unable to create asset directories!", e);
+        logger.error("Unable to create asset directories!", e);
       }
     }
   }

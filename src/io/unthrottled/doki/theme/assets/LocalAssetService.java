@@ -8,7 +8,6 @@ import io.unthrottled.doki.theme.Activator;
 import org.eclipse.core.runtime.ILog;
 import org.eclipse.core.runtime.Platform;
 
-import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -54,8 +53,8 @@ public class LocalAssetService {
   private String getOnDiskCheckSum(Path localAssetPath) {
     try {
       return computeCheckSum(Files.readAllBytes(localAssetPath));
-    } catch (IOException e) {
-      // todo: log
+    } catch (Throwable e) {
+      logger.warn("Unable to calculate local checksum for "+localAssetPath.toAbsolutePath(), e);
       return "lol not going to match";
     }
   }
@@ -80,12 +79,11 @@ public class LocalAssetService {
               if (remoteChecksum.equals(onDiskCheckSum)) {
                 return AssetChangedStatus.SAME;
               } else {
-//        log.warn("""
-//              Local asset: $localInstallPath
-//              is different from remote asset $remoteAssetUrl
-//              Local Checksum: $onDiskCheckSum
-//              Remote Checksum: $remoteChecksum
-//            """.trimIndent())
+	              logger.warn("\n" +
+	                "Local asset: " +localInstallPath +
+	                "\nis different from remote asset " +remoteAssetUrl +
+		              "\nLocal Checksum: " + onDiskCheckSum +
+		              "\nRemote Checksum: " + remoteChecksum);
                 return AssetChangedStatus.DIFFERENT;
               }
             }
@@ -108,8 +106,8 @@ public class LocalAssetService {
                   StandardOpenOption.TRUNCATE_EXISTING
               )) {
                 writer.write(gson.toJson(assetChecks));
-              } catch (IOException e) {
-                // todo: log
+              } catch (Throwable e) {
+              	logger.warn("Unable to write checked date for asset " + localInstallPath.toAbsolutePath(), e);
               }
             }
         );
@@ -124,12 +122,13 @@ public class LocalAssetService {
               return Optional.ofNullable(gson.fromJson(reader,
                   new TypeToken<Map<String, Instant>>() {}.getType()
               ));
-            } catch (IOException e) {
+            } catch (Throwable e) {
+            	logger.warn("Unable to read previous asset checks for raisins.", e);
               return Optional.<Map<String, Instant>>empty();
             }
           }).orElseGet(Collections::emptyMap);
     } catch (Throwable e) {
-//      log.warn("Unable to get local asset checks for raisins", e);
+      logger.warn("Unable to get local asset checks for raisins", e);
       return Collections.emptyMap();
     }
   }
