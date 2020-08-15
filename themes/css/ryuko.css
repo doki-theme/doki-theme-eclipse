@@ -100,6 +100,57 @@ TabbedPropertyList {
 	color                       : '#org-eclipse-ui-workbench-ACTIVE_NOFOCUS_TAB_SELECTED_TEXT_COLOR'; /* text color in the tab / tab area */
 }
 
+CTabFolder Canvas {
+	background-color: #282f35;
+	color: #CCC;
+}
+
+Shell Tree, Shell Table, Shell List {
+	background-color: #282f35;
+}
+
+.MPart Composite,
+.MPart Composite > *,
+.MPart Composite > * > *,
+.MPart Label,
+.MPart ScrolledForm,
+.MPart Form,
+.MPart Section,
+.MPart FormText,
+.MPart Link,
+.MPart Sash,
+.MPart Button,
+.MPart Group,
+.MPart SashForm,
+.MPart Tree,
+.MPart FilteredTree,
+.MPart RegistryFilteredTree,
+.MPart PageSiteComposite,
+.MPart DependenciesComposite,
+.MPart Text[style~='SWT.READ_ONLY'],
+.MPart FigureCanvas,
+.MPart ListEditorComposite,
+.MPart ScrolledComposite,
+.Mpart ScrolledComposite ProgressInfoItem,
+.MPart Form ScrolledPageBook,
+.MPart DependenciesComposite > SashForm > Section > * { /* Section > DependenciesComposite$... */
+	background-color: #282f35;
+	color: #AAAAAA;
+}
+
+.MPart Section > Label {
+	background-color: #282f35;
+	color: #ABCEDA;
+}
+
+#org-eclipse-ui-console-ConsoleView .MPart > Composite,
+#org-eclipse-ui-console-ConsoleView .MPart StyledText,
+#org-eclipse-ui-console-ConsoleView .MPart PageBook Label {
+	background-color: #282f35;
+	color: #CCCCCC;
+}
+
+
 /******* */
 
 IEclipsePreferences#org-eclipse-ui-workbench {
