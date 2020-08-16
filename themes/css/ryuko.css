@@ -24,6 +24,53 @@ ColorDefinition#org-eclipse-ui-workbench-INACTIVE_TAB_INNER_KEYLINE_COLOR {
 	label: url('platform:/plugin/org.eclipse.ui.themes?message=INACTIVE_TAB_INNER_KEYLINE_COLOR');
 }
 
+ColorDefinition#org-eclipse-ui-workbench-ACTIVE_UNSELECTED_TABS_COLOR_START {
+	color: #2b3238;
+	category: '#org-eclipse-ui-presentation-default';
+	label: url('platform:/plugin/org.eclipse.ui.themes?message=ACTIVE_UNSELECTED_TABS_COLOR_START');
+}
+
+ColorDefinition#org-eclipse-ui-workbench-ACTIVE_UNSELECTED_TABS_COLOR_END {
+	color: #2b3238;
+	category: '#org-eclipse-ui-presentation-default';
+	label: url('platform:/plugin/org.eclipse.ui.themes?message=ACTIVE_UNSELECTED_TABS_COLOR_END');
+}
+
+ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_OUTLINE_COLOR {
+	color: #30383d;
+	category: '#org-eclipse-ui-presentation-default';
+	label: url('platform:/plugin/org.eclipse.ui.themes?message=ACTIVE_TAB_OUTLINE_COLOR');
+}
+
+ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_INNER_KEYLINE_COLOR {
+	color: #30383d;
+	category: '#org-eclipse-ui-presentation-default';
+	label: url('platform:/plugin/org.eclipse.ui.themes?message=ACTIVE_TAB_INNER_KEYLINE_COLOR');
+}
+
+CTabFolder {
+	/* Set the styles for the inner tabs: */
+	color: '#org-eclipse-ui-workbench-INACTIVE_TAB_TEXT_COLOR';
+	swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
+	padding: 2px 2px;
+	swt-tab-outline: '#org-eclipse-ui-workbench-ACTIVE_TAB_OUTLINE_COLOR'; /* border color for selected tab */
+	swt-outer-keyline-color: '#org-eclipse-ui-workbench-ACTIVE_TAB_OUTER_KEYLINE_COLOR'; /* border color for whole tabs container */
+	swt-unselected-tabs-color: '#org-eclipse-ui-workbench-ACTIVE_UNSELECTED_TABS_COLOR_START' '#org-eclipse-ui-workbench-ACTIVE_UNSELECTED_TABS_COLOR_END' 100% 100%; /* title background for unselected tab */
+	swt-selected-tab-fill: '#org-eclipse-ui-workbench-ACTIVE_TAB_BG_END'; /* title background for selected tab */
+	swt-shadow-visible: false;
+	/*todo: figure out highlights for all themes*/
+	swt-unselected-hot-tab-color-background: #a32f34; /* Bug 465711 */
+	swt-selected-tab-highlight: none;
+}
+
+CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'] {
+	/* Set the styles for the bottom inner tabs (Bug 430051): */
+	swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
+	swt-unselected-hot-tab-color-background: #a32f34; /* Bug 465711 */
+	swt-selected-tab-highlight: #a73035;
+	swt-selected-highlight-top: false;
+}
+
 Shell,
 Composite, ScrolledComposite, ExpandableComposite, Canvas, TabFolder, CLabel, Label,
 CoolBar, Sash, Group, RefactoringLocationControl, ChangeParametersControl, Link, FilteredTree,
