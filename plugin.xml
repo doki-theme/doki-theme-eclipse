@@ -1,40 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?eclipse version="3.4"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <plugin>
-
-   <extension
-         id="io.unthrottled.doki.theme.fragment"
-         point="org.eclipse.e4.workbench.model">
-      <fragment
-            apply="notexists"
-            uri="fragment.e4xmi">
-      </fragment>
-   </extension>
-   <extension
-         point="org.eclipse.e4.ui.css.swt.theme">
-         <theme
-            basestylesheeturi="themes/css/ryuko.css"
-            id="dark_19b65ec8-133c-4655-a77b-13623d8e97d3"
-            label="Ryuko">
-      	</theme>
-      	
-   </extension>
- <extension
-   id="product"
-   point="org.eclipse.core.runtime.products">
- </extension>
- <extension
-       point="org.eclipse.ui.preferencePages">
-    <page
-          class="io.unthrottled.doki.theme.preferences.ThemePreferences"
-          id="io.unthrottled.doki.theme.preferences.ThemePreferences"
-          name="Doki-Theme Settings">
-    </page>
- </extension>
- <extension
-       point="org.eclipse.core.runtime.preferences">
-    <initializer
-          class="io.unthrottled.doki.theme.preferences.PreferenceInitializer">
-    </initializer>
- </extension>
+  <extension id="io.unthrottled.doki.theme.fragment" point="org.eclipse.e4.workbench.model">
+    <fragment apply="notexists" uri="fragment.e4xmi"/>
+  </extension>
+  <extension point="org.eclipse.e4.ui.css.swt.theme">
+    <theme basestylesheeturi="themes/css/ryuko.css" id="dark_19b65ec8-133c-4655-a77b-13623d8e97d3" label="Ryuko"/>
+  </extension>
+  <extension id="product" point="org.eclipse.core.runtime.products"/>
+  <extension point="org.eclipse.ui.preferencePages">
+    <page class="io.unthrottled.doki.theme.preferences.ThemePreferences" id="io.unthrottled.doki.theme.preferences.ThemePreferences" name="Doki-Theme Settings"/>
+  </extension>
+  <extension point="org.eclipse.core.runtime.preferences">
+    <initializer class="io.unthrottled.doki.theme.preferences.PreferenceInitializer"/>
+  </extension>
 </plugin>

@@ -1,6 +1,7 @@
 // @ts-ignore
 import {DokiThemeDefinitions, EclipseDokiThemeDefinition, MasterDokiThemeDefinition, StringDictonary} from './types';
 import GroupToNameMapping from "./GroupMappings";
+import {toXml, xmlBuilder} from "./XmlTools";
 
 const path = require('path');
 
@@ -400,16 +401,35 @@ walkDir(eclipseDefinitionDirectoryPath)
       );
   })
   .then(dokiThemes => {
-    fs.writeFileSync(path.resolve(repoDirectory, 'themes', 'themes.json'),
-      JSON.stringify(dokiThemes.reduce((accum, dokiTheme) => ({
-        ...accum,
-        [dokiTheme.definition.id]: {
-          id: dokiTheme.definition.id,
-          displayName: `${GroupToNameMapping[dokiTheme.definition.group]}${dokiTheme.definition.name}`,
-          stickers: dokiTheme.stickers
-        }
-      }), {}), null, 2), {
-        encoding: 'utf-8',
+    const pluginXmlPath = path.resolve(repoDirectory, 'plugin.xml');
+    return toXml(fs.readFileSync(pluginXmlPath, {
+      encoding: 'utf8'
+    }))
+      .then(pluginXml => {
+        const cssExtension = pluginXml.plugin.extension.find(
+          (extension: any) => extension.$.point === 'org.eclipse.e4.ui.css.swt.theme'
+        );
+        console.log(JSON.stringify(cssExtension, null, 2));
+        // cssExtension.theme.push({
+        //   '$':{
+        //     "to":"the window",
+        //     "skeet":"skeet"
+        //   }
+        // })
+        const xml = xmlBuilder.buildObject(pluginXml);
+        fs.writeFileSync(path.resolve(pluginXmlPath), xml, 'utf8');
+      }).then(()=>{
+        fs.writeFileSync(path.resolve(repoDirectory, 'themes', 'themes.json'),
+          JSON.stringify(dokiThemes.reduce((accum, dokiTheme) => ({
+            ...accum,
+            [dokiTheme.definition.id]: {
+              id: dokiTheme.definition.id,
+              displayName: `${GroupToNameMapping[dokiTheme.definition.group]}${dokiTheme.definition.name}`,
+              stickers: dokiTheme.stickers
+            }
+          }), {}), null, 2), {
+            encoding: 'utf-8',
+          })
       });
   })
   .then(() => {
