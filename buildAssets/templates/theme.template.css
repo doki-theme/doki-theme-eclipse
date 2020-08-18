@@ -1,0 +1,216 @@
+@import url("platform:/plugin/org.eclipse.ui.themes/css/e4-dark_win.css");
+
+ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_BG_END {
+    color: {{secondaryBackground}}; /*active tabs */
+    category: '#org-eclipse-ui-presentation-default';
+    label: url('platform:/plugin/org.eclipse.ui.themes?message=ACTIVE_TAB_BG_END');
+}
+
+
+ColorDefinition#org-eclipse-ui-workbench-INACTIVE_UNSELECTED_TABS_COLOR_START {
+    color: {{baseBackground}}; /*base background */
+    category: '#org-eclipse-ui-presentation-default';
+    label: url('platform:/plugin/org.eclipse.ui.themes?message=INACTIVE_UNSELECTED_TABS_COLOR_START');
+}
+ColorDefinition#org-eclipse-ui-workbench-INACTIVE_TAB_OUTER_KEYLINE_COLOR {
+    color: {{baseBackground}};
+    category: '#org-eclipse-ui-presentation-default';
+    label: url('platform:/plugin/org.eclipse.ui.themes?message=INACTIVE_TAB_OUTER_KEYLINE_COLOR');
+}
+ColorDefinition#org-eclipse-ui-workbench-INACTIVE_TAB_INNER_KEYLINE_COLOR {
+    color: {{baseBackground}};
+    category: '#org-eclipse-ui-presentation-default';
+    label: url('platform:/plugin/org.eclipse.ui.themes?message=INACTIVE_TAB_INNER_KEYLINE_COLOR');
+}
+
+ColorDefinition#org-eclipse-ui-workbench-ACTIVE_UNSELECTED_TABS_COLOR_START {
+    color: {{textEditorBackground}};
+    category: '#org-eclipse-ui-presentation-default';
+    label: url('platform:/plugin/org.eclipse.ui.themes?message=ACTIVE_UNSELECTED_TABS_COLOR_START');
+}
+
+ColorDefinition#org-eclipse-ui-workbench-ACTIVE_UNSELECTED_TABS_COLOR_END {
+    color: {{textEditorBackground}};
+    category: '#org-eclipse-ui-presentation-default';
+    label: url('platform:/plugin/org.eclipse.ui.themes?message=ACTIVE_UNSELECTED_TABS_COLOR_END');
+}
+
+ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_OUTLINE_COLOR {
+    color: {{borderColor}};
+    category: '#org-eclipse-ui-presentation-default';
+    label: url('platform:/plugin/org.eclipse.ui.themes?message=ACTIVE_TAB_OUTLINE_COLOR');
+}
+
+ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_INNER_KEYLINE_COLOR {
+    color: {{borderColor}};
+    category: '#org-eclipse-ui-presentation-default';
+    label: url('platform:/plugin/org.eclipse.ui.themes?message=ACTIVE_TAB_INNER_KEYLINE_COLOR');
+}
+
+CTabFolder {
+    /* Set the styles for the inner tabs: */
+    color: '#org-eclipse-ui-workbench-INACTIVE_TAB_TEXT_COLOR';
+    swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
+    padding: 2px 2px;
+    swt-tab-outline: '#org-eclipse-ui-workbench-ACTIVE_TAB_OUTLINE_COLOR'; /* border color for selected tab */
+    swt-outer-keyline-color: '#org-eclipse-ui-workbench-ACTIVE_TAB_OUTER_KEYLINE_COLOR'; /* border color for whole tabs container */
+    swt-unselected-tabs-color: '#org-eclipse-ui-workbench-ACTIVE_UNSELECTED_TABS_COLOR_START' '#org-eclipse-ui-workbench-ACTIVE_UNSELECTED_TABS_COLOR_END' 100% 100%; /* title background for unselected tab */
+    swt-selected-tab-fill: '#org-eclipse-ui-workbench-ACTIVE_TAB_BG_END'; /* title background for selected tab */
+    swt-shadow-visible: false;
+    /*todo: figure out highlights for all themes*/
+    swt-unselected-hot-tab-color-background: {{highlightColor}}; /* Bug 465711 */
+    swt-selected-tab-highlight: none;
+}
+
+CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'] {
+    /* Set the styles for the bottom inner tabs (Bug 430051): */
+    swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
+    swt-unselected-hot-tab-color-background: {{highlightColor}}; /* Bug 465711 */
+    swt-selected-tab-highlight: {{highlightColor}};
+    swt-selected-highlight-top: false;
+}
+
+Shell,
+Composite, ScrolledComposite, ExpandableComposite, Canvas, TabFolder, CLabel, Label,
+CoolBar, Sash, Group, RefactoringLocationControl, ChangeParametersControl, Link, FilteredTree,
+ProxyEntriesComposite, NonProxyHostsComposite, DelayedFilterCheckboxTree,
+Splitter, ScrolledPageContent, ViewForm, LaunchConfigurationFilteredTree,
+ContainerSelectionGroup, BrowseCatalogItem, EncodingSettings,
+ProgressMonitorPart, DocCommentOwnerComposite, NewServerComposite,
+NewManualServerComposite, ServerTypeComposite, FigureCanvas,
+DependenciesComposite, ListEditorComposite, WrappedPageBook,
+CompareStructureViewerSwitchingPane, CompareContentViewerSwitchingPane,
+QualifiedNameComponent, RefactoringStatusViewer,
+MessageLine,
+Button /* SWT-BUG: checkbox inner label font color is not accessible */,
+Composite > *,
+Composite > * > *,
+Group > StyledText {
+    background-color:{{baseBackground}};
+    color:{{foregroundColor}};
+}
+
+Combo,
+List,
+Text,
+Spinner,
+CCombo {
+    background-color:{{baseBackground}};
+    color:{{foregroundColor}};
+}
+
+Composite > StyledText,
+Shell [style~='SWT.DROP_DOWN'] > StyledText, /* for eg. folded code popup (but it's ignored) */
+SashForm > StyledText {
+    /*	Fix StyledText inside a SashForm */
+    background-color:{{baseBackground}};
+    color:{{foregroundColor}};
+}
+
+Text[style~='SWT.READ_ONLY'] {
+    background-color: {{baseBackground}};
+    color: {{lineNumberColor}};
+}
+
+DatePicker,
+DatePicker > Text,
+ScheduleDatePicker,
+ScheduleDatePicker > Text {
+    background-color:{{baseBackground}};
+    color:{{foregroundColor}};
+}
+
+ScrolledFormText,
+FormText {
+    background-color:{{baseBackground}};
+    color:{{foregroundColor}};
+}
+
+CatalogSwitcher,
+CatalogSwitcher > ScrolledComposite > Composite > Composite /* ignored because hard-coded */,
+CategoryItem {
+    background-color: {{baseBackground}};
+    color: #dddddd;
+}
+
+.MPartSashContainer {
+    background-color: {{baseBackground}};
+    color: {{foregroundColor}};
+}
+
+TabbedPropertyList {
+    swt-tabNormalShadow-color   : '#org-eclipse-ui-workbench-INACTIVE_TAB_OUTLINE_COLOR';             /* color of shadow lines around the tabs */
+    swt-tabDarkShadow-color     : '#org-eclipse-ui-workbench-ACTIVE_NOFOCUS_TAB_SELECTED_TEXT_COLOR'; /* line color of the tiny scroll triangle (at top / at bottom) */
+    swt-tabAreaBackground-color : {{baseBackground}};   /*same as canvas*/
+    swt-tabBackground-color     : '#org-eclipse-ui-workbench-ACTIVE_NOFOCUS_TAB_BG_START';
+    color                       : '#org-eclipse-ui-workbench-ACTIVE_NOFOCUS_TAB_SELECTED_TEXT_COLOR'; /* text color in the tab / tab area */
+}
+
+CTabFolder Canvas {
+    background-color: {{secondaryBackground}};
+    color: {{foregroundColor}};
+}
+
+Shell Tree, Shell Table, Shell List {
+    background-color: {{secondaryBackground}};
+}
+
+.MPart Composite,
+.MPart Composite > *,
+.MPart Composite > * > *,
+.MPart Label,
+.MPart ScrolledForm,
+.MPart Form,
+.MPart Section,
+.MPart FormText,
+.MPart Link,
+.MPart Sash,
+.MPart Button,
+.MPart Group,
+.MPart SashForm,
+.MPart Tree,
+.MPart FilteredTree,
+.MPart RegistryFilteredTree,
+.MPart PageSiteComposite,
+.MPart DependenciesComposite,
+.MPart Text[style~='SWT.READ_ONLY'],
+.MPart FigureCanvas,
+.MPart ListEditorComposite,
+.MPart ScrolledComposite,
+.Mpart ScrolledComposite ProgressInfoItem,
+.MPart Form ScrolledPageBook,
+.MPart DependenciesComposite > SashForm > Section > * { /* Section > DependenciesComposite$... */
+    background-color: {{secondaryBackground}};
+    color: {{foregroundColor}};
+}
+
+.MPart Section > Label {
+    background-color: {{secondaryBackground}};
+    color: {{lineNumberColor}};
+}
+
+#org-eclipse-ui-console-ConsoleView .MPart > Composite,
+#org-eclipse-ui-console-ConsoleView .MPart StyledText,
+#org-eclipse-ui-console-ConsoleView .MPart PageBook Label {
+    background-color: {{secondaryBackground}};
+    color: {{foregroundColor}};
+}
+
+
+/******* */
+
+IEclipsePreferences#org-eclipse-ui-workbench {
+    preferences:
+            'ACTIVE_HYPERLINK_COLOR=255,200,0'
+            'CONFLICTING_COLOR=240,15,66'
+            'org.eclipse.search.ui.match.highlight=93,86,76'
+            'ERROR_COLOR=247,68,117'
+            'HYPERLINK_COLOR=111,197,238'
+            'INCOMING_COLOR=31,179,235'
+            'OUTGOING_COLOR=238,238,238'
+            'RESOLVED_COLOR=108,210,17'
+            'org.eclipse.egit.ui.IgnoredResourceForegroundColor=160,160,180'
+            'org.eclipse.egit.ui.UncommittedChangeForegroundColor=210,220,230'
+
+}
+

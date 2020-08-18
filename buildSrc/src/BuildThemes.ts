@@ -179,25 +179,70 @@ function resolveNamedColors(
         'dark' : 'light'));
 }
 
-const toPairs = require('lodash/toPairs');
-
 export interface StringDictionary<T> {
   [key: string]: T;
 }
 
-export const dictionaryReducer = <T>(
-  accum: StringDictionary<T>,
-  [key, value]: [string, T],
-) => {
-  accum[key] = value;
-  return accum;
-};
+function getColorFromTemplate(templateVariables: StringDictionary<string>, templateVariable: string) {
+  const resolvedTemplateVariable = templateVariable.split('|')
+    .map(namedColor => templateVariables[namedColor])
+    .filter(Boolean)[0]
+  if (!resolvedTemplateVariable) {
+    throw Error(`Template does not have variable ${templateVariable}`)
+  }
+
+  return resolvedTemplateVariable;
+}
 
 
-function replaceValues<T, R>(itemToReplace: T, valueConstructor: (key: string, value: string) => R): T {
-  return toPairs(itemToReplace)
-    .map(([key, value]: [string, string]) => ([key, valueConstructor(key, value)]))
-    .reduce(dictionaryReducer, {});
+function resolveTemplateVariable(
+  templateVariable: string,
+  templateVariables: StringDictionary<string>,
+): string {
+  return resolveColor(getColorFromTemplate(templateVariables, templateVariable), templateVariables);
+}
+
+
+function fillInTemplateScript(
+  templateToFillIn: string,
+  templateVariables: StringDictionary<string>,
+) {
+  return templateToFillIn.split('\n')
+    .map(line => {
+      const reduce = line.split("").reduce((accum, next) => {
+        if (accum.currentTemplate) {
+          if (next === '}' && accum.currentTemplate.endsWith('}')) {
+            // evaluate Template
+            const templateVariable = accum.currentTemplate.substring(2, accum.currentTemplate.length - 1)
+            accum.currentTemplate = ''
+            const resolvedTemplateVariable = resolveTemplateVariable(
+              templateVariable,
+              templateVariables
+            )
+            accum.line += resolvedTemplateVariable
+          } else {
+            accum.currentTemplate += next
+          }
+        } else if (next === '{' && !accum.stagingTemplate) {
+          accum.stagingTemplate = next
+        } else if (accum.stagingTemplate && next === '{') {
+          accum.stagingTemplate = '';
+          accum.currentTemplate = '{{';
+        } else if (accum.stagingTemplate) {
+          accum.line += accum.stagingTemplate + next;
+          accum.stagingTemplate = ''
+        } else {
+          accum.line += next;
+        }
+
+        return accum;
+      }, {
+        currentTemplate: '',
+        stagingTemplate: '',
+        line: '',
+      });
+      return reduce.line + reduce.stagingTemplate || reduce.currentTemplate;
+    }).join('\n');
 }
 
 function hexToRGB(s: string | [number, number, number]): [number, number, number] {
@@ -218,7 +263,7 @@ type DokiThemeEclipse = {
   [k: string]: any
 }
 
-function buildEclipseThemeManifest(
+function buildNamedColors(
   dokiThemeDefinition: MasterDokiThemeDefinition,
   dokiTemplateDefinitions: DokiThemeDefinitions,
   dokiThemeEclipseDefinition: EclipseDokiThemeDefinition,
@@ -229,9 +274,8 @@ function buildEclipseThemeManifest(
   const colorsOverride = dokiThemeEclipseDefinition.overrides.theme &&
     dokiThemeEclipseDefinition.overrides.theme.colors || {};
   return {
-    name: `Doki Theme: ${dokiThemeDefinition.name}`,
-    description: `A ${dokiThemeDefinition.dark ? 'dark' : 'light'} theme modeled after ${dokiThemeDefinition.displayName} from ${dokiThemeDefinition.group}`,
-    theme: {}
+    ...namedColors,
+    ...colorsOverride
   };
 }
 
@@ -249,7 +293,7 @@ function createDokiTheme(
         dokiThemeDefinition,
         dokiFileDefinitionPath
       ),
-      manifest: buildEclipseThemeManifest(
+      namedColors: buildNamedColors(
         dokiThemeDefinition,
         dokiTemplateDefinitions,
         dokiThemeEclipseDefinition,
@@ -326,6 +370,16 @@ const getStickers = (
 
 console.log('Preparing to generate themes.');
 
+
+type DokiTheme = { path: string; namedColors: DokiThemeEclipse; definition: MasterDokiThemeDefinition; stickers: { default: { path: string; name: string } }; theme: {} };
+
+function getGroupName(dokiTheme: DokiTheme) {
+  return GroupToNameMapping[dokiTheme.definition.group];
+}
+
+function getDisplayName(dokiTheme: DokiTheme) {
+  return `${(getGroupName(dokiTheme))}${dokiTheme.definition.name}`;
+}
 
 walkDir(eclipseDefinitionDirectoryPath)
   .then((files) =>
@@ -409,22 +463,40 @@ walkDir(eclipseDefinitionDirectoryPath)
         const cssExtension = pluginXml.plugin.extension.find(
           (extension: any) => extension.$.point === 'org.eclipse.e4.ui.css.swt.theme'
         );
-        console.log(JSON.stringify(cssExtension, null, 2));
-        // cssExtension.theme.push({
-        //   '$':{
-        //     "to":"the window",
-        //     "skeet":"skeet"
-        //   }
-        // })
+        cssExtension.theme =
+          dokiThemes.map(dokiTheme => ({
+            '$': {
+              'basestylesheeturi': `themes/css/${dokiTheme.definition.name}.css`,
+              'id': `${dokiTheme.definition.dark ? 'dark_' : ''}${dokiTheme.definition.id}`,
+              'label': getDisplayName(dokiTheme),
+            }
+          }));
         const xml = xmlBuilder.buildObject(pluginXml);
         fs.writeFileSync(path.resolve(pluginXmlPath), xml, 'utf8');
-      }).then(()=>{
+
+        const cssTemplate = fs.readFileSync(path.resolve(eclipseTemplateDefinitionDirectoryPath, 'theme.template.css'), {
+          encoding: 'utf-8',
+        });
+
+        dokiThemes.forEach(dokiTheme => {
+          fs.writeFileSync(
+            path.resolve(repoDirectory, 'themes', 'css', `${dokiTheme.definition.name}.css`),
+            fillInTemplateScript(
+              cssTemplate,
+              dokiTheme.namedColors
+            ),
+            {
+              encoding: 'utf-8',
+            },
+          );
+        });
+      }).then(() => {
         fs.writeFileSync(path.resolve(repoDirectory, 'themes', 'themes.json'),
           JSON.stringify(dokiThemes.reduce((accum, dokiTheme) => ({
             ...accum,
             [dokiTheme.definition.id]: {
               id: dokiTheme.definition.id,
-              displayName: `${GroupToNameMapping[dokiTheme.definition.group]}${dokiTheme.definition.name}`,
+              displayName: getDisplayName(dokiTheme),
               stickers: dokiTheme.stickers
             }
           }), {}), null, 2), {
