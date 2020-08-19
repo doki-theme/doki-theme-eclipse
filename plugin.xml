@@ -3,6 +3,54 @@
   <extension id="io.unthrottled.doki.theme.fragment" point="org.eclipse.e4.workbench.model">
     <fragment apply="notexists" uri="fragment.e4xmi"/>
   </extension>
+  <extension
+          point="org.eclipse.ui.themes">
+    <theme
+            id="ryuko"
+            name="ryuko">
+      <description>Ryuko color theme</description>
+      <fontOverride
+              id="org.eclipse.jface.bannerfont"
+      />
+      <fontOverride
+              id="org.eclipse.jface.headerfont"
+      />
+      <fontOverride
+              id="org.eclipse.jface.textfont"
+      />
+      <colorOverride
+              id="ERROR_COLOR"
+              value="COLOR_LIST_FOREGROUND"/>
+      <colorOverride
+              id="HYPERLINK_COLOR"
+              value="COLOR_LIST_FOREGROUND"/>
+      <colorOverride
+              id="ACTIVE_HYPERLINK_COLOR"
+              value="COLOR_LIST_FOREGROUND"/>
+      <colorOverride
+              id="QUALIFIER_COLOR"
+              value="COLOR_LIST_FOREGROUND"/>
+      <colorOverride
+              id="DECORATIONS_COLOR"
+              value="COLOR_LIST_FOREGROUND"/>
+      <colorOverride
+              id="COUNTER_COLOR"
+              value="COLOR_LIST_FOREGROUND"/>
+      <!-- Override color factory for active tab colors, set to defaults based on title -->
+      <colorOverride
+              id="org.eclipse.ui.workbench.ACTIVE_TAB_TEXT_COLOR"
+              value="COLOR_TITLE_FOREGROUND"/>
+      <colorOverride
+              id="org.eclipse.ui.workbench.ACTIVE_TAB_BG_END"
+              value="COLOR_TITLE_BACKGROUND"/>
+      <colorOverride
+              id="org.eclipse.ui.workbench.ACTIVE_TAB_BG_START"
+              value="COLOR_TITLE_BACKGROUND"/>
+      <data
+              name="org.eclipse.ui.workbench.ACTIVE_TAB_HIGHLIGHT" value="false">
+      </data>
+    </theme>
+  </extension>
   <extension point="org.eclipse.e4.ui.css.swt.theme">
     <theme basestylesheeturi="themes/css/Mioda Ibuki Dark.css" id="dark_420b0ed5-803c-4127-97e3-dae6aa1a5972" label="DR: Mioda Ibuki Dark"/>
     <theme basestylesheeturi="themes/css/Mioda Ibuki Light.css" id="697e8564-0975-4907-a34c-51f65177ebf3" label="DR: Mioda Ibuki Light"/>
