@@ -3,54 +3,6 @@
   <extension id="io.unthrottled.doki.theme.fragment" point="org.eclipse.e4.workbench.model">
     <fragment apply="notexists" uri="fragment.e4xmi"/>
   </extension>
-  <extension
-          point="org.eclipse.ui.themes">
-    <theme
-            id="ryuko"
-            name="ryuko">
-      <description>Ryuko color theme</description>
-      <fontOverride
-              id="org.eclipse.jface.bannerfont"
-      />
-      <fontOverride
-              id="org.eclipse.jface.headerfont"
-      />
-      <fontOverride
-              id="org.eclipse.jface.textfont"
-      />
-      <colorOverride
-              id="ERROR_COLOR"
-              value="COLOR_LIST_FOREGROUND"/>
-      <colorOverride
-              id="HYPERLINK_COLOR"
-              value="COLOR_LIST_FOREGROUND"/>
-      <colorOverride
-              id="ACTIVE_HYPERLINK_COLOR"
-              value="COLOR_LIST_FOREGROUND"/>
-      <colorOverride
-              id="QUALIFIER_COLOR"
-              value="COLOR_LIST_FOREGROUND"/>
-      <colorOverride
-              id="DECORATIONS_COLOR"
-              value="COLOR_LIST_FOREGROUND"/>
-      <colorOverride
-              id="COUNTER_COLOR"
-              value="COLOR_LIST_FOREGROUND"/>
-      <!-- Override color factory for active tab colors, set to defaults based on title -->
-      <colorOverride
-              id="org.eclipse.ui.workbench.ACTIVE_TAB_TEXT_COLOR"
-              value="COLOR_TITLE_FOREGROUND"/>
-      <colorOverride
-              id="org.eclipse.ui.workbench.ACTIVE_TAB_BG_END"
-              value="COLOR_TITLE_BACKGROUND"/>
-      <colorOverride
-              id="org.eclipse.ui.workbench.ACTIVE_TAB_BG_START"
-              value="COLOR_TITLE_BACKGROUND"/>
-      <data
-              name="org.eclipse.ui.workbench.ACTIVE_TAB_HIGHLIGHT" value="false">
-      </data>
-    </theme>
-  </extension>
   <extension point="org.eclipse.e4.ui.css.swt.theme">
     <theme basestylesheeturi="themes/css/Mioda Ibuki Dark.css" id="dark_420b0ed5-803c-4127-97e3-dae6aa1a5972" label="DR: Mioda Ibuki Dark"/>
     <theme basestylesheeturi="themes/css/Mioda Ibuki Light.css" id="697e8564-0975-4907-a34c-51f65177ebf3" label="DR: Mioda Ibuki Light"/>
@@ -78,6 +30,84 @@
     <theme basestylesheeturi="themes/css/Ram.css" id="dark_ecb74f1c-8c84-40c4-916f-601039ba2af0" label="Re:Zero: Ram"/>
     <theme basestylesheeturi="themes/css/Rem.css" id="dark_f770dcfc-f41e-4b49-aa17-66e9ffc208fd" label="Re:Zero: Rem"/>
     <theme basestylesheeturi="themes/css/Asuna.css" id="546e8fb8-6082-4ef5-a5e3-44790686f02f" label="SAO: Asuna"/>
+    <stylesheet uri="themes/css/Mioda Ibuki Dark.syntax.css">
+      <themeId refid="dark_420b0ed5-803c-4127-97e3-dae6aa1a5972"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Mioda Ibuki Light.syntax.css">
+      <themeId refid="697e8564-0975-4907-a34c-51f65177ebf3"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Kanna.syntax.css">
+      <themeId refid="dark_b93ab4ea-ff96-4459-8fa2-0caae5bc7116"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Misato Katsuragi.syntax.css">
+      <themeId refid="dark_8e8773ee-4bbb-4812-b311-005f04f6bb20"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Rias.syntax.css">
+      <themeId refid="dark_c5e92ad9-2fa0-491e-b92a-48ab92d13597"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Ryuko.syntax.css">
+      <themeId refid="dark_19b65ec8-133c-4655-a77b-13623d8e97d3"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Satsuki.syntax.css">
+      <themeId refid="3a78b13e-dbf2-410f-bb20-12b57bff7735"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Darkness Dark.syntax.css">
+      <themeId refid="dark_774ec7ad-d6a0-4d9c-b195-2f54d72ab664"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Darkness Light.syntax.css">
+      <themeId refid="8474d98d-7bb1-462c-82b1-dd7c512142a6"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Megumin.syntax.css">
+      <themeId refid="dark_63fe4617-4cac-47a5-9b93-6794514c35ad"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Monika Dark.syntax.css">
+      <themeId refid="dark_dce48196-ff46-470c-b5f9-d1e23f4a79d3"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Monika Light.syntax.css">
+      <themeId refid="9a310731-ab2d-40f5-b502-fa5419f799a2"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Natsuki Dark.syntax.css">
+      <themeId refid="dark_a7e0aa28-739a-4671-80ae-3980997e6b71"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Natsuki Light.syntax.css">
+      <themeId refid="91415015-8fe3-48eb-9951-70a5cd6cbb7f"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Sayori Dark.syntax.css">
+      <themeId refid="dark_b0340303-0a5a-4a20-9b9c-fc8ce9880078"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Sayori Light.syntax.css">
+      <themeId refid="cb8ef4b7-0844-4a04-b08b-754086598de4"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Yuri Dark.syntax.css">
+      <themeId refid="dark_a14733d6-8e15-4e75-b6b8-509f323e5b3b"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Yuri Light.syntax.css">
+      <themeId refid="cecf3f92-76d4-4f14-9a9c-3d558b6b3b68"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Konata.syntax.css">
+      <themeId refid="be058474-b967-4afb-b6d9-bda1948b33ec"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Hatsune Miku.syntax.css">
+      <themeId refid="dark_bc12b380-1f2a-4a9d-89d8-388a07f1e15f"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Beatrice.syntax.css">
+      <themeId refid="35422aa4-1396-4e76-8ec6-c5560884df22"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Emilia Dark.syntax.css">
+      <themeId refid="dark_696de7c1-3a8e-4445-83ee-3eb7e9dca47f"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Emilia Light.syntax.css">
+      <themeId refid="e828aaae-aa8c-4084-8993-d64697146930"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Ram.syntax.css">
+      <themeId refid="dark_ecb74f1c-8c84-40c4-916f-601039ba2af0"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Rem.syntax.css">
+      <themeId refid="dark_f770dcfc-f41e-4b49-aa17-66e9ffc208fd"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Asuna.syntax.css">
+      <themeId refid="546e8fb8-6082-4ef5-a5e3-44790686f02f"/>
+    </stylesheet>
   </extension>
   <extension id="product" point="org.eclipse.core.runtime.products"/>
   <extension point="org.eclipse.ui.preferencePages">
