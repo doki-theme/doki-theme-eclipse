@@ -12,6 +12,7 @@ import org.eclipse.core.runtime.Platform;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Map;
+import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -57,4 +58,8 @@ public class ThemeManager {
     	logger.error("Unable to read definitions for reasons", e);
     }
   }
+
+	public Optional<DokiTheme> getTheme(String themeId) {
+		return Optional.ofNullable(themeDefinitions.get(themeId));
+	}
 }

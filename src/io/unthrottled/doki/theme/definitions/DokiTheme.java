@@ -19,4 +19,8 @@ public class DokiTheme {
   public Stickers getStickers() {
     return themeDefinition.getStickers();
   }
+
+	public String getCSSId() {
+		return (themeDefinition.isDark() ? "dark_" : "") + getId();
+	}
 }

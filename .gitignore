@@ -1,7 +1,7 @@
 .idea/
 *.iml
 masterThemes/
-themes/css/
+themes
 
 # Compiled class file
 *.class

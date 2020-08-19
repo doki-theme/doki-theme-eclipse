@@ -4,6 +4,7 @@ public class ThemeDefinition {
   private String id;
   private String displayName;
   private Stickers stickers;
+  private boolean isDark;
 
 
   public String getId() {
@@ -18,5 +19,8 @@ public class ThemeDefinition {
     return stickers;
   }
 
+	public boolean isDark() {
+		return isDark;
+	}
 }
 

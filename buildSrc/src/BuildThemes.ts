@@ -497,7 +497,8 @@ walkDir(eclipseDefinitionDirectoryPath)
             [dokiTheme.definition.id]: {
               id: dokiTheme.definition.id,
               displayName: getDisplayName(dokiTheme),
-              stickers: dokiTheme.stickers
+              stickers: dokiTheme.stickers,
+              isDark: dokiTheme.definition.dark,
             }
           }), {}), null, 2), {
             encoding: 'utf-8',
