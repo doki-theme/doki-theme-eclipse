@@ -205,36 +205,66 @@ Shell Tree, Shell Table, Shell List {
 
 Tree {
     flat-scroll-bar: true;
-    flat-scroll-bar-background : #ababab;
-    flat-scroll-bar-thumb: #cdcdcd;
-    flat-scroll-bar-page-increment: #f8f8f8;
-    flat-scroll-bar-thumb-top-level: #454545;
-    flat-scroll-bar-page-increment-top-level: #f8f8f8;
-    flat-scroll-bar-increment-length: 7;
-    adapter-demeanor: expand-on-mouse-over; /* fixed-width */
+    flat-scroll-bar-background : {{textEditorBackground}};
+    flat-scroll-bar-thumb: {{accentColor}};
+    flat-scroll-bar-page-increment: {{textEditorBackground}};
+    flat-scroll-bar-thumb-top-level: {{accentColor}};
+    flat-scroll-bar-page-increment-top-level: {{textEditorBackground}};
 }
 
 Table {
     flat-scroll-bar: true;
-    flat-scroll-bar-background : #ababab;
-    flat-scroll-bar-thumb: #cdcdcd;
-    flat-scroll-bar-page-increment: #f8f8f8;
-    flat-scroll-bar-thumb-top-level: #454545;
-    flat-scroll-bar-page-increment-top-level: #f8f8f8;
-    flat-scroll-bar-increment-length: 7;
-    adapter-demeanor: expand-on-mouse-over; /* fixed-width */
+    flat-scroll-bar-background : {{textEditorBackground}};
+    flat-scroll-bar-thumb: {{accentColor}};
+    flat-scroll-bar-page-increment: {{textEditorBackground}};
+    flat-scroll-bar-thumb-top-level: {{accentColor}};
+    flat-scroll-bar-page-increment-top-level: {{textEditorBackground}};
 }
 
 StyledText {
     flat-scroll-bar: true;
-    flat-scroll-bar-thumb: #ababab;
-    flat-scroll-bar-page-increment: #cdcdcd;
-    adapter-background-top-level: #f8f8f8;
-    flat-scroll-bar-thumb-top-level: #454545;
-    flat-scroll-bar-page-increment-top-level: #f8f8f8;
-    flat-scroll-bar-increment-length: 7;
-    adapter-demeanor: expand-on-mouse-over; /* fixed-width */
+    flat-scroll-bar-thumb: {{textEditorBackground}};
+    flat-scroll-bar-page-increment: {{accentColor}};
+    adapter-background-top-level: {{textEditorBackground}};
+    flat-scroll-bar-thumb-top-level: {{accentColor}};
+    flat-scroll-bar-page-increment-top-level: {{textEditorBackground}};
 }
+
+ScrolledComposite {
+    flat-scroll-bar: true;
+    flat-scroll-bar-thumb: {{textEditorBackground}};
+    flat-scroll-bar-page-increment: {{accentColor}};
+    flat-scroll-bar-background-top-level: {{textEditorBackground}};
+}
+
+FigureCanvas, FigureCanvasAdapter {
+    flat-scroll-bar: true;
+    flat-scroll-bar-thumb: {{textEditorBackground}};
+    flat-scroll-bar-page-increment: {{accentColor}};
+    flat-scroll-bar-background-top-level: {{textEditorBackground}};
+}
+
+ScrolledPageContent {
+    flat-scroll-bar: true;
+    flat-scroll-bar-thumb: {{textEditorBackground}};
+    flat-scroll-bar-page-increment: {{accentColor}};
+    flat-scroll-bar-background-top-level: {{textEditorBackground}};
+}
+
+ScrolledForm {
+    flat-scroll-bar: true;
+    flat-scroll-bar-thumb: {{textEditorBackground}};
+    flat-scroll-bar-page-increment: {{accentColor}};
+    flat-scroll-bar-background-top-level: {{textEditorBackground}};
+}
+
+MinimapCanvas {
+    flat-scroll-bar: true;
+    flat-scroll-bar-thumb: {{textEditorBackground}};
+    flat-scroll-bar-page-increment: {{accentColor}};
+    flat-scroll-bar-background-top-level: {{textEditorBackground}};
+}
+
 
 /******* */
 

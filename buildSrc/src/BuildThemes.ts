@@ -370,7 +370,6 @@ const getStickers = (
 
 console.log('Preparing to generate themes.');
 
-
 type DokiTheme = { path: string; namedColors: DokiThemeEclipse; definition: MasterDokiThemeDefinition; stickers: { default: { path: string; name: string } }; theme: {} };
 
 function getGroupName(dokiTheme: DokiTheme) {
@@ -539,7 +538,7 @@ walkDir(eclipseDefinitionDirectoryPath)
             encoding: 'utf-8',
           })
       });
-  }) 
+  })
   .then(() => {
     console.log('Theme Generation Complete!');
   });
