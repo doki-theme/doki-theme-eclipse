@@ -203,6 +203,38 @@ Shell Tree, Shell Table, Shell List {
     color: {{foregroundColor}};
 }
 
+Tree {
+    flat-scroll-bar: true;
+    flat-scroll-bar-background : #ababab;
+    flat-scroll-bar-thumb: #cdcdcd;
+    flat-scroll-bar-page-increment: #f8f8f8;
+    flat-scroll-bar-thumb-top-level: #454545;
+    flat-scroll-bar-page-increment-top-level: #f8f8f8;
+    flat-scroll-bar-increment-length: 7;
+    adapter-demeanor: expand-on-mouse-over; /* fixed-width */
+}
+
+Table {
+    flat-scroll-bar: true;
+    flat-scroll-bar-background : #ababab;
+    flat-scroll-bar-thumb: #cdcdcd;
+    flat-scroll-bar-page-increment: #f8f8f8;
+    flat-scroll-bar-thumb-top-level: #454545;
+    flat-scroll-bar-page-increment-top-level: #f8f8f8;
+    flat-scroll-bar-increment-length: 7;
+    adapter-demeanor: expand-on-mouse-over; /* fixed-width */
+}
+
+StyledText {
+    flat-scroll-bar: true;
+    flat-scroll-bar-thumb: #ababab;
+    flat-scroll-bar-page-increment: #cdcdcd;
+    adapter-background-top-level: #f8f8f8;
+    flat-scroll-bar-thumb-top-level: #454545;
+    flat-scroll-bar-page-increment-top-level: #f8f8f8;
+    flat-scroll-bar-increment-length: 7;
+    adapter-demeanor: expand-on-mouse-over; /* fixed-width */
+}
 
 /******* */
 

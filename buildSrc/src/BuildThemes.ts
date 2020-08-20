@@ -539,7 +539,7 @@ walkDir(eclipseDefinitionDirectoryPath)
             encoding: 'utf-8',
           })
       });
-  })
+  }) 
   .then(() => {
     console.log('Theme Generation Complete!');
   });
