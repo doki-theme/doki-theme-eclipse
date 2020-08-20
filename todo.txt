@@ -1,0 +1,7 @@
+- Option to not automatically apply doki theme from settings.
+- Scrollbars
+- Icon highlights
+- Theme highlights
+- Syntax highlighting for other types of files.
+- Stickers need to be top cropped.
+- Light themes need to be worked on
