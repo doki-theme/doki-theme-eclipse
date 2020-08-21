@@ -46,7 +46,7 @@ public class StickerView {
             });
       }
     });
-    stickerDisplayLabel = new Label(parent, SWT.BORDER);
+    stickerDisplayLabel = new Label(parent, SWT.COLOR_INFO_BACKGROUND);
     Image image = new Image(parent.getDisplay(),
         StickerService.getInstance().getCurrentStickerUrl());
     stickerDisplayLabel.setImage(image);
