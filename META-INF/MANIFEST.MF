@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Doki-theme-eclipse
 Bundle-SymbolicName: doki-theme-eclipse;singleton:=true
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 0.1.0.beta
 Bundle-Activator: io.unthrottled.doki.theme.Activator
 Bundle-Vendor: io.unthrottled.doki
 Require-Bundle: javax.inject,
@@ -19,8 +19,8 @@ Require-Bundle: javax.inject,
  com.google.guava;bundle-version="27.1.0",
  org.apache.commons.httpclient;bundle-version="3.1.0",
  org.apache.commons.io;bundle-version="2.6.0",
- com.codeaffine.eclipse.swt;bundle-version="0.5.0",
- com.codeaffine.eclipse.ui.swt.theme;bundle-version="0.5.0"
+ com.codeaffine.eclipse.swt;bundle-version="0.5.0";visibility:=reexport,
+ com.codeaffine.eclipse.ui.swt.theme;bundle-version="0.5.0";visibility:=reexport
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Automatic-Module-Name: doki.theme.eclipse
 Import-Package: javax.annotation;version="1.2.0"

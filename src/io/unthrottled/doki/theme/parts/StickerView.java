@@ -39,8 +39,8 @@ public class StickerView {
         .ifPresent(dokiTheme -> {
           themeEngine.setTheme(dokiTheme.getCSSId(),true);
         });
-      } else if (AUTO_SET_THEME.equals(changeEvent.getProperty()) && (boolean)changeEvent.getNewValue()) {
-        ThemeManager.getInstance().getTheme(preferenceStore.getDefaultString(CURRENT_THEME_PREFERENCE))
+      } else if (AUTO_SET_THEME.equals(changeEvent.getProperty()) && Boolean.TRUE.equals(changeEvent.getNewValue())) {
+        ThemeManager.getInstance().getTheme(preferenceStore.getString(CURRENT_THEME_PREFERENCE))
             .ifPresent(dokiTheme -> {
               themeEngine.setTheme(dokiTheme.getCSSId(),true);
             });
