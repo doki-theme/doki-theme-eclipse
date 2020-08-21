@@ -199,7 +199,10 @@ function resolveTemplateVariable(
   templateVariable: string,
   templateVariables: StringDictionary<string>,
 ): string {
-  return resolveColor(getColorFromTemplate(templateVariables, templateVariable), templateVariables);
+  const isToRGB = templateVariable.startsWith('^');
+  const cleanTemplateVariable = templateVariable.substr(isToRGB ? 1 : 0);
+  const hexColor = resolveColor(getColorFromTemplate(templateVariables, cleanTemplateVariable), templateVariables);
+  return isToRGB ? hexToRGB(hexColor).join(',') : hexColor;
 }
 
 

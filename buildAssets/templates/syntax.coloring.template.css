@@ -98,14 +98,14 @@ IEclipsePreferences#org-eclipse-ui-workbench:org-eclipse-jdt-ui { /* pseudo attr
 }
 
 BulletListBlock > StyledText {
-    background-color: #3f4447;
-    color: #BBBBBB;
+    background-color: {{baseBackground}};
+    color: {{foregroundColor}};
 }
 
 FormatterPreferenceSectionComposite {
-    background-color:#515658;
-    color:#eeeeee;
-    swt-titlebar-color: #cccccc;
+    background-color: {{baseBackground}};
+    color: {{foregroundColor}};
+    swt-titlebar-color: {{borderColor}};
 }
 
 #BreadcrumbComposite > Composite,
@@ -124,8 +124,8 @@ FormatterPreferenceSectionComposite {
      * the background with the lighter color used for the background
      * of toolbars and make the foreground color brighter too.
      */
-    background-color:#515658;
-    color: white;
+    background-color: {{baseBackground}};
+    color: {{foregroundColor}};
 }
 
 
@@ -138,9 +138,9 @@ IEclipsePreferences#org-eclipse-ui-editors:org-eclipse-ui-themes { /* pseudo att
 			'AbstractTextEditor.Color.SelectionBackground.SystemDefault=false'
 			'AbstractTextEditor.Color.Background=47,47,47'
 			'AbstractTextEditor.Color.Foreground.SystemDefault=false'
-			'AbstractTextEditor.Color.SelectionBackground=33,66,131'
-			'AbstractTextEditor.Color.SelectionForeground=147,161,161'
-			'AbstractTextEditor.Color.Foreground=204,204,204'
+			'AbstractTextEditor.Color.SelectionBackground={{^selectionBackground}}'
+			'AbstractTextEditor.Color.SelectionForeground={{^selectionForeground}}'
+			'AbstractTextEditor.Color.Foreground={{foregroundColor}}'
 			'AbstractTextEditor.Color.FindScope=30,120,155'
 			'asOccurencesIndicationColor=72,72,72'
 			'breakpointIndicationColor=51,119,193'
@@ -177,12 +177,12 @@ IEclipsePreferences#org-eclipse-ui-workbench:org-eclipse-ui-themes { /* pseudo a
 			'org.eclipse.ui.workbench.HOVER_BACKGROUND=52,57,61'
 			'org.eclipse.ui.workbench.HOVER_FOREGROUND=238,238,238'
 			'ERROR_COLOR=247,68,117'
-			'HYPERLINK_COLOR=111,197,238'
+			'HYPERLINK_COLOR={{^accentColor}}'
 			'INCOMING_COLOR=31,179,235'
 			'OUTGOING_COLOR=238,238,238'
 			'RESOLVED_COLOR=108,210,17'
 			'org.eclipse.search.ui.match.highlight=206,92,0'
-			'org.eclipse.ui.editors.rangeIndicatorColor=27,118,153'
+			'org.eclipse.ui.editors.rangeIndicatorColor={{^accentColor}}'
 			'org.eclipse.jface.REVISION_NEWEST_COLOR=75,44,3'
 			'org.eclipse.jface.REVISION_OLDEST_COLOR=154,113,61'
 }
