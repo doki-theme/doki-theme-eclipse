@@ -3,10 +3,8 @@ package io.unthrottled.doki.theme.preferences;
 import io.unthrottled.doki.theme.Activator;
 import io.unthrottled.doki.theme.definitions.ThemeConstants;
 import io.unthrottled.doki.theme.themes.ThemeManager;
-import org.eclipse.jface.preference.ComboFieldEditor;
-import org.eclipse.jface.preference.DirectoryFieldEditor;
-import org.eclipse.jface.preference.FieldEditorPreferencePage;
-import org.eclipse.jface.preference.RadioGroupFieldEditor;
+import org.eclipse.jface.preference.*;
+import org.eclipse.jface.viewers.CheckboxCellEditor;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.IWorkbenchPreferencePage;
 
@@ -55,6 +53,10 @@ public class ThemePreferences extends FieldEditorPreferencePage implements IWork
                 dokiTheme.getId()
             }).sorted(Comparator.comparing(item -> item[0]))
             .toArray(String[][]::new),
+        getFieldEditorParent()));
+
+    addField(new BooleanFieldEditor(PreferenceConstants.AUTO_SET_THEME,
+        "Automatically set theme",
         getFieldEditorParent()));
   }
 

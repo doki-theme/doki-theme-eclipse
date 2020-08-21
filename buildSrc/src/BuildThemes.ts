@@ -367,7 +367,6 @@ const getStickers = (
   };
 };
 
-
 console.log('Preparing to generate themes.');
 
 type DokiTheme = { path: string; namedColors: DokiThemeEclipse; definition: MasterDokiThemeDefinition; stickers: { default: { path: string; name: string } }; theme: {} };

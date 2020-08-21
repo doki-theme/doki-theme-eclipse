@@ -19,5 +19,6 @@ public class PreferenceInitializer extends AbstractPreferenceInitializer {
 		store.setDefault(PreferenceConstants.ASSET_PATH_PREFERENCE, assetsDirectory.toString());
 		store.setDefault(PreferenceConstants.STICKER_TYPE_PREFERENCE, ThemeConstants.Stickers.PRIMARY_STICKER);
 		store.setDefault(PreferenceConstants.CURRENT_THEME_PREFERENCE, ThemeConstants.Themes.DEFAULT_THEME_ID);
+		store.setDefault(PreferenceConstants.AUTO_SET_THEME, false);
 	}
 }

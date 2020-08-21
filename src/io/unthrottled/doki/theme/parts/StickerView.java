@@ -1,6 +1,7 @@
 package io.unthrottled.doki.theme.parts;
 
 import io.unthrottled.doki.theme.Activator;
+import io.unthrottled.doki.theme.preferences.PreferenceConstants;
 import io.unthrottled.doki.theme.themes.StickerService;
 import io.unthrottled.doki.theme.themes.ThemeManager;
 
@@ -15,6 +16,7 @@ import org.eclipse.ui.PlatformUI;
 
 import javax.annotation.PostConstruct;
 
+import static io.unthrottled.doki.theme.preferences.PreferenceConstants.*;
 import static io.unthrottled.doki.theme.preferences.PreferenceConstants.CURRENT_THEME_PREFERENCE;
 import static io.unthrottled.doki.theme.preferences.PreferenceConstants.STICKER_TYPE_PREFERENCE;
 
@@ -24,22 +26,24 @@ public class StickerView {
   @PostConstruct
   public void createPartControl(Composite parent, IThemeEngine themeEngine) {
     var preferenceStore = Activator.getDefault().getPreferenceStore();
-    preferenceStore.addPropertyChangeListener(new IPropertyChangeListener() {
-      @Override
-      public void propertyChange(PropertyChangeEvent changeEvent) {
-        boolean themeChanged = CURRENT_THEME_PREFERENCE.equals(changeEvent.getProperty());
-				if (themeChanged ||
-            STICKER_TYPE_PREFERENCE.equals(changeEvent.getProperty())) {
-          var imageUrl = StickerService.getInstance().getCurrentStickerUrl();
-          stickerDisplayLabel.setImage(new Image(parent.getDisplay(), imageUrl));
-        }
-				
-				if(themeChanged) {
-					ThemeManager.getInstance().getTheme((String)changeEvent.getNewValue())
-        	.ifPresent(dokiTheme -> {        
-        		themeEngine.setTheme(dokiTheme.getCSSId(),true);
-        	});
-				}
+    preferenceStore.addPropertyChangeListener(changeEvent -> {
+      boolean themeChanged = CURRENT_THEME_PREFERENCE.equals(changeEvent.getProperty());
+      if (themeChanged ||
+          STICKER_TYPE_PREFERENCE.equals(changeEvent.getProperty())) {
+        var imageUrl = StickerService.getInstance().getCurrentStickerUrl();
+        stickerDisplayLabel.setImage(new Image(parent.getDisplay(), imageUrl));
+      }
+
+      if((themeChanged && Activator.getDefault().getPreferenceStore().getBoolean(AUTO_SET_THEME))) {
+        ThemeManager.getInstance().getTheme((String)changeEvent.getNewValue())
+        .ifPresent(dokiTheme -> {
+          themeEngine.setTheme(dokiTheme.getCSSId(),true);
+        });
+      } else if (AUTO_SET_THEME.equals(changeEvent.getProperty()) && (boolean)changeEvent.getNewValue()) {
+        ThemeManager.getInstance().getTheme(preferenceStore.getDefaultString(CURRENT_THEME_PREFERENCE))
+            .ifPresent(dokiTheme -> {
+              themeEngine.setTheme(dokiTheme.getCSSId(),true);
+            });
       }
     });
     stickerDisplayLabel = new Label(parent, SWT.BORDER);
