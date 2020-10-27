@@ -45,7 +45,9 @@ public class ThemeManager {
   }
 
   private ThemeManager() {
-    try (var themeDefJson = getClass().getResourceAsStream("/themes/themes.json")) {
+    try (var themeDefJson = getClass()
+    		.getClassLoader()
+    		.getResourceAsStream("themes/themes.json")) {
       themeDefinitions = gson.<Map<String, ThemeDefinition>>fromJson(
           new BufferedReader(new InputStreamReader(themeDefJson)),
           new TypeToken<Map<String, ThemeDefinition>>() {

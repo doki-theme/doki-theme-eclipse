@@ -5,6 +5,7 @@ Bundle-SymbolicName: doki-theme-eclipse;singleton:=true
 Bundle-Version: 0.1.0.beta
 Bundle-Activator: io.unthrottled.doki.theme.Activator
 Bundle-Vendor: %Bundle-Vendor
+Bundle-ClassPath: .
 Require-Bundle: javax.inject,
  org.eclipse.osgi,
  org.eclipse.jface,
