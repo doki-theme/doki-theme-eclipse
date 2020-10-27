@@ -8,9 +8,14 @@
     <theme basestylesheeturi="themes/css/Mioda Ibuki Light.css" id="697e8564-0975-4907-a34c-51f65177ebf3" label="DR: Mioda Ibuki Light"/>
     <theme basestylesheeturi="themes/css/Kanna.css" id="dark_b93ab4ea-ff96-4459-8fa2-0caae5bc7116" label="DM: Kanna"/>
     <theme basestylesheeturi="themes/css/Misato Katsuragi.css" id="dark_8e8773ee-4bbb-4812-b311-005f04f6bb20" label="EVA: Misato Katsuragi"/>
+    <theme basestylesheeturi="themes/css/Ishtar Dark.css" id="dark_62a4f26f-34b2-46f8-a10c-798e48c1ce9d" label="Fate: Ishtar Dark"/>
+    <theme basestylesheeturi="themes/css/Ishtar Light.css" id="325c5d4d-5614-4c58-b296-18924f2f6928" label="Fate: Ishtar Light"/>
+    <theme basestylesheeturi="themes/css/Tohsaka Rin.css" id="dark_3546f7be-b84f-4b8e-8cad-effa3f4603af" label="Fate: Tohsaka Rin"/>
+    <theme basestylesheeturi="themes/css/Rory Mercury.css" id="dark_355d711c-2fa6-4df2-9504-dd44d8f5e350" label="Gate: Rory Mercury"/>
     <theme basestylesheeturi="themes/css/Rias.css" id="dark_c5e92ad9-2fa0-491e-b92a-48ab92d13597" label="DxD: Rias"/>
     <theme basestylesheeturi="themes/css/Ryuko.css" id="dark_19b65ec8-133c-4655-a77b-13623d8e97d3" label="KillLaKill: Ryuko"/>
     <theme basestylesheeturi="themes/css/Satsuki.css" id="3a78b13e-dbf2-410f-bb20-12b57bff7735" label="KillLaKill: Satsuki"/>
+    <theme basestylesheeturi="themes/css/Aqua.css" id="dark_15e51483-1ccd-46b7-90cf-885cccaaaf2c" label="KonoSuba: Aqua"/>
     <theme basestylesheeturi="themes/css/Darkness Dark.css" id="dark_774ec7ad-d6a0-4d9c-b195-2f54d72ab664" label="KonoSuba: Darkness Dark"/>
     <theme basestylesheeturi="themes/css/Darkness Light.css" id="8474d98d-7bb1-462c-82b1-dd7c512142a6" label="KonoSuba: Darkness Light"/>
     <theme basestylesheeturi="themes/css/Megumin.css" id="dark_63fe4617-4cac-47a5-9b93-6794514c35ad" label="KonoSuba: Megumin"/>
@@ -42,6 +47,18 @@
     <stylesheet uri="themes/css/Misato Katsuragi.syntax.css">
       <themeId refid="dark_8e8773ee-4bbb-4812-b311-005f04f6bb20"/>
     </stylesheet>
+    <stylesheet uri="themes/css/Ishtar Dark.syntax.css">
+      <themeId refid="dark_62a4f26f-34b2-46f8-a10c-798e48c1ce9d"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Ishtar Light.syntax.css">
+      <themeId refid="325c5d4d-5614-4c58-b296-18924f2f6928"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Tohsaka Rin.syntax.css">
+      <themeId refid="dark_3546f7be-b84f-4b8e-8cad-effa3f4603af"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Rory Mercury.syntax.css">
+      <themeId refid="dark_355d711c-2fa6-4df2-9504-dd44d8f5e350"/>
+    </stylesheet>
     <stylesheet uri="themes/css/Rias.syntax.css">
       <themeId refid="dark_c5e92ad9-2fa0-491e-b92a-48ab92d13597"/>
     </stylesheet>
@@ -50,6 +67,9 @@
     </stylesheet>
     <stylesheet uri="themes/css/Satsuki.syntax.css">
       <themeId refid="3a78b13e-dbf2-410f-bb20-12b57bff7735"/>
+    </stylesheet>
+    <stylesheet uri="themes/css/Aqua.syntax.css">
+      <themeId refid="dark_15e51483-1ccd-46b7-90cf-885cccaaaf2c"/>
     </stylesheet>
     <stylesheet uri="themes/css/Darkness Dark.syntax.css">
       <themeId refid="dark_774ec7ad-d6a0-4d9c-b195-2f54d72ab664"/>
