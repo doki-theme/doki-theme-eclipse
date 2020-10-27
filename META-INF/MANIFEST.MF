@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Doki-theme-eclipse
+Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: doki-theme-eclipse;singleton:=true
 Bundle-Version: 0.1.0.beta
 Bundle-Activator: io.unthrottled.doki.theme.Activator
-Bundle-Vendor: io.unthrottled.doki
+Bundle-Vendor: %Bundle-Vendor
 Require-Bundle: javax.inject,
  org.eclipse.osgi,
  org.eclipse.jface,
@@ -23,3 +23,9 @@ Bundle-RequiredExecutionEnvironment: JavaSE-11
 Automatic-Module-Name: doki.theme.eclipse
 Import-Package: javax.annotation;version="1.2.0"
 Bundle-ActivationPolicy: lazy
+Export-Package: io.unthrottled.doki.theme,
+ io.unthrottled.doki.theme.assets,
+ io.unthrottled.doki.theme.definitions,
+ io.unthrottled.doki.theme.parts,
+ io.unthrottled.doki.theme.preferences,
+ io.unthrottled.doki.theme.themes

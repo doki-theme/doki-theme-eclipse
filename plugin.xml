@@ -131,7 +131,7 @@
   </extension>
   <extension id="product" point="org.eclipse.core.runtime.products"/>
   <extension point="org.eclipse.ui.preferencePages">
-    <page class="io.unthrottled.doki.theme.preferences.ThemePreferences" id="io.unthrottled.doki.theme.preferences.ThemePreferences" name="Doki-Theme Settings"/>
+    <page class="io.unthrottled.doki.theme.preferences.ThemePreferences" id="io.unthrottled.doki.theme.preferences.ThemePreferences" name="%page.name"/>
   </extension>
   <extension point="org.eclipse.core.runtime.preferences">
     <initializer class="io.unthrottled.doki.theme.preferences.PreferenceInitializer"/>
