@@ -18,6 +18,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+import java.util.concurrent.ConcurrentHashMap;
 
 enum AssetChangedStatus {
   SAME, DIFFERENT, LUL_DUNNO
@@ -27,7 +28,7 @@ public class LocalAssetService {
   private static final ILog logger = Platform.getLog(Activator.getDefault().getBundle());
   private static LocalAssetService instance;
   private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
-  private final Map<String, Instant> assetChecks = readPreviousAssetChecks();
+  private final ConcurrentHashMap<String, Instant> assetChecks = readPreviousAssetChecks();
 
   private LocalAssetService() {
   }
@@ -114,24 +115,24 @@ public class LocalAssetService {
       );
   }
 
-  private Map<String, Instant> readPreviousAssetChecks() {
+  private ConcurrentHashMap<String, Instant> readPreviousAssetChecks() {
     try {
       return getAssetChecksFile()
         .filter(Files::exists)
         .flatMap(it -> {
           try (var reader = Files.newBufferedReader(it)) {
             return Optional.ofNullable(gson.fromJson(reader,
-              new TypeToken<Map<String, Instant>>() {
+              new TypeToken<ConcurrentHashMap<String, Instant>>() {
               }.getType()
             ));
           } catch (Throwable e) {
             logger.warn("Unable to read previous asset checks for raisins.", e);
-            return Optional.<Map<String, Instant>>empty();
+            return Optional.<ConcurrentHashMap<String, Instant>>empty();
           }
-        }).orElseGet(HashMap::new);
+        }).orElseGet(ConcurrentHashMap::new);
     } catch (Throwable e) {
       logger.warn("Unable to get local asset checks for raisins", e);
-      return new HashMap<>();
+      return new ConcurrentHashMap<>();
     }
   }
 

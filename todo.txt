@@ -4,3 +4,8 @@
 - Syntax highlighting for other types of files.
 - Stickers need to be top cropped.
 - Light themes need to be worked on
+
+---
+
+https://www.vogella.com/tutorials/EclipsePlugin/article.html#eclipse-plug-in-development-resources
+https://www.eclipse.org/articles/Article-PDE-does-plugins/PDE-intro.html
