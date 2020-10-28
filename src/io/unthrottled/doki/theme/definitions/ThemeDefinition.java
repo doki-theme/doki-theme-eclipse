@@ -19,8 +19,8 @@ public class ThemeDefinition {
     return stickers;
   }
 
-	public boolean isDark() {
-		return isDark;
-	}
+  public boolean isDark() {
+    return isDark;
+  }
 }
 

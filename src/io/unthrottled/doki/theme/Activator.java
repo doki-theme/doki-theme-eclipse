@@ -6,27 +6,27 @@ import org.osgi.framework.BundleContext;
 
 public class Activator extends AbstractUIPlugin implements BundleActivator {
 
-	private static BundleContext context;
-	private static Activator activator;
+  private static BundleContext context;
+  private static Activator activator;
 
-	static BundleContext getContext() {
-		return context;
-	}
+  public Activator() {
+    super();
+    activator = this;
+  }
 
-	public Activator() {
-		super();
-		activator = this;
-	}
+  static BundleContext getContext() {
+    return context;
+  }
 
-	public void start(BundleContext bundleContext) throws Exception {
-		Activator.context = bundleContext;
-	}
+  public static Activator getDefault() {
+    return activator;
+  }
 
-	public void stop(BundleContext bundleContext) throws Exception {
-		Activator.context = null;
-	}
-	
-	public static Activator getDefault() {
-		return activator;
-	}
+  public void start(BundleContext bundleContext) throws Exception {
+    Activator.context = bundleContext;
+  }
+
+  public void stop(BundleContext bundleContext) throws Exception {
+    Activator.context = null;
+  }
 }

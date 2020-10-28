@@ -11,6 +11,9 @@ public class StickerService {
 
   private static StickerService instance;
 
+  private StickerService() {
+  }
+
   public static StickerService getInstance() {
     if (instance == null) {
       instance = new StickerService();
@@ -19,14 +22,12 @@ public class StickerService {
     return instance;
   }
 
-  private StickerService() {}
-
   public String getCurrentStickerUrl() {
     var preferenceStore = Activator.getDefault().getPreferenceStore();
     var themeStickers = ThemeManager.getInstance().getCurrentTheme().getStickers();
     var preferredStickerType = preferenceStore.getString(STICKER_TYPE_PREFERENCE);
     if (SECONDARY_STICKER.equals(preferredStickerType) &&
-        themeStickers.getSecondary() != null) {
+      themeStickers.getSecondary() != null) {
       return resolveStickerUrl(themeStickers.getSecondary());
     }
 
@@ -35,7 +36,7 @@ public class StickerService {
 
   private String resolveStickerUrl(Sticker sticker) {
     return AssetManager.getInstance().resolveAssetUrl(
-        "/stickers/vscode" + sticker.getPath()
+      "/stickers/vscode" + sticker.getPath()
     );
   }
 }

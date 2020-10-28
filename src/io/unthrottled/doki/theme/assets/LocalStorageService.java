@@ -16,6 +16,9 @@ public class LocalStorageService {
 
   private static LocalStorageService instance;
 
+  private LocalStorageService() {
+  }
+
   public static LocalStorageService getInstance() {
     if (instance == null) {
       instance = new LocalStorageService();
@@ -24,14 +27,11 @@ public class LocalStorageService {
     return instance;
   }
 
-  private LocalStorageService() {
-  }
-
   public Path getAssetPath() {
     return Paths.get(
-        Activator.getDefault().getPreferenceStore().getString(
-            PreferenceConstants.ASSET_PATH_PREFERENCE
-        )
+      Activator.getDefault().getPreferenceStore().getString(
+        PreferenceConstants.ASSET_PATH_PREFERENCE
+      )
     );
   }
 

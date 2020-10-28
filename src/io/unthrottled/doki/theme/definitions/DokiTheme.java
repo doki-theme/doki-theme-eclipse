@@ -20,7 +20,7 @@ public class DokiTheme {
     return themeDefinition.getStickers();
   }
 
-	public String getCSSId() {
-		return (themeDefinition.isDark() ? "dark_" : "") + getId();
-	}
+  public String getCSSId() {
+    return (themeDefinition.isDark() ? "dark_" : "") + getId();
+  }
 }

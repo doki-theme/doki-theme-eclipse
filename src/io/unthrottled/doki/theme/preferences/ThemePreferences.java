@@ -4,7 +4,6 @@ import io.unthrottled.doki.theme.Activator;
 import io.unthrottled.doki.theme.definitions.ThemeConstants;
 import io.unthrottled.doki.theme.themes.ThemeManager;
 import org.eclipse.jface.preference.*;
-import org.eclipse.jface.viewers.CheckboxCellEditor;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.IWorkbenchPreferencePage;
 
@@ -36,28 +35,28 @@ public class ThemePreferences extends FieldEditorPreferencePage implements IWork
    */
   public void createFieldEditors() {
     addField(new DirectoryFieldEditor(PreferenceConstants.ASSET_PATH_PREFERENCE, "Asset &Directory preference:",
-        getFieldEditorParent()));
+      getFieldEditorParent()));
 
     addField(new RadioGroupFieldEditor(
-        PreferenceConstants.STICKER_TYPE_PREFERENCE,
-        "Sticker Type",
-        1,
-        new String[][]{{"&Primary", ThemeConstants.Stickers.PRIMARY_STICKER}, {
-            "&Secondary", ThemeConstants.Stickers.SECONDARY_STICKER}
-        }, getFieldEditorParent()));
+      PreferenceConstants.STICKER_TYPE_PREFERENCE,
+      "Sticker Type",
+      1,
+      new String[][]{{"&Primary", ThemeConstants.Stickers.PRIMARY_STICKER}, {
+        "&Secondary", ThemeConstants.Stickers.SECONDARY_STICKER}
+      }, getFieldEditorParent()));
 
     addField(new ComboFieldEditor(PreferenceConstants.CURRENT_THEME_PREFERENCE, "Choose your theme",
-        ThemeManager.getInstance().getAvailableThemes()
-            .map(dokiTheme -> new String[]{
-                dokiTheme.getUniqueName(),
-                dokiTheme.getId()
-            }).sorted(Comparator.comparing(item -> item[0]))
-            .toArray(String[][]::new),
-        getFieldEditorParent()));
+      ThemeManager.getInstance().getAvailableThemes()
+        .map(dokiTheme -> new String[]{
+          dokiTheme.getUniqueName(),
+          dokiTheme.getId()
+        }).sorted(Comparator.comparing(item -> item[0]))
+        .toArray(String[][]::new),
+      getFieldEditorParent()));
 
     addField(new BooleanFieldEditor(PreferenceConstants.AUTO_SET_THEME,
-        "Automatically set theme",
-        getFieldEditorParent()));
+      "Automatically set theme",
+      getFieldEditorParent()));
   }
 
   public void init(IWorkbench workbench) {
