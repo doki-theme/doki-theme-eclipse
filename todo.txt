@@ -9,3 +9,12 @@
 
 https://www.vogella.com/tutorials/EclipsePlugin/article.html#eclipse-plug-in-development-resources
 https://www.eclipse.org/articles/Article-PDE-does-plugins/PDE-intro.html
+
+
+repos:
+git://git.eclipse.org/gitroot/jdt/eclipse.jdt.ui.git
+git://git.eclipse.org/gitroot/platform/eclipse.platform.ui.git
+git://git.eclipse.org/gitroot/platform/eclipse.platform.swt.git
+
+handy tools:
+- CSS Spy: http://download.eclipse.org/e4/updates/0.14
