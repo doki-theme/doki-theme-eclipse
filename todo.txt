@@ -10,6 +10,8 @@
 https://www.vogella.com/tutorials/EclipsePlugin/article.html#eclipse-plug-in-development-resources
 https://www.eclipse.org/articles/Article-PDE-does-plugins/PDE-intro.html
 
+https://help.eclipse.org/2020-09/index.jsp?topic=/org.eclipse.pde.doc.user/reference/pde_feature_generating_build.htm
+
 
 repos:
 git://git.eclipse.org/gitroot/jdt/eclipse.jdt.ui.git
@@ -18,3 +20,7 @@ git://git.eclipse.org/gitroot/platform/eclipse.platform.swt.git
 
 handy tools:
 - CSS Spy: http://download.eclipse.org/e4/updates/0.14
+
+
+Dumb notes:
+- dropins directory for plugins, all jars must be at a depth of 1...
