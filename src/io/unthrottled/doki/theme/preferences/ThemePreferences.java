@@ -53,10 +53,6 @@ public class ThemePreferences extends FieldEditorPreferencePage implements IWork
         }).sorted(Comparator.comparing(item -> item[0]))
         .toArray(String[][]::new),
       getFieldEditorParent()));
-
-    addField(new BooleanFieldEditor(PreferenceConstants.AUTO_SET_THEME,
-      "Automatically set theme",
-      getFieldEditorParent()));
   }
 
   public void init(IWorkbench workbench) {

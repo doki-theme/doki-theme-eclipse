@@ -29,14 +29,10 @@ public class StickerView {
 
       if ((themeChanged && Activator.getDefault().getPreferenceStore().getBoolean(AUTO_SET_THEME))) {
         ThemeManager.getInstance().getTheme((String) changeEvent.getNewValue())
-          .ifPresent(dokiTheme -> {
-            themeEngine.setTheme(dokiTheme.getCSSId(), true);
-          });
+          .ifPresent(dokiTheme -> themeEngine.setTheme(dokiTheme.getCSSId(), true));
       } else if (AUTO_SET_THEME.equals(changeEvent.getProperty()) && Boolean.TRUE.equals(changeEvent.getNewValue())) {
         ThemeManager.getInstance().getTheme(preferenceStore.getString(CURRENT_THEME_PREFERENCE))
-          .ifPresent(dokiTheme -> {
-            themeEngine.setTheme(dokiTheme.getCSSId(), true);
-          });
+          .ifPresent(dokiTheme -> themeEngine.setTheme(dokiTheme.getCSSId(), true));
       }
     });
     stickerDisplayLabel = new Label(parent, SWT.COLOR_INFO_BACKGROUND);
