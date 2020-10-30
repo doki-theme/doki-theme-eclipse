@@ -5,7 +5,12 @@ import io.unthrottled.doki.theme.themes.StickerService;
 import io.unthrottled.doki.theme.themes.ThemeManager;
 import org.eclipse.e4.ui.css.swt.theme.IThemeEngine;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Image;
+import org.eclipse.swt.graphics.Point;
+import org.eclipse.swt.graphics.RGB;
+import org.eclipse.swt.layout.RowData;
+import org.eclipse.swt.layout.RowLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 
@@ -35,9 +40,26 @@ public class StickerView {
           .ifPresent(dokiTheme -> themeEngine.setTheme(dokiTheme.getCSSId(), true));
       }
     });
-    stickerDisplayLabel = new Label(parent, SWT.COLOR_INFO_BACKGROUND);
+    var rowLayout = new RowLayout();
+    rowLayout.wrap = true;
+    rowLayout.pack = true;
+    rowLayout.justify = false;
+    rowLayout.type = SWT.HORIZONTAL;
+    parent.setLayout(rowLayout);
+    var parent1 = parent.getParent();
     Image image = new Image(parent.getDisplay(),
       StickerService.getInstance().getCurrentStickerUrl());
+    stickerDisplayLabel = new Label(parent, SWT.COLOR_INFO_BACKGROUND);
+
+    var p = new Composite(parent, SWT.COLOR_INFO_BACKGROUND);
+    stickerDisplayLabel.setText("Shit");
+    parent1.addPaintListener(pe -> {
+      p.setLayoutData(new RowData(0,0));
+      p.setBounds(0,0,0,0);
+      p.setSize(0,0);
+      stickerDisplayLabel.setBackground(p.getBackground());
+      parent1.setBackground(p.getBackground());
+    });
     stickerDisplayLabel.setImage(image);
   }
 }
