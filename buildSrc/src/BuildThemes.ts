@@ -477,56 +477,57 @@ walkDir(eclipseDefinitionDirectoryPath)
     return toXml(fs.readFileSync(pluginXmlPath, {
       encoding: 'utf8'
     }))
-      .then(pluginXml => {
-        const cssXMLExtension = pluginXml.plugin.extension.find(
-          (extension: any) => extension.$.point === 'org.eclipse.e4.ui.css.swt.theme'
-        );
-
-        const createLafCssFileName = (dokiTheme: DokiTheme) => `${dokiTheme.definition.name}.css`;
-        const createSyntaxCssFileName = (dokiTheme: DokiTheme) => `${dokiTheme.definition.name}.syntax.css`;
-
-        cssXMLExtension.theme =
-          dokiThemes.map(dokiTheme => ({
-            '$': {
-              'basestylesheeturi': `themes/css/${createLafCssFileName(dokiTheme)}`,
-              'id': buildThemeId(dokiTheme),
-              'label': getDisplayName(dokiTheme),
-            }
-          }));
-
-        cssXMLExtension.stylesheet =
-          dokiThemes.map(dokiTheme => ({
-            '$': {
-              'uri': `themes/css/${createSyntaxCssFileName(dokiTheme)}`,
-            },
-            themeId: {
-              '$': {
-                refid: buildThemeId(dokiTheme)
-              },
-            }
-          }));
-        const xml = xmlBuilder.buildObject(pluginXml);
-
-        fs.writeFileSync(path.resolve(pluginXmlPath), xml, 'utf8');
-
-        const lafCSSTemplate = fs.readFileSync(
-          path.resolve(eclipseTemplateDefinitionDirectoryPath, 'theme.template.css'),
-          {
-            encoding: 'utf-8',
-          });
-
-        const syntaxCSSTemplate = fs.readFileSync(
-          path.resolve(eclipseTemplateDefinitionDirectoryPath,
-            'syntax.coloring.template.css'),
-          {
-            encoding: 'utf-8',
-          });
-
-        dokiThemes.forEach(dokiTheme => {
-          writeCssFile(createLafCssFileName(dokiTheme), lafCSSTemplate, dokiTheme);
-          writeCssFile(createSyntaxCssFileName(dokiTheme), syntaxCSSTemplate, dokiTheme);
-        });
-      }).then(() => {
+      // .then(pluginXml => {
+      //   const cssXMLExtension = pluginXml.plugin.extension.find(
+      //     (extension: any) => extension.$.point === 'org.eclipse.e4.ui.css.swt.theme'
+      //   );
+      //
+      //   const createLafCssFileName = (dokiTheme: DokiTheme) => `${dokiTheme.definition.name}.css`;
+      //   const createSyntaxCssFileName = (dokiTheme: DokiTheme) => `${dokiTheme.definition.name}.syntax.css`;
+      //
+      //   cssXMLExtension.theme =
+      //     dokiThemes.map(dokiTheme => ({
+      //       '$': {
+      //         'basestylesheeturi': `themes/css/${createLafCssFileName(dokiTheme)}`,
+      //         'id': buildThemeId(dokiTheme),
+      //         'label': getDisplayName(dokiTheme),
+      //       }
+      //     }));
+      //
+      //   cssXMLExtension.stylesheet =
+      //     dokiThemes.map(dokiTheme => ({
+      //       '$': {
+      //         'uri': `themes/css/${createSyntaxCssFileName(dokiTheme)}`,
+      //       },
+      //       themeId: {
+      //         '$': {
+      //           refid: buildThemeId(dokiTheme)
+      //         },
+      //       }
+      //     }));
+      //   const xml = xmlBuilder.buildObject(pluginXml);
+      //
+      //   fs.writeFileSync(path.resolve(pluginXmlPath), xml, 'utf8');
+      //
+      //   const lafCSSTemplate = fs.readFileSync(
+      //     path.resolve(eclipseTemplateDefinitionDirectoryPath, 'theme.template.css'),
+      //     {
+      //       encoding: 'utf-8',
+      //     });
+      //
+      //   const syntaxCSSTemplate = fs.readFileSync(
+      //     path.resolve(eclipseTemplateDefinitionDirectoryPath,
+      //       'syntax.coloring.template.css'),
+      //     {
+      //       encoding: 'utf-8',
+      //     });
+      //
+      //   dokiThemes.forEach(dokiTheme => {
+      //     writeCssFile(createLafCssFileName(dokiTheme), lafCSSTemplate, dokiTheme);
+      //     writeCssFile(createSyntaxCssFileName(dokiTheme), syntaxCSSTemplate, dokiTheme);
+      //   });
+      // })
+      .then(() => {
         fs.writeFileSync(path.resolve(repoDirectory, 'themes', 'themes.json'),
           JSON.stringify(dokiThemes.reduce((accum, dokiTheme) => ({
             ...accum,
