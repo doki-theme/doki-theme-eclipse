@@ -40,26 +40,32 @@ public class StickerView {
           .ifPresent(dokiTheme -> themeEngine.setTheme(dokiTheme.getCSSId(), true));
       }
     });
+
+    parent.setLayout(buildLayout());
+    var rootParent = parent.getParent();
+    Image image = new Image(parent.getDisplay(),
+      StickerService.getInstance().getCurrentStickerUrl());
+    stickerDisplayLabel = new Label(parent, SWT.COLOR_INFO_BACKGROUND);
+
+    // I just want to take the same color so that it looks
+    // consistent with the DevStyles Theme.
+    var colorBoi = new Composite(parent, SWT.COLOR_INFO_BACKGROUND);
+    rootParent.addPaintListener(pe -> {
+      colorBoi.setLayoutData(new RowData(0,0));
+      colorBoi.setBounds(0,0,0,0);
+      colorBoi.setSize(0,0);
+      stickerDisplayLabel.setBackground(colorBoi.getBackground());
+      rootParent.setBackground(colorBoi.getBackground());
+    });
+    stickerDisplayLabel.setImage(image);
+  }
+
+  private RowLayout buildLayout() {
     var rowLayout = new RowLayout();
     rowLayout.wrap = true;
     rowLayout.pack = true;
     rowLayout.justify = false;
     rowLayout.type = SWT.HORIZONTAL;
-    parent.setLayout(rowLayout);
-    var parent1 = parent.getParent();
-    Image image = new Image(parent.getDisplay(),
-      StickerService.getInstance().getCurrentStickerUrl());
-    stickerDisplayLabel = new Label(parent, SWT.COLOR_INFO_BACKGROUND);
-
-    var p = new Composite(parent, SWT.COLOR_INFO_BACKGROUND);
-    stickerDisplayLabel.setText("Shit");
-    parent1.addPaintListener(pe -> {
-      p.setLayoutData(new RowData(0,0));
-      p.setBounds(0,0,0,0);
-      p.setSize(0,0);
-      stickerDisplayLabel.setBackground(p.getBackground());
-      parent1.setBackground(p.getBackground());
-    });
-    stickerDisplayLabel.setImage(image);
+    return rowLayout;
   }
 }
