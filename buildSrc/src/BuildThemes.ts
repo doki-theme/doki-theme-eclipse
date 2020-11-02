@@ -444,7 +444,7 @@ function writeSyntaxFile(pathSegments: string, templateToFillIn: string, dokiThe
   const hls = rgbToHsl(hexToRGB(dokiTheme.namedColors.baseBackground)).join(', ')
   fs.writeFileSync(
     path.resolve(themeDirectory, hls),
-    pathSegments
+    hls
   )
   fs.writeFileSync(
     devstyleSyntaxXml,
