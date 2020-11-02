@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="894b40f5-277e-459e-a5eb-9c27e0bc9d94" name="Doki Theme" modified="2020-04-28 20:03:55" author="Zac Scott (scottzach1)">
-  <searchResultIndication color="#44475a" />
-  <filteredSearchResultIndication color="#44475a" />
-  <occurrenceIndication color="#44475a" underline="true" />
-  <writeOccurrenceIndication color="#44475a" underline="true" />
+<colorTheme id="6969" name="Asuna" modified="2020-11-02T11:11:16.885Z" author="Alex Simons (Unthrottled)">
+  <searchResultIndication color="#f6f6f6" />
+  <filteredSearchResultIndication color="#f6f6f6" />
+  <occurrenceIndication color="#f6f6f6" underline="true" />
+  <writeOccurrenceIndication color="#f6f6f6" underline="true" />
   <findScope color="#44475a" />
-  <deletionIndication color="#ffb86c" />
-  <sourceHoverBackground color="#8be9fd" />
-  <singleLineComment color="#6272a4" italic="true" />
-  <multiLineComment color="#6272a4" italic="true" />
-  <commentTaskTag color="#8be9fd" italic="false" underline="true" strikethrough="false" />
-  <javadoc color="#6272a4" italic="false" />
-  <javadocLink color="#8be9fd" italic="false" underline="true" strikethrough="false" />
-  <javadocTag color="#8be9fd" italic="false" />
-  <javadocKeyword color="#8be9fd" italic="false" />
-  <class color="#8be9fd" bold="false" underline="false" strikethrough="false" />
-  <interface color="#8be9fd" />
-  <method color="#50fa7b" />
-  <methodDeclaration color="#50fa7b" />
-  <bracket color="#f8f8f2" />
-  <number color="#ff79c6" />
-  <string color="#f1fa8c" />
-  <operator color="#8be9fd" />
-  <keyword color="#ff79c6" bold="false" />
-  <annotation color="#50fa7b" />
-  <staticMethod color="#50fa7b" />
-  <localVariable color="#f8f8f2" />
-  <localVariableDeclaration color="#ff79c6" />
-  <field color="#f8f8f2" />
-  <staticField color="#f8f8f2" />
-  <staticFinalField color="#bd93f9" />
-  <deprecatedMember color="#ffb86c" underline="false" strikethrough="true" />
-  <enum color="#bd93f9" />
-  <inheritedMethod color="#50fa7b" />
-  <abstractMethod color="#50fa7b" />
-  <parameterVariable color="#79ABFF" />
-  <typeArgument color="#8be9fd" />
-  <typeParameter color="#ffb86c" />
+  <deletionIndication color="#ff5555" />
+  <sourceHoverBackground color="#fff1f5" />
+  <singleLineComment color="#6272A4" italic="true" />
+  <multiLineComment color="#6272A4" italic="true" />
+  <commentTaskTag color="#ec081e" italic="true" underline="true" strikethrough="false" />
+  <javadoc color="#6272A4" italic="true" />
+  <javadocLink color="#a61d0d" italic="true" underline="true" strikethrough="false" />
+  <javadocTag color="#0d5fa6" italic="true" />
+  <javadocKeyword color="#0d5fa6" italic="true" />
+  <class color="#db974d" bold="false" underline="false" strikethrough="false" />
+  <interface color="#0d5fa6" />
+  <method color="#a61d0d" />
+  <methodDeclaration color="#a61d0d" />
+  <bracket color="#252427" />
+  <number color="#4C94D6" />
+  <string color="#a61d0d" />
+  <operator color="#e53935" />
+  <keyword color="#a61d0d" bold="false" />
+  <annotation color="#a61d0d" />
+  <staticMethod color="#a61d0d" />
+  <localVariable color="#252427" />
+  <localVariableDeclaration color="#252427" />
+  <field color="#252427" bold="true" />
+  <staticField color="#4C94D6" />
+  <staticFinalField color="#4C94D6" italic="true" />
+  <deprecatedMember color="#B7B7B7" underline="false" strikethrough="true" />
+  <enum color="#4C94D6" />
+  <inheritedMethod color="#a61d0d" />
+  <abstractMethod color="#a61d0d" />
+  <parameterVariable color="#a61d0d" />
+  <typeArgument color="#0d5fa6" />
+  <typeParameter color="#0d5fa6" />
   <constant color="#4C94D6" />
   <background color="#fcfcfc" />
   <currentLine color="#f6f6f6" />

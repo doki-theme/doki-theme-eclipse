@@ -208,7 +208,7 @@ function resolveTemplateVariable(
 
 function fillInTemplateScript(
   templateToFillIn: string,
-  templateVariables: StringDictionary<string>,
+  templateVariables: StringDictionary<any>,
 ) {
   return templateToFillIn.split('\n')
     .map(line => {
@@ -407,7 +407,11 @@ function writeSyntaxFile(pathSegments: string, templateToFillIn: string, dokiThe
     devstyleSyntaxXml,
     fillInTemplateScript(
       templateToFillIn,
-      dokiTheme.namedColors
+      {
+        ...dokiTheme.namedColors,
+        ...dokiTheme.definition,
+        modifiedDate: new Date().toISOString()
+      }
     ),
     {
       encoding: 'utf-8',
