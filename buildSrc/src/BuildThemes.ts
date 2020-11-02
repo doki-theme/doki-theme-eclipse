@@ -399,6 +399,22 @@ function writeCssFile(pathSegments: string, templateToFillIn: string, dokiTheme:
   );
 }
 
+const devstyleAssetsDirectory = path.resolve(repoDirectory, 'devStyleThemes')
+function writeSyntaxFile(pathSegments: string, templateToFillIn: string, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { default: { path: string; name: string } }; theme: {}; namedColors: DokiThemeEclipse }) {
+  const devstyleSyntaxXml = path.resolve(devstyleAssetsDirectory, getDisplayName(dokiTheme), pathSegments);
+  fs.mkdirSync(path.dirname(devstyleSyntaxXml), {recursive: true})
+  fs.writeFileSync(
+    devstyleSyntaxXml,
+    fillInTemplateScript(
+      templateToFillIn,
+      dokiTheme.namedColors
+    ),
+    {
+      encoding: 'utf-8',
+    },
+  );
+}
+
 walkDir(eclipseDefinitionDirectoryPath)
   .then((files) =>
     files.filter((file) => file.endsWith("eclipse.definition.json"))
@@ -473,10 +489,21 @@ walkDir(eclipseDefinitionDirectoryPath)
       );
   })
   .then(dokiThemes => {
-    const pluginXmlPath = path.resolve(repoDirectory, 'plugin.xml');
-    return toXml(fs.readFileSync(pluginXmlPath, {
-      encoding: 'utf8'
-    }))
+    const devStyleSyntaxXml = fs.readFileSync(
+      path.resolve(eclipseTemplateDefinitionDirectoryPath, 'syntax.xml'), {encoding: 'utf-8'}
+    );
+    fs.rmdirSync(devstyleAssetsDirectory, {recursive: true})
+    dokiThemes.forEach(dokiTheme => {
+      writeSyntaxFile(
+        `${dokiTheme.definition.name}.xml`,
+        devStyleSyntaxXml,
+        dokiTheme
+      )
+    });
+    // const pluginXmlPath = path.resolve(repoDirectory, 'plugin.xml');
+    // return toXml(fs.readFileSync(pluginXmlPath, {
+    //   encoding: 'utf8'
+    // }))
       // .then(pluginXml => {
       //   const cssXMLExtension = pluginXml.plugin.extension.find(
       //     (extension: any) => extension.$.point === 'org.eclipse.e4.ui.css.swt.theme'
@@ -527,7 +554,7 @@ walkDir(eclipseDefinitionDirectoryPath)
       //     writeCssFile(createSyntaxCssFileName(dokiTheme), syntaxCSSTemplate, dokiTheme);
       //   });
       // })
-      .then(() => {
+      // .then(() => {
         fs.writeFileSync(path.resolve(repoDirectory, 'themes', 'themes.json'),
           JSON.stringify(dokiThemes.reduce((accum, dokiTheme) => ({
             ...accum,
@@ -540,7 +567,7 @@ walkDir(eclipseDefinitionDirectoryPath)
           }), {}), null, 2), {
             encoding: 'utf-8',
           })
-      });
+      // });
   })
   .then(() => {
     console.log('Theme Generation Complete!');
