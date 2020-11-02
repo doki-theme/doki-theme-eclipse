@@ -248,6 +248,43 @@ function fillInTemplateScript(
     }).join('\n');
 }
 
+/**
+ * Converts an RGB color value to HSL. Conversion formula
+ * adapted from http://en.wikipedia.org/wiki/HSL_color_space.
+ * Assumes r, g, and b are contained in the set [0, 255] and
+ * returns h, s, and l in the set [0, 1].
+ *
+ * @param   Number  r       The red color value
+ * @param   Number  g       The green color value
+ * @param   Number  b       The blue color value
+ * @return  Array           The HSL representation
+ */
+function rgbToHsl([r, g, b]: [number, number, number]) {
+  r /= 255, g /= 255, b /= 255;
+
+  const max = Math.max(r, g, b), min = Math.min(r, g, b);
+  const l = (max + min) / 2;
+  let s: number;
+  let h = l;
+
+  if (max == min) {
+    h = s = 0; // achromatic
+  } else {
+    var d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+
+    switch (max) {
+      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+      case g: h = (b - r) / d + 2; break;
+      case b: h = (r - g) / d + 4; break;
+    }
+
+    h /= 6;
+  }
+
+  return [ Math.round(h * 300), Math.round(s * 100), Math.round(l * 100) ];
+}
+
 function hexToRGB(s: string | [number, number, number]): [number, number, number] {
   if (typeof s === 'string') {
     const hex = parseInt(s.substr(1), 16)
@@ -401,8 +438,14 @@ function writeCssFile(pathSegments: string, templateToFillIn: string, dokiTheme:
 
 const devstyleAssetsDirectory = path.resolve(repoDirectory, 'devStyleThemes')
 function writeSyntaxFile(pathSegments: string, templateToFillIn: string, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { default: { path: string; name: string } }; theme: {}; namedColors: DokiThemeEclipse }) {
-  const devstyleSyntaxXml = path.resolve(devstyleAssetsDirectory, getDisplayName(dokiTheme), pathSegments);
+  const themeDirectory = path.resolve(devstyleAssetsDirectory, getDisplayName(dokiTheme))
+  const devstyleSyntaxXml = path.resolve(themeDirectory, pathSegments);
   fs.mkdirSync(path.dirname(devstyleSyntaxXml), {recursive: true})
+  const hls = rgbToHsl(hexToRGB(dokiTheme.namedColors.baseBackground)).join(', ')
+  fs.writeFileSync(
+    path.resolve(themeDirectory, hls),
+    pathSegments
+  )
   fs.writeFileSync(
     devstyleSyntaxXml,
     fillInTemplateScript(
