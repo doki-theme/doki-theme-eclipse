@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6969" name="Ryuko" modified="2020-11-02T11:47:03.209Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6969" name="Ryuko" modified="2020-11-02T12:15:03.632Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#272e34" />
   <filteredSearchResultIndication color="#272e34" />
   <occurrenceIndication color="#292e34" underline="true" />
@@ -11,20 +11,20 @@
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#ee2726" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#6272A4" italic="true" />
-  <javadocLink color="#a73035" italic="true" underline="true" strikethrough="false" />
+  <javadocLink color="#e4ff10" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#C1B5C3" italic="true" />
   <javadocKeyword color="#C1B5C3" italic="true" />
   <class color="#6893f3" bold="false" underline="false" strikethrough="false" />
   <interface color="#C1B5C3" />
-  <method color="#a73035" />
-  <methodDeclaration color="#a73035" />
+  <method color="#e4ff10" />
+  <methodDeclaration color="#e4ff10" />
   <bracket color="#bbbbbb" />
   <number color="#86dbfd" />
   <string color="#efa554" />
   <operator color="#a28a92" />
   <keyword color="#e0474b" bold="false" />
-  <annotation color="#a73035" />
-  <staticMethod color="#a73035" />
+  <annotation color="#e4ff10" />
+  <staticMethod color="#e4ff10" />
   <localVariable color="#bbbbbb" />
   <localVariableDeclaration color="#bbbbbb" />
   <field color="#bbbbbb" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#86dbfd" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
-  <inheritedMethod color="#a73035" />
-  <abstractMethod color="#a73035" />
+  <inheritedMethod color="#e4ff10" />
+  <abstractMethod color="#e4ff10" />
   <parameterVariable color="#efa554" />
   <typeArgument color="#C1B5C3" />
   <typeParameter color="#C1B5C3" />

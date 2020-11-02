@@ -452,6 +452,7 @@ function writeSyntaxFile(pathSegments: string, templateToFillIn: string, dokiThe
       templateToFillIn,
       {
         ...dokiTheme.namedColors,
+        ...(dokiTheme.definition.editorScheme?.colors || {}),
         ...dokiTheme.definition,
         modifiedDate: new Date().toISOString()
       }

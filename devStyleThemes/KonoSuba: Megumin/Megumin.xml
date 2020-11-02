@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6969" name="Megumin" modified="2020-11-02T11:47:03.210Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6969" name="Megumin" modified="2020-11-02T12:15:03.633Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#33282d" />
   <filteredSearchResultIndication color="#33282d" />
   <occurrenceIndication color="#2f2329" underline="true" />
@@ -11,20 +11,20 @@
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#ee2e37" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#6272A4" italic="true" />
-  <javadocLink color="#a73035" italic="true" underline="true" strikethrough="false" />
+  <javadocLink color="#e4ff10" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#AF5C5A" italic="true" />
   <javadocKeyword color="#AF5C5A" italic="true" />
   <class color="#dae838" bold="false" underline="false" strikethrough="false" />
   <interface color="#AF5C5A" />
-  <method color="#a73035" />
-  <methodDeclaration color="#a73035" />
+  <method color="#e4ff10" />
+  <methodDeclaration color="#e4ff10" />
   <bracket color="#bbbbbb" />
   <number color="#86dbfd" />
   <string color="#ffd866" />
   <operator color="#a28a92" />
   <keyword color="#a28a92" bold="false" />
-  <annotation color="#a73035" />
-  <staticMethod color="#a73035" />
+  <annotation color="#e4ff10" />
+  <staticMethod color="#e4ff10" />
   <localVariable color="#bbbbbb" />
   <localVariableDeclaration color="#bbbbbb" />
   <field color="#bbbbbb" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#86dbfd" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
-  <inheritedMethod color="#a73035" />
-  <abstractMethod color="#a73035" />
+  <inheritedMethod color="#e4ff10" />
+  <abstractMethod color="#e4ff10" />
   <parameterVariable color="#ffd866" />
   <typeArgument color="#AF5C5A" />
   <typeParameter color="#AF5C5A" />

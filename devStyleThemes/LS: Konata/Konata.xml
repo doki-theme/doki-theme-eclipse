@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6969" name="Konata" modified="2020-11-02T11:47:03.212Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6969" name="Konata" modified="2020-11-02T12:15:03.635Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#6c95ee" />
   <filteredSearchResultIndication color="#6c95ee" />
   <occurrenceIndication color="#6c95ee" underline="true" />
@@ -11,20 +11,20 @@
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#98ff3d" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#6272A4" italic="true" />
-  <javadocLink color="#4bcf4c" italic="true" underline="true" strikethrough="false" />
+  <javadocLink color="#60ff62" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#fffdae" italic="true" />
   <javadocKeyword color="#fffdae" italic="true" />
   <class color="#DABDFB" bold="false" underline="false" strikethrough="false" />
   <interface color="#fffdae" />
-  <method color="#4bcf4c" />
-  <methodDeclaration color="#4bcf4c" />
+  <method color="#60ff62" />
+  <methodDeclaration color="#60ff62" />
   <bracket color="#f3edff" />
   <number color="#F3C49C" />
   <string color="#FFB6EE" />
   <operator color="#faffcb" />
   <keyword color="#fad7e1" bold="false" />
-  <annotation color="#4bcf4c" />
-  <staticMethod color="#4bcf4c" />
+  <annotation color="#60ff62" />
+  <staticMethod color="#60ff62" />
   <localVariable color="#f3edff" />
   <localVariableDeclaration color="#f3edff" />
   <field color="#f3edff" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#F3C49C" italic="true" />
   <deprecatedMember color="#B7B7B7" underline="false" strikethrough="true" />
   <enum color="#F3C49C" />
-  <inheritedMethod color="#4bcf4c" />
-  <abstractMethod color="#4bcf4c" />
+  <inheritedMethod color="#60ff62" />
+  <abstractMethod color="#60ff62" />
   <parameterVariable color="#FFB6EE" />
   <typeArgument color="#fffdae" />
   <typeParameter color="#fffdae" />

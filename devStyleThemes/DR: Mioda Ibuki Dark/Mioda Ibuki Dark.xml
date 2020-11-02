@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6969" name="Ibuki" modified="2020-11-02T11:47:03.205Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6969" name="Ibuki" modified="2020-11-02T12:15:03.628Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#343434" />
   <filteredSearchResultIndication color="#343434" />
   <occurrenceIndication color="#343434" underline="true" />
@@ -11,20 +11,20 @@
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#68c4ee" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#6272A4" italic="true" />
-  <javadocLink color="#5395b4" italic="true" underline="true" strikethrough="false" />
+  <javadocLink color="#ff69df" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#5ea7ff" italic="true" />
   <javadocKeyword color="#5ea7ff" italic="true" />
   <class color="#8daeef" bold="false" underline="false" strikethrough="false" />
   <interface color="#5ea7ff" />
-  <method color="#5395b4" />
-  <methodDeclaration color="#5395b4" />
+  <method color="#ff69df" />
+  <methodDeclaration color="#ff69df" />
   <bracket color="#bbbbbb" />
   <number color="#86dbfd" />
   <string color="#f4fa8c" />
   <operator color="#a28a92" />
   <keyword color="#8b8b8b" bold="false" />
-  <annotation color="#5395b4" />
-  <staticMethod color="#5395b4" />
+  <annotation color="#ff69df" />
+  <staticMethod color="#ff69df" />
   <localVariable color="#bbbbbb" />
   <localVariableDeclaration color="#bbbbbb" />
   <field color="#bbbbbb" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#86dbfd" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
-  <inheritedMethod color="#5395b4" />
-  <abstractMethod color="#5395b4" />
+  <inheritedMethod color="#ff69df" />
+  <abstractMethod color="#ff69df" />
   <parameterVariable color="#f4fa8c" />
   <typeArgument color="#5ea7ff" />
   <typeParameter color="#5ea7ff" />

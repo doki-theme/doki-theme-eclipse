@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6969" name="Yuri" modified="2020-11-02T11:47:03.212Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6969" name="Yuri" modified="2020-11-02T12:15:03.635Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#eae5f6" />
   <filteredSearchResultIndication color="#eae5f6" />
   <occurrenceIndication color="#efeaf6" underline="true" />
@@ -11,20 +11,20 @@
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#f595ff" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#6272A4" italic="true" />
-  <javadocLink color="#ab74cb" italic="true" underline="true" strikethrough="false" />
+  <javadocLink color="#90468c" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#7C75EF" italic="true" />
   <javadocKeyword color="#7C75EF" italic="true" />
   <class color="#c26a9d" bold="false" underline="false" strikethrough="false" />
   <interface color="#7C75EF" />
-  <method color="#ab74cb" />
-  <methodDeclaration color="#ab74cb" />
+  <method color="#90468c" />
+  <methodDeclaration color="#90468c" />
   <bracket color="#252427" />
   <number color="#4C94D6" />
   <string color="#d27f2d" />
   <operator color="#7B6970" />
   <keyword color="#c26a9d" bold="false" />
-  <annotation color="#ab74cb" />
-  <staticMethod color="#ab74cb" />
+  <annotation color="#90468c" />
+  <staticMethod color="#90468c" />
   <localVariable color="#252427" />
   <localVariableDeclaration color="#252427" />
   <field color="#252427" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#4C94D6" italic="true" />
   <deprecatedMember color="#B7B7B7" underline="false" strikethrough="true" />
   <enum color="#4C94D6" />
-  <inheritedMethod color="#ab74cb" />
-  <abstractMethod color="#ab74cb" />
+  <inheritedMethod color="#90468c" />
+  <abstractMethod color="#90468c" />
   <parameterVariable color="#d27f2d" />
   <typeArgument color="#7C75EF" />
   <typeParameter color="#7C75EF" />

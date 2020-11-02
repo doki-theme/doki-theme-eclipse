@@ -12,6 +12,11 @@ export interface MasterDokiThemeDefinition {
   product?: 'community' | 'ultimate';
   stickers: Stickers;
   colors: StringDictonary<string>;
+  editorScheme?: EditorScheme;
+}
+
+export interface EditorScheme {
+  colors: StringDictonary<string>
 }
 
 export interface StringDictonary<T> {

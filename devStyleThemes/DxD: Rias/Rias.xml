@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6969" name="Rias" modified="2020-11-02T11:47:03.208Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6969" name="Rias" modified="2020-11-02T12:15:03.631Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#491818" />
   <filteredSearchResultIndication color="#491818" />
   <occurrenceIndication color="#491818" underline="true" />
@@ -11,20 +11,20 @@
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#ec081e" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#6272A4" italic="true" />
-  <javadocLink color="#e03943" italic="true" underline="true" strikethrough="false" />
+  <javadocLink color="#fbf96e" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#eea367" italic="true" />
   <javadocKeyword color="#eea367" italic="true" />
   <class color="#e03392" bold="false" underline="false" strikethrough="false" />
   <interface color="#eea367" />
-  <method color="#e03943" />
-  <methodDeclaration color="#e03943" />
+  <method color="#fbf96e" />
+  <methodDeclaration color="#fbf96e" />
   <bracket color="#fafafa" />
   <number color="#86dbfd" />
   <string color="#9EB7D6" />
   <operator color="#a28a92" />
   <keyword color="#C04750" bold="false" />
-  <annotation color="#e03943" />
-  <staticMethod color="#e03943" />
+  <annotation color="#fbf96e" />
+  <staticMethod color="#fbf96e" />
   <localVariable color="#fafafa" />
   <localVariableDeclaration color="#fafafa" />
   <field color="#fafafa" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#86dbfd" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
-  <inheritedMethod color="#e03943" />
-  <abstractMethod color="#e03943" />
+  <inheritedMethod color="#fbf96e" />
+  <abstractMethod color="#fbf96e" />
   <parameterVariable color="#9EB7D6" />
   <typeArgument color="#eea367" />
   <typeParameter color="#eea367" />

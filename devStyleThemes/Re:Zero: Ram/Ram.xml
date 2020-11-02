@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6969" name="Ram" modified="2020-11-02T11:47:03.213Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6969" name="Ram" modified="2020-11-02T12:15:03.636Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#292734" />
   <filteredSearchResultIndication color="#292734" />
   <occurrenceIndication color="#2c2934" underline="true" />
@@ -11,20 +11,20 @@
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#e565ee" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#6272A4" italic="true" />
-  <javadocLink color="#e594bf" italic="true" underline="true" strikethrough="false" />
+  <javadocLink color="#a87ff8" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#F375C8" italic="true" />
   <javadocKeyword color="#F375C8" italic="true" />
   <class color="#EF9FD8" bold="false" underline="false" strikethrough="false" />
   <interface color="#F375C8" />
-  <method color="#e594bf" />
-  <methodDeclaration color="#e594bf" />
+  <method color="#a87ff8" />
+  <methodDeclaration color="#a87ff8" />
   <bracket color="#bbbbbb" />
   <number color="#86dbfd" />
   <string color="#f4fa8c" />
   <operator color="#a28a92" />
   <keyword color="#988F9A" bold="false" />
-  <annotation color="#e594bf" />
-  <staticMethod color="#e594bf" />
+  <annotation color="#a87ff8" />
+  <staticMethod color="#a87ff8" />
   <localVariable color="#bbbbbb" />
   <localVariableDeclaration color="#bbbbbb" />
   <field color="#bbbbbb" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#86dbfd" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
-  <inheritedMethod color="#e594bf" />
-  <abstractMethod color="#e594bf" />
+  <inheritedMethod color="#a87ff8" />
+  <abstractMethod color="#a87ff8" />
   <parameterVariable color="#f4fa8c" />
   <typeArgument color="#F375C8" />
   <typeParameter color="#F375C8" />
