@@ -437,7 +437,9 @@ function writeCssFile(pathSegments: string, templateToFillIn: string, dokiTheme:
 }
 
 const devstyleAssetsDirectory = path.resolve(repoDirectory, 'devStyleThemes')
-function writeSyntaxFile(pathSegments: string, templateToFillIn: string, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { default: { path: string; name: string } }; theme: {}; namedColors: DokiThemeEclipse }) {
+function writeSyntaxFile(pathSegments: string,
+                         templateToFillIn: string, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { default: { path: string; name: string } }; theme: {}; namedColors: DokiThemeEclipse },
+                         themeId: number) {
   const themeDirectory = path.resolve(devstyleAssetsDirectory, getDisplayName(dokiTheme))
   const devstyleSyntaxXml = path.resolve(themeDirectory, pathSegments);
   fs.mkdirSync(path.dirname(devstyleSyntaxXml), {recursive: true})
@@ -454,6 +456,7 @@ function writeSyntaxFile(pathSegments: string, templateToFillIn: string, dokiThe
         ...dokiTheme.namedColors,
         ...(dokiTheme.definition.editorScheme?.colors || {}),
         ...dokiTheme.definition,
+        themeId: themeId.toString(),
         modifiedDate: new Date().toISOString()
       }
     ),
@@ -540,12 +543,20 @@ walkDir(eclipseDefinitionDirectoryPath)
     const devStyleSyntaxXml = fs.readFileSync(
       path.resolve(eclipseTemplateDefinitionDirectoryPath, 'syntax.xml'), {encoding: 'utf-8'}
     );
+    const themeIdsToDumbEclipseIds = dokiThemes.map(dokiTheme => dokiTheme.definition.id)
+      .sort((a,b) => a.localeCompare(b))
+      .reduce((accum, themeId, index)=> ({
+        ...accum,
+        [themeId] : index
+      }) , {} as StringDictonary<number>);
+
     fs.rmdirSync(devstyleAssetsDirectory, {recursive: true})
     dokiThemes.forEach(dokiTheme => {
       writeSyntaxFile(
         `${dokiTheme.definition.name}.xml`,
         devStyleSyntaxXml,
-        dokiTheme
+        dokiTheme,
+        (themeIdsToDumbEclipseIds[dokiTheme.definition.id] || 0) + 6969
       )
     });
     // const pluginXmlPath = path.resolve(repoDirectory, 'plugin.xml');
