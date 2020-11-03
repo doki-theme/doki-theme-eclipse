@@ -4,9 +4,9 @@
   <filteredSearchResultIndication color="{{searchResultBackground}}" />
   <occurrenceIndication color="{{codeBlock}}" underline="true" />
   <writeOccurrenceIndication color="{{codeBlock}}" underline="true" />
-  <findScope color="#44475a" />
+  <findScope color="{{searchResultBackground}}" />
   <deletionIndication color="{{errorColor}}" />
-  <sourceHoverBackground color="{{highlightColor}}" />
+  <sourceHoverBackground color="{{codeBlock}}" />
   <singleLineComment color="{{commentColor}}" italic="true" />
   <multiLineComment color="{{commentColor}}" italic="true" />
   <commentTaskTag color="{{stopColor}}" italic="true" underline="true" strikethrough="false" />
@@ -17,14 +17,14 @@
   <class color="{{classNameColor}}" bold="false" underline="false" strikethrough="false" />
   <interface color="{{keyColor}}" />
   <method color="{{accentColor}}" />
-  <methodDeclaration color="{{accentColor}}" />
+  <methodDeclaration color="{{classNameColor}}" />
   <bracket color="{{foregroundColor}}" />
   <number color="{{constantColor}}" />
   <string color="{{stringColor}}" />
   <operator color="{{htmlTagColor}}" />
   <keyword color="{{keywordColor}}" bold="false" />
   <annotation color="{{accentColor}}" />
-  <staticMethod color="{{accentColor}}" />
+  <staticMethod color="{{classNameColor}}" />
   <localVariable color="{{foregroundColor}}" />
   <localVariableDeclaration color="{{foregroundColor}}" />
   <field color="{{foregroundColor}}" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="{{constantColor}}" italic="true" />
   <deprecatedMember color="{{unusedColor}}" underline="false" strikethrough="true" />
   <enum color="{{constantColor}}" />
-  <inheritedMethod color="{{accentColor}}" />
-  <abstractMethod color="{{accentColor}}" />
+  <inheritedMethod color="{{classNameColor}}" />
+  <abstractMethod color="{{classNameColor}}" />
   <parameterVariable color="{{stringColor}}" />
   <typeArgument color="{{keyColor}}" />
   <typeParameter color="{{keyColor}}" />

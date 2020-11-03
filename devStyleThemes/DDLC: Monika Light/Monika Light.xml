@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6986" name="Monika" modified="2020-11-02T13:54:41.147Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6986" name="Monika" modified="2020-11-02T23:56:33.239Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#e5edf6" />
   <filteredSearchResultIndication color="#e5edf6" />
   <occurrenceIndication color="#eaf6eb" underline="true" />
   <writeOccurrenceIndication color="#eaf6eb" underline="true" />
-  <findScope color="#44475a" />
+  <findScope color="#e5edf6" />
   <deletionIndication color="#ff5555" />
-  <sourceHoverBackground color="#e0ffe1" />
+  <sourceHoverBackground color="#eaf6eb" />
   <singleLineComment color="#6272A4" italic="true" />
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#5EEF1B" italic="true" underline="true" strikethrough="false" />
@@ -17,14 +17,14 @@
   <class color="#7AA42E" bold="false" underline="false" strikethrough="false" />
   <interface color="#8a777d" />
   <method color="#388E3C" />
-  <methodDeclaration color="#388E3C" />
+  <methodDeclaration color="#7AA42E" />
   <bracket color="#252427" />
   <number color="#4C94D6" />
   <string color="#EC9130" />
   <operator color="#3eae5d" />
   <keyword color="#3eae5d" bold="false" />
   <annotation color="#388E3C" />
-  <staticMethod color="#388E3C" />
+  <staticMethod color="#7AA42E" />
   <localVariable color="#252427" />
   <localVariableDeclaration color="#252427" />
   <field color="#252427" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#4C94D6" italic="true" />
   <deprecatedMember color="#B7B7B7" underline="false" strikethrough="true" />
   <enum color="#4C94D6" />
-  <inheritedMethod color="#388E3C" />
-  <abstractMethod color="#388E3C" />
+  <inheritedMethod color="#7AA42E" />
+  <abstractMethod color="#7AA42E" />
   <parameterVariable color="#EC9130" />
   <typeArgument color="#8a777d" />
   <typeParameter color="#8a777d" />

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6987" name="Yuri" modified="2020-11-02T13:54:41.149Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6987" name="Yuri" modified="2020-11-02T23:56:33.240Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#3C1D55" />
   <filteredSearchResultIndication color="#3C1D55" />
   <occurrenceIndication color="#392A54" underline="true" />
   <writeOccurrenceIndication color="#392A54" underline="true" />
-  <findScope color="#44475a" />
+  <findScope color="#3C1D55" />
   <deletionIndication color="#ff5555" />
-  <sourceHoverBackground color="#533668" />
+  <sourceHoverBackground color="#392A54" />
   <singleLineComment color="#6272A4" italic="true" />
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#F667FF" italic="true" underline="true" strikethrough="false" />
@@ -17,14 +17,14 @@
   <class color="#FF9CD6" bold="false" underline="false" strikethrough="false" />
   <interface color="#7C75EF" />
   <method color="#BC60CB" />
-  <methodDeclaration color="#BC60CB" />
+  <methodDeclaration color="#FF9CD6" />
   <bracket color="#DADADA" />
   <number color="#86dbfd" />
   <string color="#f1fa8c" />
   <operator color="#bca3aa" />
   <keyword color="#bca3aa" bold="false" />
   <annotation color="#BC60CB" />
-  <staticMethod color="#BC60CB" />
+  <staticMethod color="#FF9CD6" />
   <localVariable color="#DADADA" />
   <localVariableDeclaration color="#DADADA" />
   <field color="#DADADA" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#86dbfd" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
-  <inheritedMethod color="#BC60CB" />
-  <abstractMethod color="#BC60CB" />
+  <inheritedMethod color="#FF9CD6" />
+  <abstractMethod color="#FF9CD6" />
   <parameterVariable color="#f1fa8c" />
   <typeArgument color="#7C75EF" />
   <typeParameter color="#7C75EF" />

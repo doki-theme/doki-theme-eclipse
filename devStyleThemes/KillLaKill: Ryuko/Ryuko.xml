@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6970" name="Ryuko" modified="2020-11-02T13:54:41.146Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6970" name="Ryuko" modified="2020-11-02T23:56:33.238Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#272e34" />
   <filteredSearchResultIndication color="#272e34" />
   <occurrenceIndication color="#292e34" underline="true" />
   <writeOccurrenceIndication color="#292e34" underline="true" />
-  <findScope color="#44475a" />
+  <findScope color="#272e34" />
   <deletionIndication color="#ff5555" />
-  <sourceHoverBackground color="#a32f345a" />
+  <sourceHoverBackground color="#292e34" />
   <singleLineComment color="#6272A4" italic="true" />
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#ee2726" italic="true" underline="true" strikethrough="false" />
@@ -17,14 +17,14 @@
   <class color="#6893f3" bold="false" underline="false" strikethrough="false" />
   <interface color="#C1B5C3" />
   <method color="#e4ff10" />
-  <methodDeclaration color="#e4ff10" />
+  <methodDeclaration color="#6893f3" />
   <bracket color="#bbbbbb" />
   <number color="#86dbfd" />
   <string color="#efa554" />
   <operator color="#a28a92" />
   <keyword color="#e0474b" bold="false" />
   <annotation color="#e4ff10" />
-  <staticMethod color="#e4ff10" />
+  <staticMethod color="#6893f3" />
   <localVariable color="#bbbbbb" />
   <localVariableDeclaration color="#bbbbbb" />
   <field color="#bbbbbb" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#86dbfd" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
-  <inheritedMethod color="#e4ff10" />
-  <abstractMethod color="#e4ff10" />
+  <inheritedMethod color="#6893f3" />
+  <abstractMethod color="#6893f3" />
   <parameterVariable color="#efa554" />
   <typeArgument color="#C1B5C3" />
   <typeParameter color="#C1B5C3" />

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6988" name="Natsuki" modified="2020-11-02T13:54:41.148Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6988" name="Natsuki" modified="2020-11-02T23:56:33.239Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#6F3654" />
   <filteredSearchResultIndication color="#6F3654" />
   <occurrenceIndication color="#3d1c31" underline="true" />
   <writeOccurrenceIndication color="#3d1c31" underline="true" />
-  <findScope color="#44475a" />
+  <findScope color="#6F3654" />
   <deletionIndication color="#ff5555" />
-  <sourceHoverBackground color="#3c0c33" />
+  <sourceHoverBackground color="#3d1c31" />
   <singleLineComment color="#6272A4" italic="true" />
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#F650FF" italic="true" underline="true" strikethrough="false" />
@@ -17,14 +17,14 @@
   <class color="#FF9CD6" bold="false" underline="false" strikethrough="false" />
   <interface color="#FF9CD6" />
   <method color="#E94686" />
-  <methodDeclaration color="#E94686" />
+  <methodDeclaration color="#FF9CD6" />
   <bracket color="#bbbbbb" />
   <number color="#86dbfd" />
   <string color="#f1fa8c" />
   <operator color="#bca3aa" />
   <keyword color="#bca3aa" bold="false" />
   <annotation color="#E94686" />
-  <staticMethod color="#E94686" />
+  <staticMethod color="#FF9CD6" />
   <localVariable color="#bbbbbb" />
   <localVariableDeclaration color="#bbbbbb" />
   <field color="#bbbbbb" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#86dbfd" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
-  <inheritedMethod color="#E94686" />
-  <abstractMethod color="#E94686" />
+  <inheritedMethod color="#FF9CD6" />
+  <abstractMethod color="#FF9CD6" />
   <parameterVariable color="#f1fa8c" />
   <typeArgument color="#FF9CD6" />
   <typeParameter color="#FF9CD6" />

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6992" name="Konata" modified="2020-11-02T13:54:41.149Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6992" name="Konata" modified="2020-11-02T23:56:33.241Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#6c95ee" />
   <filteredSearchResultIndication color="#6c95ee" />
   <occurrenceIndication color="#6c95ee" underline="true" />
   <writeOccurrenceIndication color="#6c95ee" underline="true" />
-  <findScope color="#44475a" />
+  <findScope color="#6c95ee" />
   <deletionIndication color="#ff5555" />
-  <sourceHoverBackground color="#7ca3f3" />
+  <sourceHoverBackground color="#6c95ee" />
   <singleLineComment color="#6272A4" italic="true" />
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#98ff3d" italic="true" underline="true" strikethrough="false" />
@@ -17,14 +17,14 @@
   <class color="#DABDFB" bold="false" underline="false" strikethrough="false" />
   <interface color="#fffdae" />
   <method color="#60ff62" />
-  <methodDeclaration color="#60ff62" />
+  <methodDeclaration color="#DABDFB" />
   <bracket color="#f3edff" />
   <number color="#F3C49C" />
   <string color="#FFB6EE" />
   <operator color="#faffcb" />
   <keyword color="#fad7e1" bold="false" />
   <annotation color="#60ff62" />
-  <staticMethod color="#60ff62" />
+  <staticMethod color="#DABDFB" />
   <localVariable color="#f3edff" />
   <localVariableDeclaration color="#f3edff" />
   <field color="#f3edff" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#F3C49C" italic="true" />
   <deprecatedMember color="#B7B7B7" underline="false" strikethrough="true" />
   <enum color="#F3C49C" />
-  <inheritedMethod color="#60ff62" />
-  <abstractMethod color="#60ff62" />
+  <inheritedMethod color="#DABDFB" />
+  <abstractMethod color="#DABDFB" />
   <parameterVariable color="#FFB6EE" />
   <typeArgument color="#fffdae" />
   <typeParameter color="#fffdae" />

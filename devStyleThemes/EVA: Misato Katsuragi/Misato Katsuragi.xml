@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6984" name="Misato" modified="2020-11-02T13:54:41.143Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6984" name="Misato" modified="2020-11-02T23:56:33.235Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#4C294A" />
   <filteredSearchResultIndication color="#4C294A" />
   <occurrenceIndication color="#322130" underline="true" />
   <writeOccurrenceIndication color="#322130" underline="true" />
-  <findScope color="#44475a" />
+  <findScope color="#4C294A" />
   <deletionIndication color="#ff5555" />
-  <sourceHoverBackground color="#403046" />
+  <sourceHoverBackground color="#322130" />
   <singleLineComment color="#6272A4" italic="true" />
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#ec1f62" italic="true" underline="true" strikethrough="false" />
@@ -17,14 +17,14 @@
   <class color="#6AADFF" bold="false" underline="false" strikethrough="false" />
   <interface color="#FF357C" />
   <method color="#42E66C" />
-  <methodDeclaration color="#42E66C" />
+  <methodDeclaration color="#6AADFF" />
   <bracket color="#b5a3b0" />
   <number color="#86dbfd" />
   <string color="#FAF7BA" />
   <operator color="#BD84DD" />
   <keyword color="#BD84DD" bold="false" />
   <annotation color="#42E66C" />
-  <staticMethod color="#42E66C" />
+  <staticMethod color="#6AADFF" />
   <localVariable color="#b5a3b0" />
   <localVariableDeclaration color="#b5a3b0" />
   <field color="#b5a3b0" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#86dbfd" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
-  <inheritedMethod color="#42E66C" />
-  <abstractMethod color="#42E66C" />
+  <inheritedMethod color="#6AADFF" />
+  <abstractMethod color="#6AADFF" />
   <parameterVariable color="#FAF7BA" />
   <typeArgument color="#FF357C" />
   <typeParameter color="#FF357C" />

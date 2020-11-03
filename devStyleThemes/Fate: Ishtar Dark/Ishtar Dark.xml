@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6978" name="Ishtar" modified="2020-11-02T13:54:41.144Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6978" name="Ishtar" modified="2020-11-02T23:56:33.235Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#191718" />
   <filteredSearchResultIndication color="#191718" />
   <occurrenceIndication color="#191718" underline="true" />
   <writeOccurrenceIndication color="#191718" underline="true" />
-  <findScope color="#44475a" />
+  <findScope color="#191718" />
   <deletionIndication color="#ff5555" />
-  <sourceHoverBackground color="#191807" />
+  <sourceHoverBackground color="#191718" />
   <singleLineComment color="#6272A4" italic="true" />
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#fec144" italic="true" underline="true" strikethrough="false" />
@@ -17,14 +17,14 @@
   <class color="#7C7C82" bold="false" underline="false" strikethrough="false" />
   <interface color="#0f6ab7" />
   <method color="#f5c443" />
-  <methodDeclaration color="#f5c443" />
+  <methodDeclaration color="#7C7C82" />
   <bracket color="#c2c2c2" />
   <number color="#86dbfd" />
   <string color="#a18649" />
   <operator color="#e53935" />
   <keyword color="#db974d" bold="false" />
   <annotation color="#f5c443" />
-  <staticMethod color="#f5c443" />
+  <staticMethod color="#7C7C82" />
   <localVariable color="#c2c2c2" />
   <localVariableDeclaration color="#c2c2c2" />
   <field color="#c2c2c2" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#86dbfd" italic="true" />
   <deprecatedMember color="#3D3D42" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
-  <inheritedMethod color="#f5c443" />
-  <abstractMethod color="#f5c443" />
+  <inheritedMethod color="#7C7C82" />
+  <abstractMethod color="#7C7C82" />
   <parameterVariable color="#a18649" />
   <typeArgument color="#0f6ab7" />
   <typeParameter color="#0f6ab7" />

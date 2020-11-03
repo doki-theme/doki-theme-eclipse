@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6969" name="Aqua" modified="2020-11-02T13:54:41.146Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6969" name="Aqua" modified="2020-11-02T23:56:33.238Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#2e3149" />
   <filteredSearchResultIndication color="#2e3149" />
   <occurrenceIndication color="#2e3149" underline="true" />
   <writeOccurrenceIndication color="#2e3149" underline="true" />
-  <findScope color="#44475a" />
+  <findScope color="#2e3149" />
   <deletionIndication color="#ff5555" />
-  <sourceHoverBackground color="#2d3047" />
+  <sourceHoverBackground color="#2e3149" />
   <singleLineComment color="#6272A4" italic="true" />
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#688dee" italic="true" underline="true" strikethrough="false" />
@@ -17,14 +17,14 @@
   <class color="#8dc6ef" bold="false" underline="false" strikethrough="false" />
   <interface color="#6893f3" />
   <method color="#578CDA" />
-  <methodDeclaration color="#578CDA" />
+  <methodDeclaration color="#8dc6ef" />
   <bracket color="#bbbbbb" />
   <number color="#86dbfd" />
   <string color="#f4fa8c" />
   <operator color="#a28a92" />
   <keyword color="#988F9A" bold="false" />
   <annotation color="#578CDA" />
-  <staticMethod color="#578CDA" />
+  <staticMethod color="#8dc6ef" />
   <localVariable color="#bbbbbb" />
   <localVariableDeclaration color="#bbbbbb" />
   <field color="#bbbbbb" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#86dbfd" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
-  <inheritedMethod color="#578CDA" />
-  <abstractMethod color="#578CDA" />
+  <inheritedMethod color="#8dc6ef" />
+  <abstractMethod color="#8dc6ef" />
   <parameterVariable color="#f4fa8c" />
   <typeArgument color="#6893f3" />
   <typeParameter color="#6893f3" />
