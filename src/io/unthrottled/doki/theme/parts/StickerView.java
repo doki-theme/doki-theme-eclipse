@@ -5,10 +5,7 @@ import io.unthrottled.doki.theme.themes.StickerService;
 import io.unthrottled.doki.theme.themes.ThemeManager;
 import org.eclipse.e4.ui.css.swt.theme.IThemeEngine;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.swt.graphics.Point;
-import org.eclipse.swt.graphics.RGB;
 import org.eclipse.swt.layout.RowData;
 import org.eclipse.swt.layout.RowLayout;
 import org.eclipse.swt.widgets.Composite;
@@ -16,7 +13,9 @@ import org.eclipse.swt.widgets.Label;
 
 import javax.annotation.PostConstruct;
 
-import static io.unthrottled.doki.theme.preferences.PreferenceConstants.*;
+import static io.unthrottled.doki.theme.preferences.PreferenceConstants.AUTO_SET_THEME;
+import static io.unthrottled.doki.theme.preferences.PreferenceConstants.CURRENT_THEME_PREFERENCE;
+import static io.unthrottled.doki.theme.preferences.PreferenceConstants.STICKER_TYPE_PREFERENCE;
 
 public class StickerView {
   private Label stickerDisplayLabel;
@@ -51,9 +50,9 @@ public class StickerView {
     // consistent with the DevStyles Theme.
     var colorBoi = new Composite(parent, SWT.COLOR_INFO_BACKGROUND);
     rootParent.addPaintListener(pe -> {
-      colorBoi.setLayoutData(new RowData(0,0));
-      colorBoi.setBounds(0,0,0,0);
-      colorBoi.setSize(0,0);
+      colorBoi.setLayoutData(new RowData(0, 0));
+      colorBoi.setBounds(0, 0, 0, 0);
+      colorBoi.setSize(0, 0);
       stickerDisplayLabel.setBackground(colorBoi.getBackground());
       rootParent.setBackground(colorBoi.getBackground());
     });

@@ -3,7 +3,10 @@ package io.unthrottled.doki.theme.preferences;
 import io.unthrottled.doki.theme.Activator;
 import io.unthrottled.doki.theme.definitions.ThemeConstants;
 import io.unthrottled.doki.theme.themes.ThemeManager;
-import org.eclipse.jface.preference.*;
+import org.eclipse.jface.preference.ComboFieldEditor;
+import org.eclipse.jface.preference.DirectoryFieldEditor;
+import org.eclipse.jface.preference.FieldEditorPreferencePage;
+import org.eclipse.jface.preference.RadioGroupFieldEditor;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.IWorkbenchPreferencePage;
 

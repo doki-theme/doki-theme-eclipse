@@ -37,16 +37,16 @@ public class ThemeManager {
   private ThemeManager() {
     try (var themeDefJson = getResourceStream()) {
       themeDefinitions = gson.<Map<String, ThemeDefinition>>fromJson(
-          new BufferedReader(new InputStreamReader(
-              Objects.requireNonNull(
-                  themeDefJson,
-                  "Expected to have theme definitions!"
-              ))),
-          new TypeToken<Map<String, ThemeDefinition>>() {
-          }.getType()
+        new BufferedReader(new InputStreamReader(
+          Objects.requireNonNull(
+            themeDefJson,
+            "Expected to have theme definitions!"
+          ))),
+        new TypeToken<Map<String, ThemeDefinition>>() {
+        }.getType()
       ).values().stream()
-          .map(DokiTheme::new)
-          .collect(Collectors.toMap(DokiTheme::getId, Function.identity()));
+        .map(DokiTheme::new)
+        .collect(Collectors.toMap(DokiTheme::getId, Function.identity()));
 
     } catch (Throwable e) {
       logger.error("Unable to read definitions for reasons", e);
@@ -67,7 +67,7 @@ public class ThemeManager {
 
   public DokiTheme getCurrentTheme() {
     return themeDefinitions.get(
-        Activator.getDefault().getPreferenceStore().getString(PreferenceConstants.CURRENT_THEME_PREFERENCE)
+      Activator.getDefault().getPreferenceStore().getString(PreferenceConstants.CURRENT_THEME_PREFERENCE)
     );
   }
 
