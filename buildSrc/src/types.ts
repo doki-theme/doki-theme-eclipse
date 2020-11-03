@@ -32,7 +32,10 @@ export interface Stickers {
 export interface EclipseDokiThemeDefinition {
   id: string;
   overrides: {
-    theme: {
+    editorScheme?: {
+      [key: string]: StringDictonary<string>
+    }
+    theme?: {
       [key: string]: StringDictonary<string>
     }
   };

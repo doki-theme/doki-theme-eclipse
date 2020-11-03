@@ -311,8 +311,7 @@ function buildNamedColors(
   const namedColors = constructNamedColorTemplate(
     dokiThemeDefinition, dokiTemplateDefinitions
   )
-  const colorsOverride = dokiThemeEclipseDefinition.overrides.theme &&
-    dokiThemeEclipseDefinition.overrides.theme.colors || {};
+  const colorsOverride = dokiThemeEclipseDefinition.overrides.theme?.colors || {};
   return {
     ...namedColors,
     ...colorsOverride
@@ -338,7 +337,8 @@ function createDokiTheme(
         dokiTemplateDefinitions,
         dokiThemeEclipseDefinition,
       ),
-      theme: {}
+      theme: {},
+      eclipseDefinition: dokiThemeEclipseDefinition
     };
   } catch (e) {
     throw new Error(`Unable to build ${dokiThemeDefinition.name}'s theme for reasons ${e}`);
@@ -438,7 +438,7 @@ function writeCssFile(pathSegments: string, templateToFillIn: string, dokiTheme:
 
 const devstyleAssetsDirectory = path.resolve(repoDirectory, 'devStyleThemes')
 function writeSyntaxFile(pathSegments: string,
-                         templateToFillIn: string, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { default: { path: string; name: string } }; theme: {}; namedColors: DokiThemeEclipse },
+                         templateToFillIn: string, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { default: { path: string; name: string } }; theme: {}; namedColors: DokiThemeEclipse, eclipseDefinition: EclipseDokiThemeDefinition },
                          themeId: number) {
   const themeDirectory = path.resolve(devstyleAssetsDirectory, getDisplayName(dokiTheme))
   const devstyleSyntaxXml = path.resolve(themeDirectory, pathSegments);
@@ -455,6 +455,7 @@ function writeSyntaxFile(pathSegments: string,
       {
         ...dokiTheme.namedColors,
         ...(dokiTheme.definition.editorScheme?.colors || {}),
+        ...(dokiTheme.eclipseDefinition.overrides.editorScheme?.colors || {}),
         ...dokiTheme.definition,
         themeId: themeId.toString(),
         modifiedDate: new Date().toISOString()
