@@ -1,4 +1,4 @@
 #!/bin/sh
 
 ./getMasterThemes.sh
-mkdir -p themes/css
+mkdir -p plugin-source/themes/css

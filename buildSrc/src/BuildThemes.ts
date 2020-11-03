@@ -423,9 +423,11 @@ function buildThemeId(dokiTheme: { path: string; definition: MasterDokiThemeDefi
   return `${dokiTheme.definition.dark ? 'dark_' : ''}${dokiTheme.definition.id}`;
 }
 
+const themesDirectory = path.resolve(repoDirectory, 'plugin-source', 'themes');
+
 function writeCssFile(pathSegments: string, templateToFillIn: string, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { default: { path: string; name: string } }; theme: {}; namedColors: DokiThemeEclipse }) {
   fs.writeFileSync(
-    path.resolve(repoDirectory, 'themes', 'css', pathSegments),
+    path.resolve(themesDirectory, 'css', pathSegments),
     fillInTemplateScript(
       templateToFillIn,
       dokiTheme.namedColors
@@ -615,7 +617,7 @@ walkDir(eclipseDefinitionDirectoryPath)
       //   });
       // })
       // .then(() => {
-        fs.writeFileSync(path.resolve(repoDirectory, 'themes', 'themes.json'),
+        fs.writeFileSync(path.resolve(themesDirectory, 'themes.json'),
           JSON.stringify(dokiThemes.reduce((accum, dokiTheme) => ({
             ...accum,
             [dokiTheme.definition.id]: {
