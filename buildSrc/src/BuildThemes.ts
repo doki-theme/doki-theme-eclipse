@@ -445,10 +445,11 @@ function writeSyntaxFile(pathSegments: string,
   const themeDirectory = path.resolve(devstyleAssetsDirectory, getDisplayName(dokiTheme))
   const devstyleSyntaxXml = path.resolve(themeDirectory, pathSegments);
   fs.mkdirSync(path.dirname(devstyleSyntaxXml), {recursive: true})
-  const hls = rgbToHsl(hexToRGB(dokiTheme.namedColors.baseBackground)).join(', ')
+  const hsl = rgbToHsl(hexToRGB(dokiTheme.namedColors.baseBackground)).join(', ')
+  const themeToCustomize = dokiTheme.definition.dark ? `Dark` : `Light`
   fs.writeFileSync(
-    path.resolve(themeDirectory, hls),
-    hls
+    path.resolve(themeDirectory, `${themeToCustomize} Custom HSL: ${hsl}`),
+    hsl
   )
   fs.writeFileSync(
     devstyleSyntaxXml,
