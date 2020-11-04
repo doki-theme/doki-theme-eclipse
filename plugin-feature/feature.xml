@@ -2,7 +2,7 @@
 <feature
       id="DokiThemeEclipse"
       label="Doki-Theme-Eclipse"
-      version="0.1.0.beta"
+      version="0.1.0"
       provider-name="Unthrottled">
 
    <description url="http://www.example.com/description">

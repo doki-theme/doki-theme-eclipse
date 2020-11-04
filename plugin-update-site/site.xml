@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/DokiThemeEclipse_0.1.0.beta.jar" id="DokiThemeEclipse" version="0.1.0.beta">
+   <feature url="features/DokiThemeEclipse_0.1.0.jar" id="DokiThemeEclipse" version="0.1.0">
       <category name="TheDokiTheme"/>
    </feature>
    <category-def name="TheDokiTheme" label="TheDokiTheme"/>

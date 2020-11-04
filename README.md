@@ -16,7 +16,6 @@ The Doki Theme: Eclipse IDE
 
 The current version of the Doki Theme for Eclipse leverages the look and feel of the [Darkest Dark](https://marketplace.eclipse.org/content/darkest-dark-theme-devstyle) plugin.
 The Eclipse platform's theme development experience is currently dark, scary, and very arcane. 
-
 In order to give you the best developer experience sooner, let's just take a quick shortcut!
 
 (The future 1.0.0 release will contain the fully bundled color experience without needing DevStyles colors)
@@ -98,7 +97,7 @@ Feel free to place the sticker where you want to after that.
 
 Hey alright! You can customize your Doki-Theme settings.
 
-** Asset Directory Preference**
+**Asset Directory Preference**
 
 The Doki-Theme downloads your waifu so that she may be available offline.
 You have the ability to customize the location where your waifu is downloaded.
