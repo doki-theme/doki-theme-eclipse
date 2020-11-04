@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="DokiThemeEclipse"
+      id="io.unthrottled.doki.theme.eclipse"
       label="Doki-Theme-Eclipse"
       version="0.1.0"
       provider-name="Unthrottled">
