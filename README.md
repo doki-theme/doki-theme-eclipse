@@ -81,6 +81,42 @@ The directory includes a xml file which you can [download](https://webapps.stack
 
 Example Directory: [Kanna](https://github.com/doki-theme/doki-theme-eclipse/tree/master/devStyleThemes/DM:%20Kanna)
 
+## Stickers!
+
+The best feature that **every** IDE needs!
+
+The sticker is available from the `Doki Sticker` view, which opens a window with your current theme's waifu.
+You can find this by using the `Find Actions` shortcut (default `ctrl+3` or `ctrl+shift+a` if you have IntelliJ shortcuts installed!)and search for `Doki`, you should find the relevant settings and view doing that.
+
+If you don't feel like being fancy, you can find it via `Window > Show View > Other` and just type `doki` and you'll find the relevant view!
+
+Feel free to place the sticker where you want to after that.
+
+## Settings
+
+> `Window > Preferences > Doki-Theme Settings`
+
+Hey alright! You can customize your Doki-Theme settings.
+
+** Asset Directory Preference**
+
+The Doki-Theme downloads your waifu so that she may be available offline.
+You have the ability to customize the location where your waifu is downloaded.
+
+> Note: The plugin will overwrite the image if it has detected that the image has changed
+> (just in-case you were trying to be clever, I'd save you some time).
+
+**Sticker Type**
+
+Some theme's have more than one sticker. 
+This setting enables you to switch between one another.
+
+**Choose Your Theme**
+
+This give you the ability to change what sticker is currently present in you `Doki Sticker` view
+
+![Theme Settings](documentationAssets/ThemeSettings.png)
+
 # About!
 
 This plugin is for serious Otaku programmers.
