@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
     "@types/jest": "^26.0.0",
     "@types/lodash": "^4.14.155",
     "@types/xml2js": "^0.4.5",
@@ -23,9 +24,12 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "aws-sdk": "^2.784.0",
+    "file-type": "^16.0.1",
     "xml2js": "^0.4.23"
   },
   "scripts": {
-    "buildThemes": "ts-node ./src/BuildThemes.ts"
+    "buildThemes": "ts-node ./src/BuildThemes.ts",
+    "sync": "ts-node ./src/AssetUpload.ts"
   }
 }
