@@ -3,5 +3,9 @@
    <feature url="features/DokiThemeEclipse_0.1.0.jar" id="DokiThemeEclipse" version="0.1.0">
       <category name="TheDokiTheme"/>
    </feature>
-   <category-def name="TheDokiTheme" label="TheDokiTheme"/>
+   <category-def name="TheDokiTheme" label="The Doki Theme">
+      <description>
+         Code with your waifu! Here are a bunch of themes for your Eclipse IDE. Choose a girl from various anime series, manga, and visual novels such as: Re:Zero, KillLaKill and Doki-Doki Literature Club.
+      </description>
+   </category-def>
 </site>
