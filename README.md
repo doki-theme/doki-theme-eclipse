@@ -18,7 +18,7 @@ This plugin is available from my plugin update site:
 
 [https://eclipse.assets.unthrottled.io/doki-theme/](https://eclipse.assets.unthrottled.io/doki-theme/)
 
-You can go to `Help > Install New Softwar` and add this site to install the plugin. 
+You can go to `Help > Install New Software` and add this site to install the plugin. 
 
 **Be sure to watch this repository for releases!** 
 That way you know when to check for updates.
@@ -40,7 +40,7 @@ You have a couple of options here friend! You can opt to use:
 
 **Bundled looks and feels**
 
-To save you some work, here are waifus that go best for each of the bundled themes
+To save you some work, here are waifus that go best with each of the bundled themes
 
 | Dev Style | Waifu |
 | --- | --- |
