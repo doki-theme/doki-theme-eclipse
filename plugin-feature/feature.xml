@@ -62,4 +62,11 @@
       <discovery label="Plugin Home" url="https://github.com/doki-theme/doki-theme-eclipse"/>
    </url>
 
+   <plugin
+         id="doki-theme-eclipse"
+         download-size="0"
+         install-size="0"
+         version="0.1.0"
+         unpack="false"/>
+
 </feature>
