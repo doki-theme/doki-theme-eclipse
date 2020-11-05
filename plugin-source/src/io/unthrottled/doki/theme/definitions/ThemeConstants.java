@@ -2,7 +2,7 @@ package io.unthrottled.doki.theme.definitions;
 
 public class ThemeConstants {
   public static class Themes {
-    public static final String DEFAULT_THEME_ID = "19b65ec8-133c-4655-a77b-13623d8e97d3"; // Best Girl
+    public static final String DEFAULT_THEME_ID = "3546f7be-b84f-4b8e-8cad-effa3f4603af"; // Tohsaka Rin
   }
 
   public static class Stickers {
