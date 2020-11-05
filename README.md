@@ -41,7 +41,7 @@ To save you some work, here are waifus that go best for each of the bundled them
 | Dark Purple | Emilia Dark, Yuri Dark, Misato |
 | Light Gray | Satsuki, Asuna |
 | Light Blue | Sayori Light |
-| Light Red | <No body, please don't use this ._.> |
+| Light Red | <No body> |
 | Light Green | Monika Light |
 | Light Purple | Emilia Light, Yuri Light |
 
@@ -55,7 +55,7 @@ Unfortunately, it does not respect the HSL value completely, because it does not
 However, for some themes, it does look close enough to the original color.
 So if you're feeling adventurous, go for this route!
 
-For your convenience, I have provided the `devStlyeThemes` directory in this repository.
+For your convenience, I have provided the `devStyleThemes` directory in this repository.
 This directory contains all the current supported Doki Themes. 
 
 The directory includes a file whose name is base HSL value you can use to set the Light/Dark custom theme to.
@@ -73,7 +73,7 @@ However, this gives us the Doki Theme now, so I can't complain too much :)
 > Note: `Window > Preferences > DevStyle > Color Theme` is the DevStyle Customization window.
 
 
-Like I said above (if you read that part), I have provided the `devStlyeThemes` directory in this repository.
+Like I said above (if you read that part), I have provided the `devStyleThemes` directory in this repository.
 This directory contains all the current supported Doki Themes.
 
 The directory includes a xml file which you can [download](https://webapps.stackexchange.com/a/87957) and `import` and apply as your `Editor Theme`.
