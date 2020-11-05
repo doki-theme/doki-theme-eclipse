@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6979" name="Megumin" modified="2020-11-04T23:43:22.011Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6979" name="Megumin" modified="2020-11-05T00:25:22.009Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#33282d" />
   <filteredSearchResultIndication color="#33282d" />
   <occurrenceIndication color="#2f2329" underline="true" />
@@ -11,20 +11,20 @@
   <multiLineComment color="#6272A4" italic="true" />
   <commentTaskTag color="#ee2e37" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#6272A4" italic="true" />
-  <javadocLink color="#e4ff10" italic="true" underline="true" strikethrough="false" />
+  <javadocLink color="#e0474b" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#AF5C5A" italic="true" />
   <javadocKeyword color="#AF5C5A" italic="true" />
-  <class color="#e0474b" bold="false" underline="false" strikethrough="false" />
+  <class color="#dae838" bold="false" underline="false" strikethrough="false" />
   <interface color="#AF5C5A" />
-  <method color="#e4ff10" />
-  <methodDeclaration color="#e0474b" />
+  <method color="#e0474b" />
+  <methodDeclaration color="#dae838" />
   <bracket color="#bbbbbb" />
   <number color="#86dbfd" />
   <string color="#ffd866" />
   <operator color="#a28a92" />
   <keyword color="#a28a92" bold="false" />
-  <annotation color="#e4ff10" />
-  <staticMethod color="#e0474b" />
+  <annotation color="#e0474b" />
+  <staticMethod color="#dae838" />
   <localVariable color="#bbbbbb" />
   <localVariableDeclaration color="#bbbbbb" />
   <field color="#bbbbbb" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#86dbfd" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
-  <inheritedMethod color="#e0474b" />
-  <abstractMethod color="#e0474b" />
+  <inheritedMethod color="#dae838" />
+  <abstractMethod color="#dae838" />
   <parameterVariable color="#ffd866" />
   <typeArgument color="#AF5C5A" />
   <typeParameter color="#AF5C5A" />
