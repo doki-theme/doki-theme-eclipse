@@ -7,10 +7,10 @@
   <findScope color="{{searchResultBackground}}" />
   <deletionIndication color="{{errorColor}}" />
   <sourceHoverBackground color="{{codeBlock}}" />
-  <singleLineComment color="{{commentColor}}" italic="true" />
-  <multiLineComment color="{{commentColor}}" italic="true" />
+  <singleLineComment color="{{comments}}" italic="true" />
+  <multiLineComment color="{{comments}}" italic="true" />
   <commentTaskTag color="{{stopColor}}" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="{{commentColor}}" italic="true" />
+  <javadoc color="{{comments}}" italic="true" />
   <javadocLink color="{{accentColor}}" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="{{keyColor}}" italic="true" />
   <javadocKeyword color="{{keyColor}}" italic="true" />

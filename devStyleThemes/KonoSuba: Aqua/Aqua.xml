@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6969" name="Aqua" modified="2020-11-05T00:25:22.006Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6970" name="Aqua" modified="2020-12-29T18:53:23.640Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#2e3149" />
   <filteredSearchResultIndication color="#2e3149" />
   <occurrenceIndication color="#2e3149" underline="true" />
@@ -7,10 +7,10 @@
   <findScope color="#2e3149" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#2e3149" />
-  <singleLineComment color="#6272A4" italic="true" />
-  <multiLineComment color="#6272A4" italic="true" />
+  <singleLineComment color="#6272a4" italic="true" />
+  <multiLineComment color="#6272a4" italic="true" />
   <commentTaskTag color="#688dee" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#6272A4" italic="true" />
+  <javadoc color="#6272a4" italic="true" />
   <javadocLink color="#578CDA" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#6893f3" italic="true" />
   <javadocKeyword color="#6893f3" italic="true" />

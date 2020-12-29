@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6972" name="Beatrice" modified="2020-11-05T00:25:22.012Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6974" name="Beatrice" modified="2020-12-29T18:53:23.644Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#F1E5FA" />
   <filteredSearchResultIndication color="#F1E5FA" />
   <occurrenceIndication color="#FDD8FF" underline="true" />
@@ -7,23 +7,23 @@
   <findScope color="#F1E5FA" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#FDD8FF" />
-  <singleLineComment color="#6272A4" italic="true" />
-  <multiLineComment color="#6272A4" italic="true" />
+  <singleLineComment color="#6a737d" italic="true" />
+  <multiLineComment color="#6a737d" italic="true" />
   <commentTaskTag color="#fbadff" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#6272A4" italic="true" />
-  <javadocLink color="#78A5EB" italic="true" underline="true" strikethrough="false" />
+  <javadoc color="#6a737d" italic="true" />
+  <javadocLink color="#5c84da" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#7C75EF" italic="true" />
   <javadocKeyword color="#7C75EF" italic="true" />
   <class color="#df81b8" bold="false" underline="false" strikethrough="false" />
   <interface color="#7C75EF" />
-  <method color="#78A5EB" />
+  <method color="#5c84da" />
   <methodDeclaration color="#df81b8" />
   <bracket color="#000000" />
   <number color="#4C94D6" />
   <string color="#DC872E" />
   <operator color="#7B6970" />
   <keyword color="#C869A3" bold="false" />
-  <annotation color="#78A5EB" />
+  <annotation color="#5c84da" />
   <staticMethod color="#df81b8" />
   <localVariable color="#000000" />
   <localVariableDeclaration color="#000000" />

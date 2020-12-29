@@ -457,7 +457,7 @@ function writeSyntaxFile(pathSegments: string,
       templateToFillIn,
       {
         ...dokiTheme.namedColors,
-        ...(dokiTheme.definition.editorScheme?.colors || {}),
+        ...(dokiTheme.definition.overrides?.editorScheme?.colors || {}),
         ...(dokiTheme.eclipseDefinition.overrides.editorScheme?.colors || {}),
         ...dokiTheme.definition,
         themeId: themeId.toString(),

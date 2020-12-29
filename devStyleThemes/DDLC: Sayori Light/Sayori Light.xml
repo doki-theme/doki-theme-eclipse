@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6994" name="Sayori Light" modified="2020-11-05T00:25:22.011Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6998" name="Sayori Light" modified="2020-12-29T18:53:23.642Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#e5edf6" />
   <filteredSearchResultIndication color="#e5edf6" />
   <occurrenceIndication color="#eaf0f6" underline="true" />
@@ -7,23 +7,23 @@
   <findScope color="#e5edf6" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#eaf0f6" />
-  <singleLineComment color="#6272A4" italic="true" />
-  <multiLineComment color="#6272A4" italic="true" />
+  <singleLineComment color="#6a737d" italic="true" />
+  <multiLineComment color="#6a737d" italic="true" />
   <commentTaskTag color="#3DFFF3" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#6272A4" italic="true" />
-  <javadocLink color="#00bcd4" italic="true" underline="true" strikethrough="false" />
+  <javadoc color="#6a737d" italic="true" />
+  <javadocLink color="#2e7093" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#3F77EF" italic="true" />
   <javadocKeyword color="#3F77EF" italic="true" />
   <class color="#FF3889" bold="false" underline="false" strikethrough="false" />
   <interface color="#3F77EF" />
-  <method color="#00bcd4" />
+  <method color="#2e7093" />
   <methodDeclaration color="#FF3889" />
   <bracket color="#252427" />
   <number color="#4C94D6" />
   <string color="#DC872E" />
   <operator color="#9D868D" />
   <keyword color="#9D868D" bold="false" />
-  <annotation color="#00bcd4" />
+  <annotation color="#2e7093" />
   <staticMethod color="#FF3889" />
   <localVariable color="#252427" />
   <localVariableDeclaration color="#252427" />

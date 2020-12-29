@@ -1,3 +1,6 @@
+// @ts-ignore
+import {Overrides} from "../../masterThemes/buildSrc/TypesTemplate";
+
 export interface DokiThemeDefinitions {
   [key: string]: any;
 }
@@ -9,6 +12,7 @@ export interface MasterDokiThemeDefinition {
   dark: boolean;
   author: string;
   group: string;
+  overrides?: Overrides;
   product?: 'community' | 'ultimate';
   stickers: Stickers;
   colors: StringDictonary<string>;
