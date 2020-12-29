@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6974" name="Rory Mercury" modified="2020-11-05T00:25:22.005Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6976" name="Rory Mercury" modified="2020-12-29T18:53:23.639Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#191813" />
   <filteredSearchResultIndication color="#191813" />
   <occurrenceIndication color="#191715" underline="true" />
@@ -7,10 +7,10 @@
   <findScope color="#191813" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#191715" />
-  <singleLineComment color="#6272A4" italic="true" />
-  <multiLineComment color="#6272A4" italic="true" />
+  <singleLineComment color="#6272a4" italic="true" />
+  <multiLineComment color="#6272a4" italic="true" />
   <commentTaskTag color="#ee2726" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#6272A4" italic="true" />
+  <javadoc color="#6272a4" italic="true" />
   <javadocLink color="#b53241" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#6b7476" italic="true" />
   <javadocKeyword color="#6b7476" italic="true" />
