@@ -30,6 +30,7 @@
   },
   "scripts": {
     "buildThemes": "ts-node ./src/BuildThemes.ts",
-    "sync": "ts-node ./src/AssetUpload.ts"
+    "sync": "ts-node ./src/AssetUpload.ts",
+    "upload": "ts-node ./src/AssetUpload.ts"
   }
 }

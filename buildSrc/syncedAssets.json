@@ -1,14 +1,16 @@
 {
   "doki-theme/.project": "b8f0c256a6e0c970ece6591dab458b49",
-  "doki-theme/artifacts.jar": "5e55337a5098293d6494450c5724c158",
-  "doki-theme/content.jar": "9d181add6e12aad38c94f6fb238e5839",
+  "doki-theme/artifacts.jar": "5d99176e9550318952b0a63601ccf19f",
+  "doki-theme/content.jar": "adff09e7fc2c12c54073609007cc1d9c",
   "doki-theme/features/DokiThemeEclipse_0.1.0.jar": "a4df86f6e5e5340ee36b7d535bfe7162",
   "doki-theme/index.html": "e230fa38da6ec0dd29e305e294bfcd33",
-  "doki-theme/site.xml": "642b70188b59593e84d967a97e5a5d63",
+  "doki-theme/site.xml": "b90429eaee417514a47b1c3ba25ea33d",
   "doki-theme/src/main.js": "a38fde7b7434df9dea29825cbfaf72dd",
   "doki-theme/features/io.unthrottled.doki.theme.eclipse_0.1.0.jar": "99897529f88f0a4478a39be4172260c3",
   "doki-theme/plugins/doki-theme-eclipse_0.1.0.jar": "0b3c473e0f5affe05cafe63433d34930",
   "doki-theme/features/io.unthrottled.doki.theme.eclipse_0.1.1.jar": "c57542a2d38652153adfc819b5ff7e97",
   "doki-theme/features/io.unthrottled.doki.theme.eclipse_0.2.0.jar": "3e7842443e437c0006ba4c2fbb6e18bd",
-  "doki-theme/plugins/doki-theme-eclipse_0.2.0.jar": "c0a3a5f6fbbf79bda833a0ca58998ca2"
+  "doki-theme/plugins/doki-theme-eclipse_0.2.0.jar": "c0a3a5f6fbbf79bda833a0ca58998ca2",
+  "doki-theme/features/io.unthrottled.doki.theme.eclipse_0.3.0.jar": "b301686fa801e56ccd21f35d0616ebff",
+  "doki-theme/plugins/doki-theme-eclipse_0.3.0.jar": "05b57c484b736eeaf5f4de70827a9e76"
 }
