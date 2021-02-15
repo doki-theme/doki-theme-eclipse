@@ -12,6 +12,8 @@ const GroupToNameMapping: StringDictonary<string> = {
   "Love Live": "Love Live: ",
   "OreGairu": "OreGairu: ",
   "Miss Kobayashi's Dragon Maid": "DM: ",
+  "Darling in the Franxx": "Franxx: ",
+  "Bunny Senpai": "BunnySenpai: ", 
   "Mistress": "Miss: ",
   "DanganRonpa": "DR: ",
   "Evangelion": "EVA: ",

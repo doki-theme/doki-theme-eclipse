@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6978" name="Mioda Ibuki Dark" modified="2020-12-29T18:53:23.633Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6979" name="Mioda Ibuki Dark" modified="2021-02-15T17:21:45.391Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#343434" />
   <filteredSearchResultIndication color="#343434" />
-  <occurrenceIndication color="#343434" underline="true" />
-  <writeOccurrenceIndication color="#343434" underline="true" />
+  <occurrenceIndication color="#1f2123" underline="true" />
+  <writeOccurrenceIndication color="#1f2123" underline="true" />
   <findScope color="#343434" />
   <deletionIndication color="#ff5555" />
-  <sourceHoverBackground color="#343434" />
+  <sourceHoverBackground color="#1f2123" />
   <singleLineComment color="#6272a4" italic="true" />
   <multiLineComment color="#6272a4" italic="true" />
   <commentTaskTag color="#68c4ee" italic="true" underline="true" strikethrough="false" />

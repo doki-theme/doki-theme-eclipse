@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6995" name="Hatsune Miku" modified="2020-12-29T18:53:23.644Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6999" name="Hatsune Miku" modified="2021-02-15T17:21:45.403Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#273431" />
   <filteredSearchResultIndication color="#273431" />
-  <occurrenceIndication color="#293433" underline="true" />
-  <writeOccurrenceIndication color="#293433" underline="true" />
+  <occurrenceIndication color="#2b3231" underline="true" />
+  <writeOccurrenceIndication color="#2b3231" underline="true" />
   <findScope color="#273431" />
   <deletionIndication color="#ff5555" />
-  <sourceHoverBackground color="#293433" />
+  <sourceHoverBackground color="#2b3231" />
   <singleLineComment color="#6272a4" italic="true" />
   <multiLineComment color="#6272a4" italic="true" />
   <commentTaskTag color="#68eede" italic="true" underline="true" strikethrough="false" />

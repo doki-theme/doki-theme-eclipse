@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6985" name="Darkness Light" modified="2020-12-29T18:53:23.641Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6987" name="Darkness Light" modified="2021-02-15T17:21:45.400Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#F3F2E2" />
   <filteredSearchResultIndication color="#F3F2E2" />
-  <occurrenceIndication color="#F3F2E2" underline="true" />
-  <writeOccurrenceIndication color="#F3F2E2" underline="true" />
+  <occurrenceIndication color="#f4f3ee" underline="true" />
+  <writeOccurrenceIndication color="#f4f3ee" underline="true" />
   <findScope color="#F3F2E2" />
   <deletionIndication color="#ff5555" />
-  <sourceHoverBackground color="#F3F2E2" />
+  <sourceHoverBackground color="#f4f3ee" />
   <singleLineComment color="#6a737d" italic="true" />
   <multiLineComment color="#6a737d" italic="true" />
   <commentTaskTag color="#FCFFA5" italic="true" underline="true" strikethrough="false" />
