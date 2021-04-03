@@ -3,6 +3,8 @@ Changelog
 
 # Unreleased
 
+# 0.4.0 [Astolfo, Maika, Rias, & Rei]
+
 ## 4 New Themes
 
 From the Fate series:
