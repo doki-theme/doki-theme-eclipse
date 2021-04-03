@@ -15,7 +15,7 @@ const path = require('path');
 const {
   repoDirectory,
   masterThemeDefinitionDirectoryPath,
-  templateDirectoryPath
+  appTemplatesDirectoryPath,
 } = resolvePaths(__dirname);
 
 const fs = require('fs');
@@ -99,8 +99,9 @@ type DokiThemeEclipse = {
 function createDokiTheme(
   dokiFileDefinitionPath: string,
   dokiThemeDefinition: MasterDokiThemeDefinition,
-  dokiTemplateDefinitions: DokiThemeDefinitions,
+  _: DokiThemeDefinitions,
   dokiThemeEclipseDefinition: EclipseDokiThemeDefinition,
+  dokiTemplateDefinitions: DokiThemeDefinitions,
 ) {
   try {
     return {
@@ -221,7 +222,7 @@ evaluateTemplates(
 )
   .then(dokiThemes => {
     const devStyleSyntaxXml = fs.readFileSync(
-      path.resolve(templateDirectoryPath, 'syntax.xml'), {encoding: 'utf-8'}
+      path.resolve(appTemplatesDirectoryPath, 'syntax.xml'), {encoding: 'utf-8'}
     );
     const themeIdsToDumbEclipseIds = dokiThemes.map(dokiTheme => dokiTheme.definition.id)
       .sort((a, b) => a.localeCompare(b))
@@ -276,13 +277,13 @@ evaluateTemplates(
     //   fs.writeFileSync(path.resolve(pluginXmlPath), xml, 'utf8');
     //
     //   const lafCSSTemplate = fs.readFileSync(
-    //     path.resolve(templateDirectoryPath, 'theme.template.css'),
+    //     path.resolve(appTemplatesDirectoryPath, 'theme.template.css'),
     //     {
     //       encoding: 'utf-8',
     //     });
     //
     //   const syntaxCSSTemplate = fs.readFileSync(
-    //     path.resolve(templateDirectoryPath,
+    //     path.resolve(appTemplatesDirectoryPath,
     //       'syntax.coloring.template.css'),
     //     {
     //       encoding: 'utf-8',
