@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6984" name="Emilia Dark" modified="2021-03-19T22:28:29.297Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6985" name="Emilia Dark" modified="2021-04-03T22:03:42.049Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#441d55" />
   <filteredSearchResultIndication color="#441d55" />
   <occurrenceIndication color="#442a55" underline="true" />
@@ -7,10 +7,10 @@
   <findScope color="#441d55" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#442a55" />
-  <singleLineComment color="#8986A3" italic="true" />
-  <multiLineComment color="#8986A3" italic="true" />
+  <singleLineComment color="#9277a7" italic="true" />
+  <multiLineComment color="#9277a7" italic="true" />
   <commentTaskTag color="#F667FF" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#8986A3" italic="true" />
+  <javadoc color="#9277a7" italic="true" />
   <javadocLink color="#BC60CB" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#a475ef" italic="true" />
   <javadocKeyword color="#a475ef" italic="true" />
@@ -42,6 +42,6 @@
   <currentLine color="#543466" />
   <foreground color="#DADADA" />
   <lineNumber color="#666879" />
-  <selectionBackground color="#552a70" />
+  <selectionBackground color="#51256d" />
   <selectionForeground color="#d29eff" />
 </colorTheme>

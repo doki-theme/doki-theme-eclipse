@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7007" name="Ram" modified="2021-03-19T22:28:29.298Z" author="Alex Simons (Unthrottled)">
-  <searchResultIndication color="#292734" />
-  <filteredSearchResultIndication color="#292734" />
-  <occurrenceIndication color="#302b32" underline="true" />
-  <writeOccurrenceIndication color="#302b32" underline="true" />
-  <findScope color="#292734" />
+<colorTheme id="7011" name="Ram" modified="2021-04-03T22:03:42.049Z" author="Alex Simons (Unthrottled)">
+  <searchResultIndication color="#322634" />
+  <filteredSearchResultIndication color="#322634" />
+  <occurrenceIndication color="#322a32" underline="true" />
+  <writeOccurrenceIndication color="#322a32" underline="true" />
+  <findScope color="#322634" />
   <deletionIndication color="#ff5555" />
-  <sourceHoverBackground color="#302b32" />
+  <sourceHoverBackground color="#322a32" />
   <singleLineComment color="#6272a4" italic="true" />
   <multiLineComment color="#6272a4" italic="true" />
   <commentTaskTag color="#e565ee" italic="true" underline="true" strikethrough="false" />
