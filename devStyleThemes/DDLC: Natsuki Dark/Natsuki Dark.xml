@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6996" name="Natsuki Dark" modified="2021-04-03T22:03:42.046Z" author="Alex Simons (Unthrottled)">
-  <searchResultIndication color="#6F3654" />
-  <filteredSearchResultIndication color="#6F3654" />
+<colorTheme id="7000" name="Natsuki Dark" modified="2021-05-04T22:13:48.517Z" author="Alex Simons (Unthrottled)">
+  <searchResultIndication color="#441a35" />
+  <filteredSearchResultIndication color="#441a35" />
   <occurrenceIndication color="#3d1c31" underline="true" />
   <writeOccurrenceIndication color="#3d1c31" underline="true" />
-  <findScope color="#6F3654" />
+  <findScope color="#441a35" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#3d1c31" />
   <singleLineComment color="#6272a4" italic="true" />

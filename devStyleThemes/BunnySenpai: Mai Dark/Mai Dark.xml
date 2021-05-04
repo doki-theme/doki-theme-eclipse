@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6969" name="Mai Dark" modified="2021-04-03T22:03:42.037Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6969" name="Mai Dark" modified="2021-05-04T22:13:48.508Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#2e3149" />
   <filteredSearchResultIndication color="#2e3149" />
-  <occurrenceIndication color="#2e3149" underline="true" />
-  <writeOccurrenceIndication color="#2e3149" underline="true" />
+  <occurrenceIndication color="#2d3049" underline="true" />
+  <writeOccurrenceIndication color="#2d3049" underline="true" />
   <findScope color="#2e3149" />
   <deletionIndication color="#ff5555" />
-  <sourceHoverBackground color="#2e3149" />
+  <sourceHoverBackground color="#2d3049" />
   <singleLineComment color="#6272a4" italic="true" />
   <multiLineComment color="#6272a4" italic="true" />
   <commentTaskTag color="#757cca" italic="true" underline="true" strikethrough="false" />

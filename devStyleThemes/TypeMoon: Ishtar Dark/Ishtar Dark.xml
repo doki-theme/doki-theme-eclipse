@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6983" name="Ishtar Dark" modified="2021-04-03T22:03:42.041Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6987" name="Ishtar Dark" modified="2021-05-04T22:13:48.511Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#191718" />
   <filteredSearchResultIndication color="#191718" />
   <occurrenceIndication color="#191718" underline="true" />
@@ -12,10 +12,10 @@
   <commentTaskTag color="#fec144" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#6272a4" italic="true" />
   <javadocLink color="#f5c443" italic="true" underline="true" strikethrough="false" />
-  <javadocTag color="#0f6ab7" italic="true" />
-  <javadocKeyword color="#0f6ab7" italic="true" />
+  <javadocTag color="#357fbf" italic="true" />
+  <javadocKeyword color="#357fbf" italic="true" />
   <class color="#7C7C82" bold="false" underline="false" strikethrough="false" />
-  <interface color="#0f6ab7" />
+  <interface color="#357fbf" />
   <method color="#f5c443" />
   <methodDeclaration color="#7C7C82" />
   <bracket color="#c2c2c2" />
@@ -35,8 +35,8 @@
   <inheritedMethod color="#7C7C82" />
   <abstractMethod color="#7C7C82" />
   <parameterVariable color="#a18649" />
-  <typeArgument color="#0f6ab7" />
-  <typeParameter color="#0f6ab7" />
+  <typeArgument color="#357fbf" />
+  <typeParameter color="#357fbf" />
   <constant color="#86dbfd" />
   <background color="#110F10" />
   <currentLine color="#1A1913" />

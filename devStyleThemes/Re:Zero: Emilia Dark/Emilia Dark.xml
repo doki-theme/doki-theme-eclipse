@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6985" name="Emilia Dark" modified="2021-04-03T22:03:42.049Z" author="Alex Simons (Unthrottled)">
-  <searchResultIndication color="#441d55" />
-  <filteredSearchResultIndication color="#441d55" />
+<colorTheme id="6989" name="Emilia Dark" modified="2021-05-04T22:13:48.520Z" author="Alex Simons (Unthrottled)">
+  <searchResultIndication color="#402a54" />
+  <filteredSearchResultIndication color="#402a54" />
   <occurrenceIndication color="#442a55" underline="true" />
   <writeOccurrenceIndication color="#442a55" underline="true" />
-  <findScope color="#441d55" />
+  <findScope color="#402a54" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#442a55" />
   <singleLineComment color="#9277a7" italic="true" />

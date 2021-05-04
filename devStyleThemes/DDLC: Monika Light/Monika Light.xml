@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6994" name="Monika Light" modified="2021-04-03T22:03:42.045Z" author="Alex Simons (Unthrottled)">
-  <searchResultIndication color="#e5edf6" />
-  <filteredSearchResultIndication color="#e5edf6" />
+<colorTheme id="6998" name="Monika Light" modified="2021-05-04T22:13:48.514Z" author="Alex Simons (Unthrottled)">
+  <searchResultIndication color="#def6f3" />
+  <filteredSearchResultIndication color="#def6f3" />
   <occurrenceIndication color="#eaf6eb" underline="true" />
   <writeOccurrenceIndication color="#eaf6eb" underline="true" />
-  <findScope color="#e5edf6" />
+  <findScope color="#def6f3" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#eaf6eb" />
   <singleLineComment color="#6a737d" italic="true" />
@@ -20,7 +20,7 @@
   <methodDeclaration color="#7AA42E" />
   <bracket color="#252427" />
   <number color="#4C94D6" />
-  <string color="#EC9130" />
+  <string color="#da832e" />
   <operator color="#3eae5d" />
   <keyword color="#3eae5d" bold="false" />
   <annotation color="#388E3C" />
@@ -34,7 +34,7 @@
   <enum color="#4C94D6" />
   <inheritedMethod color="#7AA42E" />
   <abstractMethod color="#7AA42E" />
-  <parameterVariable color="#EC9130" />
+  <parameterVariable color="#da832e" />
   <typeArgument color="#8a777d" />
   <typeParameter color="#8a777d" />
   <constant color="#4C94D6" />

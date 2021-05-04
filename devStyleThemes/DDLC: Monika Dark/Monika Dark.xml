@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7008" name="Monika Dark" modified="2021-04-03T22:03:42.045Z" author="Alex Simons (Unthrottled)">
-  <searchResultIndication color="#1A401B" />
-  <filteredSearchResultIndication color="#1A401B" />
+<colorTheme id="7013" name="Monika Dark" modified="2021-05-04T22:13:48.514Z" author="Alex Simons (Unthrottled)">
+  <searchResultIndication color="#252D19" />
+  <filteredSearchResultIndication color="#252D19" />
   <occurrenceIndication color="#23271A" underline="true" />
   <writeOccurrenceIndication color="#23271A" underline="true" />
-  <findScope color="#1A401B" />
+  <findScope color="#252D19" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#23271A" />
   <singleLineComment color="#6272a4" italic="true" />

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6990" name="Katsuragi Misato" modified="2021-04-03T22:03:42.040Z" author="Alex Simons (Unthrottled)">
-  <searchResultIndication color="#4C294A" />
-  <filteredSearchResultIndication color="#4C294A" />
+<colorTheme id="6994" name="Katsuragi Misato" modified="2021-05-04T22:13:48.510Z" author="Alex Simons (Unthrottled)">
+  <searchResultIndication color="#322130" />
+  <filteredSearchResultIndication color="#322130" />
   <occurrenceIndication color="#322130" underline="true" />
   <writeOccurrenceIndication color="#322130" underline="true" />
-  <findScope color="#4C294A" />
+  <findScope color="#322130" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#322130" />
   <singleLineComment color="#6272a4" italic="true" />

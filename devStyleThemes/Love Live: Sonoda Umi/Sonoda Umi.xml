@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6973" name="Sonoda Umi" modified="2021-04-03T22:03:42.047Z" author="Alex Simons (Unthrottled)">
-  <searchResultIndication color="#191B4B" />
-  <filteredSearchResultIndication color="#191B4B" />
+<colorTheme id="6974" name="Sonoda Umi" modified="2021-05-04T22:13:48.518Z" author="Alex Simons (Unthrottled)">
+  <searchResultIndication color="#251832" />
+  <filteredSearchResultIndication color="#251832" />
   <occurrenceIndication color="#181a47" underline="true" />
   <writeOccurrenceIndication color="#181a47" underline="true" />
-  <findScope color="#191B4B" />
+  <findScope color="#251832" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#181a47" />
   <singleLineComment color="#6272a4" italic="true" />

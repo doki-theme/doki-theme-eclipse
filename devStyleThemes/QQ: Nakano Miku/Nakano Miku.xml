@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colorTheme id="7012" name="Nakano Miku" modified="2021-05-04T22:13:48.519Z" author="Alex Simons (Unthrottled)">
+  <searchResultIndication color="#274862" />
+  <filteredSearchResultIndication color="#274862" />
+  <occurrenceIndication color="#234b52" underline="true" />
+  <writeOccurrenceIndication color="#234b52" underline="true" />
+  <findScope color="#274862" />
+  <deletionIndication color="#ff5555" />
+  <sourceHoverBackground color="#234b52" />
+  <singleLineComment color="#6C888D" italic="true" />
+  <multiLineComment color="#6C888D" italic="true" />
+  <commentTaskTag color="#53c8cf" italic="true" underline="true" strikethrough="false" />
+  <javadoc color="#6C888D" italic="true" />
+  <javadocLink color="#fc9ee6" italic="true" underline="true" strikethrough="false" />
+  <javadocTag color="#3394dd" italic="true" />
+  <javadocKeyword color="#3394dd" italic="true" />
+  <class color="#ba92f3" bold="false" underline="false" strikethrough="false" />
+  <interface color="#3394dd" />
+  <method color="#fc9ee6" />
+  <methodDeclaration color="#ba92f3" />
+  <bracket color="#f3edff" />
+  <number color="#da8d97" />
+  <string color="#fffeaf" />
+  <operator color="#cda8fa" />
+  <keyword color="#60ff62" bold="false" />
+  <annotation color="#fc9ee6" />
+  <staticMethod color="#ba92f3" />
+  <localVariable color="#f3edff" />
+  <localVariableDeclaration color="#f3edff" />
+  <field color="#f3edff" bold="true" />
+  <staticField color="#da8d97" />
+  <staticFinalField color="#da8d97" italic="true" />
+  <deprecatedMember color="#A5A1A1" underline="false" strikethrough="true" />
+  <enum color="#da8d97" />
+  <inheritedMethod color="#ba92f3" />
+  <abstractMethod color="#ba92f3" />
+  <parameterVariable color="#fffeaf" />
+  <typeArgument color="#3394dd" />
+  <typeParameter color="#3394dd" />
+  <constant color="#da8d97" />
+  <background color="#244158" />
+  <currentLine color="#25475f" />
+  <foreground color="#f3edff" />
+  <lineNumber color="#b9dfb6" />
+  <selectionBackground color="#498192" />
+  <selectionForeground color="#c1fdff" />
+</colorTheme>

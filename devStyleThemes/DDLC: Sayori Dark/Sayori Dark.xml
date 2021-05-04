@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6997" name="Sayori Dark" modified="2021-04-03T22:03:42.046Z" author="Alex Simons (Unthrottled)">
-  <searchResultIndication color="#1D274B" />
-  <filteredSearchResultIndication color="#1D274B" />
+<colorTheme id="7001" name="Sayori Dark" modified="2021-05-04T22:13:48.517Z" author="Alex Simons (Unthrottled)">
+  <searchResultIndication color="#1b2346" />
+  <filteredSearchResultIndication color="#1b2346" />
   <occurrenceIndication color="#1B1D31" underline="true" />
   <writeOccurrenceIndication color="#1B1D31" underline="true" />
-  <findScope color="#1D274B" />
+  <findScope color="#1b2346" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#1B1D31" />
   <singleLineComment color="#6272a4" italic="true" />

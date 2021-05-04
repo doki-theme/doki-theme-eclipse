@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6991" name="Natsuki Light" modified="2021-04-03T22:03:42.046Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6995" name="Natsuki Light" modified="2021-05-04T22:13:48.517Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#F1E5FA" />
   <filteredSearchResultIndication color="#F1E5FA" />
   <occurrenceIndication color="#FDD8FF" underline="true" />
@@ -7,10 +7,10 @@
   <findScope color="#F1E5FA" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#FDD8FF" />
-  <singleLineComment color="#6a737d" italic="true" />
-  <multiLineComment color="#6a737d" italic="true" />
+  <singleLineComment color="#7d6a7d" italic="true" />
+  <multiLineComment color="#7d6a7d" italic="true" />
   <commentTaskTag color="#fbadff" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#6a737d" italic="true" />
+  <javadoc color="#7d6a7d" italic="true" />
   <javadocLink color="#E94686" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#7C75EF" italic="true" />
   <javadocKeyword color="#7C75EF" italic="true" />

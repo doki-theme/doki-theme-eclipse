@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <colorTheme id="{{themeId}}" name="{{name}}" modified="{{modifiedDate}}" author="Alex Simons (Unthrottled)">
-  <searchResultIndication color="{{searchResultBackground}}" />
-  <filteredSearchResultIndication color="{{searchResultBackground}}" />
+  <searchResultIndication color="{{foldedTextBackground}}" />
+  <filteredSearchResultIndication color="{{foldedTextBackground}}" />
   <occurrenceIndication color="{{codeBlock}}" underline="true" />
   <writeOccurrenceIndication color="{{codeBlock}}" underline="true" />
-  <findScope color="{{searchResultBackground}}" />
+  <findScope color="{{foldedTextBackground}}" />
   <deletionIndication color="{{errorColor}}" />
   <sourceHoverBackground color="{{codeBlock}}" />
   <singleLineComment color="{{comments}}" italic="true" />
