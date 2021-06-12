@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7008" name="Rias: Crimson" modified="2021-05-04T22:13:48.512Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7011" name="Rias: Crimson" modified="2021-06-12T17:31:45.514Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#491818" />
   <filteredSearchResultIndication color="#491818" />
   <occurrenceIndication color="#491818" underline="true" />
@@ -7,10 +7,10 @@
   <findScope color="#491818" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#491818" />
-  <singleLineComment color="#6272a4" italic="true" />
-  <multiLineComment color="#6272a4" italic="true" />
+  <singleLineComment color="#a47272" italic="true" />
+  <multiLineComment color="#a47272" italic="true" />
   <commentTaskTag color="#ec081e" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#6272a4" italic="true" />
+  <javadoc color="#a47272" italic="true" />
   <javadocLink color="#fbf96e" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#eea367" italic="true" />
   <javadocKeyword color="#eea367" italic="true" />
