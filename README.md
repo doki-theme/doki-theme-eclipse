@@ -148,7 +148,13 @@ You can choose themes from various, Anime, Manga, or Visual Novels:
 - Gate
 - Miss Kobayashi's Dragon Maid
 
-# Got Contributions, fun ideas, or issues?
+## Contributing
+
+If you want to get your workstation set up to work on the plugin,
+then you'll want to check out the [CONTRIBUTING.md](./CONTRIBUTING.md) for instructions on what is needed.
+
+
+# Got Fun ideas, or issues?
 
 Don't be afraid to reach out and submit [an issue](https://github.com/doki-theme/doki-theme-eclipse/issues/new)!
 
