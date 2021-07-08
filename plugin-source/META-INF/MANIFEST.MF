@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: doki-theme-eclipse;singleton:=true
-Bundle-Version: 0.6.0
+Bundle-Version: 0.7.0
 Bundle-Activator: io.unthrottled.doki.theme.Activator
 Bundle-Vendor: %Bundle-Vendor
 Bundle-ClassPath: .
