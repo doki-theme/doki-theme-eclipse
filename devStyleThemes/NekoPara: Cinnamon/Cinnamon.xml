@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colorTheme id="6999" name="Cinnamon" modified="2021-08-07T13:48:32.477Z" author="Alex Simons (Unthrottled)">
+  <searchResultIndication color="#3b3886" />
+  <filteredSearchResultIndication color="#3b3886" />
+  <occurrenceIndication color="#33417a" underline="true" />
+  <writeOccurrenceIndication color="#33417a" underline="true" />
+  <findScope color="#3b3886" />
+  <deletionIndication color="#ff5555" />
+  <sourceHoverBackground color="#33417a" />
+  <singleLineComment color="#7384d4" italic="true" />
+  <multiLineComment color="#7384d4" italic="true" />
+  <commentTaskTag color="#98ff3d" italic="true" underline="true" strikethrough="false" />
+  <javadoc color="#7384d4" italic="true" />
+  <javadocLink color="#60ff62" italic="true" underline="true" strikethrough="false" />
+  <javadocTag color="#FFD448" italic="true" />
+  <javadocKeyword color="#FFD448" italic="true" />
+  <class color="#d0a2fa" bold="false" underline="false" strikethrough="false" />
+  <interface color="#FFD448" />
+  <method color="#60ff62" />
+  <methodDeclaration color="#d0a2fa" />
+  <bracket color="#f3edff" />
+  <number color="#8bc1f8" />
+  <string color="#b3a9ff" />
+  <operator color="#f3ff83" />
+  <keyword color="#53dac7" bold="false" />
+  <annotation color="#60ff62" />
+  <staticMethod color="#d0a2fa" />
+  <localVariable color="#f3edff" />
+  <localVariableDeclaration color="#f3edff" />
+  <field color="#f3edff" bold="true" />
+  <staticField color="#8bc1f8" />
+  <staticFinalField color="#8bc1f8" italic="true" />
+  <deprecatedMember color="#64606b" underline="false" strikethrough="true" />
+  <enum color="#8bc1f8" />
+  <inheritedMethod color="#d0a2fa" />
+  <abstractMethod color="#d0a2fa" />
+  <parameterVariable color="#b3a9ff" />
+  <typeArgument color="#FFD448" />
+  <typeParameter color="#FFD448" />
+  <constant color="#8bc1f8" />
+  <background color="#343277" />
+  <currentLine color="#3f3c91" />
+  <foreground color="#f3edff" />
+  <lineNumber color="#ffffff" />
+  <selectionBackground color="#3a6c75" />
+  <selectionForeground color="#e7e9ff" />
+</colorTheme>
