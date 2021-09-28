@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7001" name="Katsuragi Misato" modified="2021-08-07T13:48:32.465Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7005" name="Katsuragi Misato" modified="2021-09-28T22:12:55.196Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#322130" />
   <filteredSearchResultIndication color="#322130" />
   <occurrenceIndication color="#322130" underline="true" />
@@ -7,10 +7,10 @@
   <findScope color="#322130" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#322130" />
-  <singleLineComment color="#6272a4" italic="true" />
-  <multiLineComment color="#6272a4" italic="true" />
+  <singleLineComment color="#786598" italic="true" />
+  <multiLineComment color="#786598" italic="true" />
   <commentTaskTag color="#ec1f62" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#6272a4" italic="true" />
+  <javadoc color="#786598" italic="true" />
   <javadocLink color="#42E66C" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#FF357C" italic="true" />
   <javadocKeyword color="#FF357C" italic="true" />

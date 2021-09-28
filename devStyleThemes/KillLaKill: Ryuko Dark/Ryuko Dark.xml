@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6973" name="Ryuko" modified="2021-08-07T13:48:32.472Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6974" name="Ryuko Dark" modified="2021-09-28T22:12:55.201Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#272e34" />
   <filteredSearchResultIndication color="#272e34" />
   <occurrenceIndication color="#292e34" underline="true" />
@@ -21,7 +21,7 @@
   <bracket color="#bbbbbb" />
   <number color="#86dbfd" />
   <string color="#efa554" />
-  <operator color="#a28a92" />
+  <operator color="#8C90E5" />
   <keyword color="#e0474b" bold="false" />
   <annotation color="#e4ff10" />
   <staticMethod color="#6893f3" />

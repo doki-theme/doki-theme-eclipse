@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7023" name="Monika Dark" modified="2021-08-07T13:48:32.474Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7028" name="Monika Dark" modified="2021-09-28T22:12:55.203Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#252D19" />
   <filteredSearchResultIndication color="#252D19" />
   <occurrenceIndication color="#23271A" underline="true" />
@@ -7,10 +7,10 @@
   <findScope color="#252D19" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#23271A" />
-  <singleLineComment color="#6272a4" italic="true" />
-  <multiLineComment color="#6272a4" italic="true" />
+  <singleLineComment color="#4E6B4C" italic="true" />
+  <multiLineComment color="#4E6B4C" italic="true" />
   <commentTaskTag color="#FFFA11" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#6272a4" italic="true" />
+  <javadoc color="#4E6B4C" italic="true" />
   <javadocLink color="#388E3C" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#bca3aa" italic="true" />
   <javadocKeyword color="#bca3aa" italic="true" />
@@ -39,7 +39,7 @@
   <typeParameter color="#bca3aa" />
   <constant color="#86dbfd" />
   <background color="#1d2115" />
-  <currentLine color="#292D1F" />
+  <currentLine color="#24291a" />
   <foreground color="#bbbbbb" />
   <lineNumber color="#697966" />
   <selectionBackground color="#30432B" />

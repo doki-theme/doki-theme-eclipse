@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7009" name="Natsuki Dark" modified="2021-08-07T13:48:32.474Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7013" name="Natsuki Dark" modified="2021-09-28T22:12:55.203Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#441a35" />
   <filteredSearchResultIndication color="#441a35" />
   <occurrenceIndication color="#3d1c31" underline="true" />
@@ -7,10 +7,10 @@
   <findScope color="#441a35" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#3d1c31" />
-  <singleLineComment color="#6272a4" italic="true" />
-  <multiLineComment color="#6272a4" italic="true" />
+  <singleLineComment color="#9C67AF" italic="true" />
+  <multiLineComment color="#9C67AF" italic="true" />
   <commentTaskTag color="#F650FF" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#6272a4" italic="true" />
+  <javadoc color="#9C67AF" italic="true" />
   <javadocLink color="#E94686" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#FF9CD6" italic="true" />
   <javadocKeyword color="#FF9CD6" italic="true" />
@@ -39,7 +39,7 @@
   <typeParameter color="#FF9CD6" />
   <constant color="#86dbfd" />
   <background color="#35102c" />
-  <currentLine color="#4D2339" />
+  <currentLine color="#441539" />
   <foreground color="#bbbbbb" />
   <lineNumber color="#796675" />
   <selectionBackground color="#602b50" />
