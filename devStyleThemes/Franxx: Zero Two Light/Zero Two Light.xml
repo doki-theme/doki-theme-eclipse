@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6987" name="Zero Two Light" modified="2021-09-28T22:12:55.200Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6987" name="Zero Two Light" modified="2021-10-27T22:49:33.691Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#f6f6f6" />
   <filteredSearchResultIndication color="#f6f6f6" />
   <occurrenceIndication color="#f6f6f6" underline="true" />
@@ -12,10 +12,10 @@
   <commentTaskTag color="#ec081e" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#6a737d" italic="true" />
   <javadocLink color="#E356A7" italic="true" underline="true" strikethrough="false" />
-  <javadocTag color="#a61d0d" italic="true" />
-  <javadocKeyword color="#a61d0d" italic="true" />
+  <javadocTag color="#A62210" italic="true" />
+  <javadocKeyword color="#A62210" italic="true" />
   <class color="#117aa6" bold="false" underline="false" strikethrough="false" />
-  <interface color="#a61d0d" />
+  <interface color="#A62210" />
   <method color="#E356A7" />
   <methodDeclaration color="#117aa6" />
   <bracket color="#252427" />
@@ -35,8 +35,8 @@
   <inheritedMethod color="#117aa6" />
   <abstractMethod color="#117aa6" />
   <parameterVariable color="#131313" />
-  <typeArgument color="#a61d0d" />
-  <typeParameter color="#a61d0d" />
+  <typeArgument color="#A62210" />
+  <typeParameter color="#A62210" />
   <constant color="#0d5fa6" />
   <background color="#fcfcfc" />
   <currentLine color="#f6f6f6" />
