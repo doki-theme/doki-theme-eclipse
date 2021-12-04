@@ -15,6 +15,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.file.Files;
 import java.util.Map;
 import java.util.Objects;
@@ -23,6 +24,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static io.unthrottled.doki.theme.tools.URLTools.sanitizeURLSString;
 import static java.nio.file.Paths.get;
 import static java.util.Optional.ofNullable;
 import static org.eclipse.core.runtime.FileLocator.toFileURL;
@@ -35,16 +37,16 @@ public class ThemeManager {
   private Map<String, DokiTheme> themeDefinitions;
 
   private ThemeManager() {
-    try (var themeDefJson = getResourceStream()) {
+    try (var themeDefJson = getThemeDefinitionsAsInputStream()) {
       themeDefinitions = gson.<Map<String, ThemeDefinition>>fromJson(
-        new BufferedReader(new InputStreamReader(
-          Objects.requireNonNull(
-            themeDefJson,
-            "Expected to have theme definitions!"
-          ))),
-        new TypeToken<Map<String, ThemeDefinition>>() {
-        }.getType()
-      ).values().stream()
+          new BufferedReader(new InputStreamReader(
+            Objects.requireNonNull(
+              themeDefJson,
+              "Expected to have theme definitions!"
+            ))),
+          new TypeToken<Map<String, ThemeDefinition>>() {
+          }.getType()
+        ).values().stream()
         .map(DokiTheme::new)
         .collect(Collectors.toMap(DokiTheme::getId, Function.identity()));
 
@@ -71,14 +73,22 @@ public class ThemeManager {
     );
   }
 
-  private InputStream getResourceStream() {
+  private InputStream getThemeDefinitionsAsInputStream() {
     try {
-      var fileUrl = toFileURL(new URI("platform:/plugin/doki-theme-eclipse/themes/themes.json").toURL());
-      return Files.newInputStream(get(fileUrl.toURI()));
+      return Files.newInputStream(get(getThemeDefinitionsURI()));
     } catch (IOException | URISyntaxException e) {
       logger.error("Unable to open theme resource for reasons", e);
       return null;
     }
+  }
+
+  private URI getThemeDefinitionsURI() throws IOException, URISyntaxException {
+    var fileUrl = toFileURL(new URI("platform:/plugin/doki-theme-eclipse/themes/themes.json").toURL());
+    return new URI(cleanURL(fileUrl));
+  }
+
+  private String cleanURL(URL fileUrl) {
+    return sanitizeURLSString(fileUrl.toString());
   }
 
   public Optional<DokiTheme> getTheme(String themeId) {
