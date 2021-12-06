@@ -3,6 +3,10 @@ Changelog
 
 # Unreleased
 
+# 0.10.1 [Special Character Path Support]
+
+- Fixed startup issue for users that have a `'` or a ` ` in their Eclipse installation path.
+
 # 0.10.0 [Jahy-sama will not be discouraged!]
 
 **1 New Theme!**
