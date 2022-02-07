@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7021" name="Hatsune Miku" modified="2021-12-07T02:11:24.512Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7023" name="Hatsune Miku" modified="2022-02-07T23:35:53.209Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#273431" />
   <filteredSearchResultIndication color="#273431" />
   <occurrenceIndication color="#2b3231" underline="true" />
@@ -11,20 +11,20 @@
   <multiLineComment color="#67807b" italic="true" />
   <commentTaskTag color="#68eede" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#67807b" italic="true" />
-  <javadocLink color="#ff69df" italic="true" underline="true" strikethrough="false" />
-  <javadocTag color="#68f3e7" italic="true" />
-  <javadocKeyword color="#68f3e7" italic="true" />
-  <class color="#aae2f2" bold="false" underline="false" strikethrough="false" />
-  <interface color="#68f3e7" />
-  <method color="#ff69df" />
-  <methodDeclaration color="#aae2f2" />
+  <javadocLink color="#FF9CEA" italic="true" underline="true" strikethrough="false" />
+  <javadocTag color="#95C8FA" italic="true" />
+  <javadocKeyword color="#95C8FA" italic="true" />
+  <class color="#F6E9CB" bold="false" underline="false" strikethrough="false" />
+  <interface color="#95C8FA" />
+  <method color="#FF9CEA" />
+  <methodDeclaration color="#F6E9CB" />
   <bracket color="#bbbbbb" />
   <number color="#86dbfd" />
-  <string color="#F6E9CB" />
+  <string color="#B5F6BA" />
   <operator color="#60a498" />
-  <keyword color="#988F9A" bold="false" />
-  <annotation color="#ff69df" />
-  <staticMethod color="#aae2f2" />
+  <keyword color="#7BF8E1" bold="false" />
+  <annotation color="#FF9CEA" />
+  <staticMethod color="#F6E9CB" />
   <localVariable color="#bbbbbb" />
   <localVariableDeclaration color="#bbbbbb" />
   <field color="#bbbbbb" bold="true" />
@@ -32,11 +32,11 @@
   <staticFinalField color="#86dbfd" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
-  <inheritedMethod color="#aae2f2" />
-  <abstractMethod color="#aae2f2" />
-  <parameterVariable color="#F6E9CB" />
-  <typeArgument color="#68f3e7" />
-  <typeParameter color="#68f3e7" />
+  <inheritedMethod color="#F6E9CB" />
+  <abstractMethod color="#F6E9CB" />
+  <parameterVariable color="#B5F6BA" />
+  <typeArgument color="#95C8FA" />
+  <typeParameter color="#95C8FA" />
   <constant color="#86dbfd" />
   <background color="#2f3635" />
   <currentLine color="#313938" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6973" name="Aqua" modified="2021-12-07T02:11:24.507Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6974" name="Aqua" modified="2022-02-07T23:35:53.203Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#2e3149" />
   <filteredSearchResultIndication color="#2e3149" />
   <occurrenceIndication color="#2e3149" underline="true" />
@@ -19,7 +19,7 @@
   <method color="#578CDA" />
   <methodDeclaration color="#8dc6ef" />
   <bracket color="#bbbbbb" />
-  <number color="#86dbfd" />
+  <number color="#48ffd6" />
   <string color="#f4fa8c" />
   <operator color="#a28a92" />
   <keyword color="#988F9A" bold="false" />
@@ -28,16 +28,16 @@
   <localVariable color="#bbbbbb" />
   <localVariableDeclaration color="#bbbbbb" />
   <field color="#bbbbbb" bold="true" />
-  <staticField color="#86dbfd" />
-  <staticFinalField color="#86dbfd" italic="true" />
+  <staticField color="#48ffd6" />
+  <staticFinalField color="#48ffd6" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
-  <enum color="#86dbfd" />
+  <enum color="#48ffd6" />
   <inheritedMethod color="#8dc6ef" />
   <abstractMethod color="#8dc6ef" />
   <parameterVariable color="#f4fa8c" />
   <typeArgument color="#6893f3" />
   <typeParameter color="#6893f3" />
-  <constant color="#86dbfd" />
+  <constant color="#48ffd6" />
   <background color="#262940" />
   <currentLine color="#2d3047" />
   <foreground color="#bbbbbb" />
