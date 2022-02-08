@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colorTheme id="7004" name="Darkness Dark" modified="2022-02-08T00:23:03.108Z" author="Alex Simons (Unthrottled)">
+  <searchResultIndication color="#191813" />
+  <filteredSearchResultIndication color="#191813" />
+  <occurrenceIndication color="#191715" underline="true" />
+  <writeOccurrenceIndication color="#191715" underline="true" />
+  <findScope color="#191813" />
+  <deletionIndication color="#ff5555" />
+  <sourceHoverBackground color="#191715" />
+  <singleLineComment color="#6272a4" italic="true" />
+  <multiLineComment color="#6272a4" italic="true" />
+  <commentTaskTag color="#ee6a12" italic="true" underline="true" strikethrough="false" />
+  <javadoc color="#6272a4" italic="true" />
+  <javadocLink color="#f4fa8c" italic="true" underline="true" strikethrough="false" />
+  <javadocTag color="#3492b1" italic="true" />
+  <javadocKeyword color="#3492b1" italic="true" />
+  <class color="#d53a4a" bold="false" underline="false" strikethrough="false" />
+  <interface color="#3492b1" />
+  <method color="#f4fa8c" />
+  <methodDeclaration color="#d53a4a" />
+  <bracket color="#c3c3c3" />
+  <number color="#86dbfd" />
+  <string color="#4593f5" />
+  <operator color="#a28a92" />
+  <keyword color="#ffba2f" bold="false" />
+  <annotation color="#f4fa8c" />
+  <staticMethod color="#d53a4a" />
+  <localVariable color="#c3c3c3" />
+  <localVariableDeclaration color="#c3c3c3" />
+  <field color="#c3c3c3" bold="true" />
+  <staticField color="#86dbfd" />
+  <staticFinalField color="#86dbfd" italic="true" />
+  <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
+  <enum color="#86dbfd" />
+  <inheritedMethod color="#d53a4a" />
+  <abstractMethod color="#d53a4a" />
+  <parameterVariable color="#4593f5" />
+  <typeArgument color="#3492b1" />
+  <typeParameter color="#3492b1" />
+  <constant color="#86dbfd" />
+  <background color="#0a0904" />
+  <currentLine color="#14110d" />
+  <foreground color="#c3c3c3" />
+  <lineNumber color="#666879" />
+  <selectionBackground color="#553919" />
+  <selectionForeground color="#fbfbfb" />
+</colorTheme>

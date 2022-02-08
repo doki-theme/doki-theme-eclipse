@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colorTheme id="6986" name="Ryuko Light" modified="2022-02-08T00:23:03.107Z" author="Alex Simons (Unthrottled)">
+  <searchResultIndication color="#f6f6f6" />
+  <filteredSearchResultIndication color="#f6f6f6" />
+  <occurrenceIndication color="#bff8e2" underline="true" />
+  <writeOccurrenceIndication color="#bff8e2" underline="true" />
+  <findScope color="#f6f6f6" />
+  <deletionIndication color="#ff2525" />
+  <sourceHoverBackground color="#bff8e2" />
+  <singleLineComment color="#505D64" italic="true" />
+  <multiLineComment color="#505D64" italic="true" />
+  <commentTaskTag color="#19e3d9" italic="true" underline="true" strikethrough="false" />
+  <javadoc color="#505D64" italic="true" />
+  <javadocLink color="#EE5C09" italic="true" underline="true" strikethrough="false" />
+  <javadocTag color="#007972" italic="true" />
+  <javadocKeyword color="#007972" italic="true" />
+  <class color="#7748B7" bold="false" underline="false" strikethrough="false" />
+  <interface color="#007972" />
+  <method color="#EE5C09" />
+  <methodDeclaration color="#7748B7" />
+  <bracket color="#101010" />
+  <number color="#005CC5" />
+  <string color="#0F92E3" />
+  <operator color="#2811B9" />
+  <keyword color="#B03F0F" bold="false" />
+  <annotation color="#EE5C09" />
+  <staticMethod color="#7748B7" />
+  <localVariable color="#101010" />
+  <localVariableDeclaration color="#101010" />
+  <field color="#101010" bold="true" />
+  <staticField color="#005CC5" />
+  <staticFinalField color="#005CC5" italic="true" />
+  <deprecatedMember color="#92ABAB" underline="false" strikethrough="true" />
+  <enum color="#005CC5" />
+  <inheritedMethod color="#7748B7" />
+  <abstractMethod color="#7748B7" />
+  <parameterVariable color="#0F92E3" />
+  <typeArgument color="#007972" />
+  <typeParameter color="#007972" />
+  <constant color="#005CC5" />
+  <background color="#ffffff" />
+  <currentLine color="#e6effc" />
+  <foreground color="#101010" />
+  <lineNumber color="#344f69" />
+  <selectionBackground color="#74adec" />
+  <selectionForeground color="#103365" />
+</colorTheme>

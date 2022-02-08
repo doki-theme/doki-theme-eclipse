@@ -185,7 +185,7 @@ const devstyleAssetsDirectory = path.resolve(repoDirectory, 'devStyleThemes')
 function writeSyntaxFile(pathSegments: string,
                          templateToFillIn: string, dokiTheme: { path: string; definition: MasterDokiThemeDefinition; stickers: { default: { path: string; name: string } }; theme: {}; namedColors: DokiThemeEclipse, eclipseDefinition: EclipseDokiThemeDefinition },
                          themeId: number) {
-  const themeDirectory = path.resolve(devstyleAssetsDirectory, getDisplayName(dokiTheme))
+  const themeDirectory = path.resolve(devstyleAssetsDirectory, getDisplayName(dokiTheme).replace(/:/g, '-'))
   const devstyleSyntaxXml = path.resolve(themeDirectory, pathSegments);
   fs.mkdirSync(path.dirname(devstyleSyntaxXml), {recursive: true})
   const hsl = rgbToHsl(hexToRGB(dokiTheme.namedColors.baseBackground)).join(' ')
