@@ -3,6 +3,10 @@ Changelog
 
 # Unreleased
 
+# 74.1-0.1.1 [Dark Theme Bug Fix]
+
+- Stickers no longer have a dark box floating to the right of them, when using a dark theme ([#7](https://github.com/doki-theme/doki-theme-eclipse/issues/7))
+
 # 74.1-0.1.0 [Synapse break. Vanishment, this world!]
 
 **4 New Dark Themes!**
