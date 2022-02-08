@@ -41,21 +41,9 @@ public class StickerView {
     });
 
     parent.setLayout(buildLayout());
-    var rootParent = parent.getParent();
     Image image = new Image(parent.getDisplay(),
-      StickerService.getInstance().getCurrentStickerUrl());
-    stickerDisplayLabel = new Label(parent, SWT.COLOR_INFO_BACKGROUND);
-
-    // I just want to take the same color so that it looks
-    // consistent with the DevStyles Theme.
-    var colorBoi = new Composite(parent, SWT.COLOR_INFO_BACKGROUND);
-    rootParent.addPaintListener(pe -> {
-      colorBoi.setLayoutData(new RowData(0, 0));
-      colorBoi.setBounds(0, 0, 0, 0);
-      colorBoi.setSize(0, 0);
-      stickerDisplayLabel.setBackground(colorBoi.getBackground());
-      rootParent.setBackground(colorBoi.getBackground());
-    });
+    StickerService.getInstance().getCurrentStickerUrl());
+    stickerDisplayLabel = new Label(parent, SWT.LEFT | SWT.TOP);
     stickerDisplayLabel.setImage(image);
   }
 
@@ -65,6 +53,7 @@ public class StickerView {
     rowLayout.pack = true;
     rowLayout.justify = false;
     rowLayout.type = SWT.HORIZONTAL;
+    rowLayout.fill = false;
     return rowLayout;
   }
 }

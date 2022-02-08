@@ -132,7 +132,7 @@ function resolveStickerPath(
     path.resolve(themeDefinitionPath, '..'),
     sticker
   );
-  return stickerPath.substr(masterThemeDefinitionDirectoryPath.length + '/definitions'.length);
+  return stickerPath.substr(masterThemeDefinitionDirectoryPath.length + '/definitions'.length).replace(/\\/g, '/');
 }
 
 
