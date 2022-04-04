@@ -6,6 +6,7 @@ import {
   getDisplayName,
   MasterDokiThemeDefinition,
   resolvePaths,
+  Sticker,
   StringDictionary,
 } from 'doki-build-source';
 
@@ -140,18 +141,18 @@ const getStickers = (
   dokiDefinition: MasterDokiThemeDefinition,
   themePath: string,
 ) => {
-  const secondary =
-    dokiDefinition.stickers.secondary || dokiDefinition.stickers.normal;
+  const secondary: Sticker | undefined =
+    dokiDefinition.stickers.secondary;
   return {
     default: {
-      path: resolveStickerPath(themePath, dokiDefinition.stickers.default),
-      name: dokiDefinition.stickers.default,
+      path: resolveStickerPath(themePath, dokiDefinition.stickers.default.name),
+      name: dokiDefinition.stickers.default.name,
     },
     ...(secondary
       ? {
         secondary: {
-          path: resolveStickerPath(themePath, secondary),
-          name: secondary,
+          path: resolveStickerPath(themePath, secondary.name),
+          name: secondary.name,
         },
       }
       : {}),

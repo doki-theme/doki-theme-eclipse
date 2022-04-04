@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6994" name="Nakano Nino" modified="2022-02-08T11:32:05.301Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6997" name="Nakano Nino" modified="2022-04-04T21:50:53.980Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#252126" />
   <filteredSearchResultIndication color="#252126" />
   <occurrenceIndication color="#232024" underline="true" />
@@ -38,7 +38,7 @@
   <typeArgument color="#68c4ee" />
   <typeParameter color="#68c4ee" />
   <constant color="#ff858c" />
-  <background color="#1f1b20" />
+  <background color="#1c191d" />
   <currentLine color="#272328" />
   <foreground color="#bbbbbb" />
   <lineNumber color="#666879" />

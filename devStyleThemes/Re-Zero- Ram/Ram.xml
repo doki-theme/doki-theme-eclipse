@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7041" name="Ram" modified="2022-02-08T11:32:05.307Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7044" name="Ram" modified="2022-04-04T21:50:53.982Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#322634" />
   <filteredSearchResultIndication color="#322634" />
   <occurrenceIndication color="#42283e" underline="true" />
@@ -12,10 +12,10 @@
   <commentTaskTag color="#e565ee" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#987fa5" italic="true" />
   <javadocLink color="#e88def" italic="true" underline="true" strikethrough="false" />
-  <javadocTag color="#986DEA" italic="true" />
-  <javadocKeyword color="#986DEA" italic="true" />
+  <javadocTag color="#9d8df6" italic="true" />
+  <javadocKeyword color="#9d8df6" italic="true" />
   <class color="#FBFF90" bold="false" underline="false" strikethrough="false" />
-  <interface color="#986DEA" />
+  <interface color="#9d8df6" />
   <method color="#e88def" />
   <methodDeclaration color="#FBFF90" />
   <bracket color="#bbbbbb" />
@@ -35,8 +35,8 @@
   <inheritedMethod color="#FBFF90" />
   <abstractMethod color="#FBFF90" />
   <parameterVariable color="#a1e9ff" />
-  <typeArgument color="#986DEA" />
-  <typeParameter color="#986DEA" />
+  <typeArgument color="#9d8df6" />
+  <typeParameter color="#9d8df6" />
   <constant color="#85FFEF" />
   <background color="#342c34" />
   <currentLine color="#353139" />

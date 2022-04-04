@@ -2,11 +2,11 @@
 <feature
       id="io.unthrottled.doki.theme.eclipse"
       label="Doki-Theme-Eclipse"
-      version="71.1.1"
+      version="78.1.1"
       provider-name="Unthrottled">
 
    <description url="https://github.com/doki-theme/doki-theme-eclipse/blob/master/README.md#about">
-      Code with your waifu! Here are a bunch of themes for your Eclipse IDE. Choose a girl from various anime series, manga, and visual novels such as: Re:Zero, KillLaKill and Doki-Doki Literature Club.
+     Cute anime character themes for your Eclipse IDE.
    </description>
 
    <copyright url="https://github.com/doki-theme/doki-theme-eclipse/blob/master/LICENSE">
@@ -66,7 +66,7 @@ SOFTWARE.
          id="doki-theme-eclipse"
          download-size="0"
          install-size="0"
-         version="71.1.1"
+         version="78.1.1"
          unpack="false"/>
 
 </feature>

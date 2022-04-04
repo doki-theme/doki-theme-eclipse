@@ -129,24 +129,48 @@ This give you the ability to change what sticker is currently present in you `Do
 
 # About!
 
-This plugin is for serious Otaku programmers.
-Code with your waifu. With over **20** themes,
-I think you will find best girl.
+Cute themes based on cute anime characters. With over **60** themes, the one you like the best, is probably here.
 
-You can choose themes from various, Anime, Manga, or Visual Novels:
+You can choose themes based on characters from these various Anime, Manga, or Visual Novels:
 
+<details>
+  <summary>All Featured Titles</summary>
+
+- AzurLane
+- Blend S
+- Chuunibyou, Love, & Other Delusions
+- Daily Life with a Monster Girl
+- DanganRonpa
 - Doki-Doki Literature Club
-- Re:Zero
+- Don't Toy With Me, Miss Nagatoro
+- Fate/Type-Moon
+- Future Diary
+- Gate
+- Haikyu!!
+- High School DxD
+- Jahy-sama Will Not Be Discouraged!
+- Kakegurui
 - Kill La Kill
 - KonoSuba
-- DanganRonpa
-- High School DxD
+- Love Live!
 - Lucky Star
-- Sword Art Online
-- Neon Genesis Evangelion
-- Fate
-- Gate
 - Miss Kobayashi's Dragon Maid
+- Monogatari
+- NekoPara
+- Neon Genesis Evangelion
+- One Punch Man
+- OreGairu
+- Quintessential Quintuplets
+- Re:Zero
+- Rising of the Shield Hero
+- Shokugeki no Soma
+- Steins Gate
+- Sword Art Online
+- That Time I Got Reincarnated as a Slime
+- Toaru Majutsu no Index
+- Yuru Camp
+
+</details>
 
 ## Contributing
 
