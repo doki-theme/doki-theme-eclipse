@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7032" name="Yuri Light" modified="2022-04-04T21:50:53.975Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7037" name="Yuri Light" modified="2022-06-05T22:25:01.302Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#eae5f6" />
   <filteredSearchResultIndication color="#eae5f6" />
   <occurrenceIndication color="#efeaf6" underline="true" />
@@ -11,19 +11,19 @@
   <multiLineComment color="#6a737d" italic="true" />
   <commentTaskTag color="#f595ff" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#6a737d" italic="true" />
-  <javadocLink color="#90468c" italic="true" underline="true" strikethrough="false" />
-  <javadocTag color="#7C75EF" italic="true" />
-  <javadocKeyword color="#7C75EF" italic="true" />
+  <javadocLink color="#95348C" italic="true" underline="true" strikethrough="false" />
+  <javadocTag color="#D579D0" italic="true" />
+  <javadocKeyword color="#D579D0" italic="true" />
   <class color="#c26a9d" bold="false" underline="false" strikethrough="false" />
-  <interface color="#7C75EF" />
-  <method color="#90468c" />
+  <interface color="#D579D0" />
+  <method color="#95348C" />
   <methodDeclaration color="#c26a9d" />
   <bracket color="#252427" />
   <number color="#4C94D6" />
-  <string color="#d27f2d" />
-  <operator color="#7B6970" />
-  <keyword color="#c26a9d" bold="false" />
-  <annotation color="#90468c" />
+  <string color="#2DA0D2" />
+  <operator color="#5E24BA" />
+  <keyword color="#7C75EF" bold="false" />
+  <annotation color="#95348C" />
   <staticMethod color="#c26a9d" />
   <localVariable color="#252427" />
   <localVariableDeclaration color="#252427" />
@@ -34,9 +34,9 @@
   <enum color="#4C94D6" />
   <inheritedMethod color="#c26a9d" />
   <abstractMethod color="#c26a9d" />
-  <parameterVariable color="#d27f2d" />
-  <typeArgument color="#7C75EF" />
-  <typeParameter color="#7C75EF" />
+  <parameterVariable color="#2DA0D2" />
+  <typeArgument color="#D579D0" />
+  <typeParameter color="#D579D0" />
   <constant color="#4C94D6" />
   <background color="#f3f0ff" />
   <currentLine color="#e4dcf7" />

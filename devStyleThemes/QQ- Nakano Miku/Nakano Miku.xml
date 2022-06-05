@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7035" name="Nakano Miku" modified="2022-04-04T21:50:53.980Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7040" name="Nakano Miku" modified="2022-06-05T22:25:01.308Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#274862" />
   <filteredSearchResultIndication color="#274862" />
   <occurrenceIndication color="#234b52" underline="true" />
@@ -12,10 +12,10 @@
   <commentTaskTag color="#53c8cf" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#6C888D" italic="true" />
   <javadocLink color="#fc9ee6" italic="true" underline="true" strikethrough="false" />
-  <javadocTag color="#3394dd" italic="true" />
-  <javadocKeyword color="#3394dd" italic="true" />
+  <javadocTag color="#4BABFF" italic="true" />
+  <javadocKeyword color="#4BABFF" italic="true" />
   <class color="#ba92f3" bold="false" underline="false" strikethrough="false" />
-  <interface color="#3394dd" />
+  <interface color="#4BABFF" />
   <method color="#fc9ee6" />
   <methodDeclaration color="#ba92f3" />
   <bracket color="#f3edff" />
@@ -35,8 +35,8 @@
   <inheritedMethod color="#ba92f3" />
   <abstractMethod color="#ba92f3" />
   <parameterVariable color="#fffeaf" />
-  <typeArgument color="#3394dd" />
-  <typeParameter color="#3394dd" />
+  <typeArgument color="#4BABFF" />
+  <typeParameter color="#4BABFF" />
   <constant color="#da8d97" />
   <background color="#244158" />
   <currentLine color="#25475f" />

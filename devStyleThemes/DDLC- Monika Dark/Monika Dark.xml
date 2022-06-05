@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7037" name="Monika Dark" modified="2022-04-04T21:50:53.974Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7042" name="Monika Dark" modified="2022-06-05T22:25:01.301Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#252D19" />
   <filteredSearchResultIndication color="#252D19" />
   <occurrenceIndication color="#23271A" underline="true" />
@@ -7,37 +7,37 @@
   <findScope color="#252D19" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#23271A" />
-  <singleLineComment color="#4E6B4C" italic="true" />
-  <multiLineComment color="#4E6B4C" italic="true" />
+  <singleLineComment color="#647863" italic="true" />
+  <multiLineComment color="#647863" italic="true" />
   <commentTaskTag color="#FFFA11" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#4E6B4C" italic="true" />
-  <javadocLink color="#388E3C" italic="true" underline="true" strikethrough="false" />
-  <javadocTag color="#bca3aa" italic="true" />
-  <javadocKeyword color="#bca3aa" italic="true" />
-  <class color="#bca3aa" bold="false" underline="false" strikethrough="false" />
-  <interface color="#bca3aa" />
-  <method color="#388E3C" />
-  <methodDeclaration color="#bca3aa" />
+  <javadoc color="#647863" italic="true" />
+  <javadocLink color="#60E769" italic="true" underline="true" strikethrough="false" />
+  <javadocTag color="#ABFFAF" italic="true" />
+  <javadocKeyword color="#ABFFAF" italic="true" />
+  <class color="#FFEA82" bold="false" underline="false" strikethrough="false" />
+  <interface color="#ABFFAF" />
+  <method color="#60E769" />
+  <methodDeclaration color="#FFEA82" />
   <bracket color="#bbbbbb" />
-  <number color="#86dbfd" />
-  <string color="#f1fa8c" />
+  <number color="#FF8FCA" />
+  <string color="#94CFFF" />
   <operator color="#3eae5d" />
   <keyword color="#3eae5d" bold="false" />
-  <annotation color="#388E3C" />
-  <staticMethod color="#bca3aa" />
+  <annotation color="#60E769" />
+  <staticMethod color="#FFEA82" />
   <localVariable color="#bbbbbb" />
   <localVariableDeclaration color="#bbbbbb" />
   <field color="#bbbbbb" bold="true" />
-  <staticField color="#86dbfd" />
-  <staticFinalField color="#86dbfd" italic="true" />
+  <staticField color="#FF8FCA" />
+  <staticFinalField color="#FF8FCA" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
-  <enum color="#86dbfd" />
-  <inheritedMethod color="#bca3aa" />
-  <abstractMethod color="#bca3aa" />
-  <parameterVariable color="#f1fa8c" />
-  <typeArgument color="#bca3aa" />
-  <typeParameter color="#bca3aa" />
-  <constant color="#86dbfd" />
+  <enum color="#FF8FCA" />
+  <inheritedMethod color="#FFEA82" />
+  <abstractMethod color="#FFEA82" />
+  <parameterVariable color="#94CFFF" />
+  <typeArgument color="#ABFFAF" />
+  <typeParameter color="#ABFFAF" />
+  <constant color="#FF8FCA" />
   <background color="#1d2115" />
   <currentLine color="#24291a" />
   <foreground color="#bbbbbb" />

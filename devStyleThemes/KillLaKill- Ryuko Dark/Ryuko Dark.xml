@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6975" name="Ryuko Dark" modified="2022-04-04T21:50:53.972Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6975" name="Ryuko Dark" modified="2022-06-05T22:25:01.299Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#272e34" />
   <filteredSearchResultIndication color="#272e34" />
   <occurrenceIndication color="#292e34" underline="true" />
@@ -7,15 +7,15 @@
   <findScope color="#272e34" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#292e34" />
-  <singleLineComment color="#6272a4" italic="true" />
-  <multiLineComment color="#6272a4" italic="true" />
+  <singleLineComment color="#677684" italic="true" />
+  <multiLineComment color="#677684" italic="true" />
   <commentTaskTag color="#ee2726" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#6272a4" italic="true" />
+  <javadoc color="#677684" italic="true" />
   <javadocLink color="#e4ff10" italic="true" underline="true" strikethrough="false" />
-  <javadocTag color="#C1B5C3" italic="true" />
-  <javadocKeyword color="#C1B5C3" italic="true" />
+  <javadocTag color="#99B6D5" italic="true" />
+  <javadocKeyword color="#99B6D5" italic="true" />
   <class color="#6893f3" bold="false" underline="false" strikethrough="false" />
-  <interface color="#C1B5C3" />
+  <interface color="#99B6D5" />
   <method color="#e4ff10" />
   <methodDeclaration color="#6893f3" />
   <bracket color="#bbbbbb" />
@@ -35,8 +35,8 @@
   <inheritedMethod color="#6893f3" />
   <abstractMethod color="#6893f3" />
   <parameterVariable color="#efa554" />
-  <typeArgument color="#C1B5C3" />
-  <typeParameter color="#C1B5C3" />
+  <typeArgument color="#99B6D5" />
+  <typeParameter color="#99B6D5" />
   <constant color="#86dbfd" />
   <background color="#2b3238" />
   <currentLine color="#2a3037" />

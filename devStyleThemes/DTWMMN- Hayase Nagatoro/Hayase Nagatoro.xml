@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7030" name="Hayase Nagatoro" modified="2022-04-04T21:50:53.965Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7035" name="Hayase Nagatoro" modified="2022-06-05T22:25:01.290Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#212121" />
   <filteredSearchResultIndication color="#212121" />
   <occurrenceIndication color="#1f1c1b" underline="true" />
@@ -30,7 +30,7 @@
   <field color="#bbbbbb" bold="true" />
   <staticField color="#d776ae" />
   <staticFinalField color="#d776ae" italic="true" />
-  <deprecatedMember color="#444449" underline="false" strikethrough="true" />
+  <deprecatedMember color="#5D5D63" underline="false" strikethrough="true" />
   <enum color="#d776ae" />
   <inheritedMethod color="#D233A2" />
   <abstractMethod color="#D233A2" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6970" name="Mai Dark" modified="2022-04-04T21:50:53.963Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6970" name="Mai Dark" modified="2022-06-05T22:25:01.287Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#2e3149" />
   <filteredSearchResultIndication color="#2e3149" />
   <occurrenceIndication color="#2d3049" underline="true" />
@@ -7,37 +7,37 @@
   <findScope color="#2e3149" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#2d3049" />
-  <singleLineComment color="#6272a4" italic="true" />
-  <multiLineComment color="#6272a4" italic="true" />
+  <singleLineComment color="#6C7EA5" italic="true" />
+  <multiLineComment color="#6C7EA5" italic="true" />
   <commentTaskTag color="#757cca" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#6272a4" italic="true" />
+  <javadoc color="#6C7EA5" italic="true" />
   <javadocLink color="#b772de" italic="true" underline="true" strikethrough="false" />
-  <javadocTag color="#50cefb" italic="true" />
-  <javadocKeyword color="#50cefb" italic="true" />
+  <javadocTag color="#F9B2FF" italic="true" />
+  <javadocKeyword color="#F9B2FF" italic="true" />
   <class color="#61dba0" bold="false" underline="false" strikethrough="false" />
-  <interface color="#50cefb" />
+  <interface color="#F9B2FF" />
   <method color="#b772de" />
   <methodDeclaration color="#61dba0" />
   <bracket color="#bbbbbb" />
-  <number color="#86dbfd" />
+  <number color="#FFEEA6" />
   <string color="#EFA554" />
-  <operator color="#a28a92" />
-  <keyword color="#ebd5d4" bold="false" />
+  <operator color="#AFC8F5" />
+  <keyword color="#50cefb" bold="false" />
   <annotation color="#b772de" />
   <staticMethod color="#61dba0" />
   <localVariable color="#bbbbbb" />
   <localVariableDeclaration color="#bbbbbb" />
   <field color="#bbbbbb" bold="true" />
-  <staticField color="#86dbfd" />
-  <staticFinalField color="#86dbfd" italic="true" />
+  <staticField color="#FFEEA6" />
+  <staticFinalField color="#FFEEA6" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
-  <enum color="#86dbfd" />
+  <enum color="#FFEEA6" />
   <inheritedMethod color="#61dba0" />
   <abstractMethod color="#61dba0" />
   <parameterVariable color="#EFA554" />
-  <typeArgument color="#50cefb" />
-  <typeParameter color="#50cefb" />
-  <constant color="#86dbfd" />
+  <typeArgument color="#F9B2FF" />
+  <typeParameter color="#F9B2FF" />
+  <constant color="#FFEEA6" />
   <background color="#242448" />
   <currentLine color="#2d2d52" />
   <foreground color="#bbbbbb" />

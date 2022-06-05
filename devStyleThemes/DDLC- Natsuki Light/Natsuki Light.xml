@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7013" name="Natsuki Light" modified="2022-04-04T21:50:53.974Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7016" name="Natsuki Light" modified="2022-06-05T22:25:01.301Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#F1E5FA" />
   <filteredSearchResultIndication color="#F1E5FA" />
   <occurrenceIndication color="#FDD8FF" underline="true" />
@@ -11,19 +11,19 @@
   <multiLineComment color="#7d6a7d" italic="true" />
   <commentTaskTag color="#fbadff" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#7d6a7d" italic="true" />
-  <javadocLink color="#E94686" italic="true" underline="true" strikethrough="false" />
+  <javadocLink color="#EE5687" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#7C75EF" italic="true" />
   <javadocKeyword color="#7C75EF" italic="true" />
   <class color="#df81b8" bold="false" underline="false" strikethrough="false" />
   <interface color="#7C75EF" />
-  <method color="#E94686" />
+  <method color="#EE5687" />
   <methodDeclaration color="#df81b8" />
   <bracket color="#000000" />
   <number color="#4C94D6" />
   <string color="#DC872E" />
-  <operator color="#7B6970" />
+  <operator color="#df81b8" />
   <keyword color="#C869A3" bold="false" />
-  <annotation color="#E94686" />
+  <annotation color="#EE5687" />
   <staticMethod color="#df81b8" />
   <localVariable color="#000000" />
   <localVariableDeclaration color="#000000" />

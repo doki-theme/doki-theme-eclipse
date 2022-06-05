@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7017" name="Mai Light" modified="2022-04-04T21:50:53.963Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7021" name="Mai Light" modified="2022-06-05T22:25:01.288Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#f0e8e7" />
   <filteredSearchResultIndication color="#f0e8e7" />
   <occurrenceIndication color="#eaecf6" underline="true" />
@@ -11,19 +11,19 @@
   <multiLineComment color="#64757d" italic="true" />
   <commentTaskTag color="#aba9dd" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#64757d" italic="true" />
-  <javadocLink color="#90468c" italic="true" underline="true" strikethrough="false" />
+  <javadocLink color="#BA2BB2" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#C869A3" italic="true" />
   <javadocKeyword color="#C869A3" italic="true" />
   <class color="#4f5287" bold="false" underline="false" strikethrough="false" />
   <interface color="#C869A3" />
-  <method color="#90468c" />
+  <method color="#BA2BB2" />
   <methodDeclaration color="#4f5287" />
   <bracket color="#252427" />
   <number color="#4C94D6" />
   <string color="#d27f2d" />
-  <operator color="#7B6970" />
+  <operator color="#4C5ED6" />
   <keyword color="#7C75EF" bold="false" />
-  <annotation color="#90468c" />
+  <annotation color="#BA2BB2" />
   <staticMethod color="#4f5287" />
   <localVariable color="#252427" />
   <localVariableDeclaration color="#252427" />

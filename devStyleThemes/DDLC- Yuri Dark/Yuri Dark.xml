@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7019" name="Yuri Dark" modified="2022-04-04T21:50:53.975Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7023" name="Yuri Dark" modified="2022-06-05T22:25:01.302Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#3C1D55" />
   <filteredSearchResultIndication color="#3C1D55" />
   <occurrenceIndication color="#3e2955" underline="true" />
@@ -11,37 +11,37 @@
   <multiLineComment color="#8B79B4" italic="true" />
   <commentTaskTag color="#F667FF" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#8B79B4" italic="true" />
-  <javadocLink color="#BC60CB" italic="true" underline="true" strikethrough="false" />
-  <javadocTag color="#7C75EF" italic="true" />
-  <javadocKeyword color="#7C75EF" italic="true" />
+  <javadocLink color="#DC74FF" italic="true" underline="true" strikethrough="false" />
+  <javadocTag color="#F1FF86" italic="true" />
+  <javadocKeyword color="#F1FF86" italic="true" />
   <class color="#FF9CD6" bold="false" underline="false" strikethrough="false" />
-  <interface color="#7C75EF" />
-  <method color="#BC60CB" />
+  <interface color="#F1FF86" />
+  <method color="#DC74FF" />
   <methodDeclaration color="#FF9CD6" />
   <bracket color="#DADADA" />
-  <number color="#86dbfd" />
-  <string color="#f1fa8c" />
-  <operator color="#bca3aa" />
-  <keyword color="#bca3aa" bold="false" />
-  <annotation color="#BC60CB" />
+  <number color="#86FDB6" />
+  <string color="#B6B3FF" />
+  <operator color="#E7A1FA" />
+  <keyword color="#B17BFD" bold="false" />
+  <annotation color="#DC74FF" />
   <staticMethod color="#FF9CD6" />
   <localVariable color="#DADADA" />
   <localVariableDeclaration color="#DADADA" />
   <field color="#DADADA" bold="true" />
-  <staticField color="#86dbfd" />
-  <staticFinalField color="#86dbfd" italic="true" />
+  <staticField color="#86FDB6" />
+  <staticFinalField color="#86FDB6" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
-  <enum color="#86dbfd" />
+  <enum color="#86FDB6" />
   <inheritedMethod color="#FF9CD6" />
   <abstractMethod color="#FF9CD6" />
-  <parameterVariable color="#f1fa8c" />
-  <typeArgument color="#7C75EF" />
-  <typeParameter color="#7C75EF" />
-  <constant color="#86dbfd" />
+  <parameterVariable color="#B6B3FF" />
+  <typeArgument color="#F1FF86" />
+  <typeParameter color="#F1FF86" />
+  <constant color="#86FDB6" />
   <background color="#422D5A" />
   <currentLine color="#473466" />
   <foreground color="#DADADA" />
   <lineNumber color="#6f6679" />
-  <selectionBackground color="#4c2a70" />
-  <selectionForeground color="#B39EFF" />
+  <selectionBackground color="#663995" />
+  <selectionForeground color="#CCBEFF" />
 </colorTheme>

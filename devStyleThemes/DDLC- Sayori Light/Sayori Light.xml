@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7031" name="Sayori Light" modified="2022-04-04T21:50:53.975Z" author="Alex Simons (Unthrottled)">
-  <searchResultIndication color="#e5edf6" />
-  <filteredSearchResultIndication color="#e5edf6" />
+<colorTheme id="7036" name="Sayori Light" modified="2022-06-05T22:25:01.302Z" author="Alex Simons (Unthrottled)">
+  <searchResultIndication color="#e9f5fd" />
+  <filteredSearchResultIndication color="#e9f5fd" />
   <occurrenceIndication color="#eaf0f6" underline="true" />
   <writeOccurrenceIndication color="#eaf0f6" underline="true" />
-  <findScope color="#e5edf6" />
+  <findScope color="#e9f5fd" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#eaf0f6" />
-  <singleLineComment color="#6a737d" italic="true" />
-  <multiLineComment color="#6a737d" italic="true" />
+  <singleLineComment color="#7790AF" italic="true" />
+  <multiLineComment color="#7790AF" italic="true" />
   <commentTaskTag color="#3DFFF3" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#6a737d" italic="true" />
+  <javadoc color="#7790AF" italic="true" />
   <javadocLink color="#2e7093" italic="true" underline="true" strikethrough="false" />
-  <javadocTag color="#3F77EF" italic="true" />
-  <javadocKeyword color="#3F77EF" italic="true" />
-  <class color="#FF3889" bold="false" underline="false" strikethrough="false" />
-  <interface color="#3F77EF" />
+  <javadocTag color="#9f69dc" italic="true" />
+  <javadocKeyword color="#9f69dc" italic="true" />
+  <class color="#EF5D99" bold="false" underline="false" strikethrough="false" />
+  <interface color="#9f69dc" />
   <method color="#2e7093" />
-  <methodDeclaration color="#FF3889" />
+  <methodDeclaration color="#EF5D99" />
   <bracket color="#252427" />
   <number color="#4C94D6" />
-  <string color="#DC872E" />
-  <operator color="#9D868D" />
-  <keyword color="#9D868D" bold="false" />
+  <string color="#E59584" />
+  <operator color="#167BBA" />
+  <keyword color="#3F77EF" bold="false" />
   <annotation color="#2e7093" />
-  <staticMethod color="#FF3889" />
+  <staticMethod color="#EF5D99" />
   <localVariable color="#252427" />
   <localVariableDeclaration color="#252427" />
   <field color="#252427" bold="true" />
@@ -32,11 +32,11 @@
   <staticFinalField color="#4C94D6" italic="true" />
   <deprecatedMember color="#B7B7B7" underline="false" strikethrough="true" />
   <enum color="#4C94D6" />
-  <inheritedMethod color="#FF3889" />
-  <abstractMethod color="#FF3889" />
-  <parameterVariable color="#DC872E" />
-  <typeArgument color="#3F77EF" />
-  <typeParameter color="#3F77EF" />
+  <inheritedMethod color="#EF5D99" />
+  <abstractMethod color="#EF5D99" />
+  <parameterVariable color="#E59584" />
+  <typeArgument color="#9f69dc" />
+  <typeParameter color="#9f69dc" />
   <constant color="#4C94D6" />
   <background color="#f0faff" />
   <currentLine color="#dceef7" />

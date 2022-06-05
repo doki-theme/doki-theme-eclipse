@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6983" name="Tohsaka Rin" modified="2022-04-04T21:50:53.967Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6984" name="Tohsaka Rin" modified="2022-06-05T22:25:01.296Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#211D1E" />
   <filteredSearchResultIndication color="#211D1E" />
   <occurrenceIndication color="#211D1E" underline="true" />
   <writeOccurrenceIndication color="#211D1E" underline="true" />
   <findScope color="#211D1E" />
-  <deletionIndication color="#ff5555" />
+  <deletionIndication color="#C20000" />
   <sourceHoverBackground color="#211D1E" />
   <singleLineComment color="#4c8484" italic="true" />
   <multiLineComment color="#4c8484" italic="true" />
   <commentTaskTag color="#ee2726" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#4c8484" italic="true" />
-  <javadocLink color="#68a8cb" italic="true" underline="true" strikethrough="false" />
+  <javadocLink color="#69e0f5" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#e0474b" italic="true" />
   <javadocKeyword color="#e0474b" italic="true" />
   <class color="#EFA554" bold="false" underline="false" strikethrough="false" />
   <interface color="#e0474b" />
-  <method color="#68a8cb" />
+  <method color="#69e0f5" />
   <methodDeclaration color="#EFA554" />
   <bracket color="#bbbbbb" />
   <number color="#86dbfd" />
-  <string color="#69e0f5" />
-  <operator color="#e0474b" />
-  <keyword color="#666f71" bold="false" />
-  <annotation color="#68a8cb" />
+  <string color="#72F8B5" />
+  <operator color="#FC5773" />
+  <keyword color="#859395" bold="false" />
+  <annotation color="#69e0f5" />
   <staticMethod color="#EFA554" />
   <localVariable color="#bbbbbb" />
   <localVariableDeclaration color="#bbbbbb" />
   <field color="#bbbbbb" bold="true" />
   <staticField color="#86dbfd" />
   <staticFinalField color="#86dbfd" italic="true" />
-  <deprecatedMember color="#3D3D42" underline="false" strikethrough="true" />
+  <deprecatedMember color="#67414A" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
   <inheritedMethod color="#EFA554" />
   <abstractMethod color="#EFA554" />
-  <parameterVariable color="#69e0f5" />
+  <parameterVariable color="#72F8B5" />
   <typeArgument color="#e0474b" />
   <typeParameter color="#e0474b" />
   <constant color="#86dbfd" />
@@ -42,6 +42,6 @@
   <currentLine color="#22191b" />
   <foreground color="#bbbbbb" />
   <lineNumber color="#847878" />
-  <selectionBackground color="#391717" />
+  <selectionBackground color="#501F1F" />
   <selectionForeground color="#fbfbfb" />
 </colorTheme>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6993" name="Asuna Light" modified="2022-04-04T21:50:53.983Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6995" name="Asuna Light" modified="2022-06-05T22:25:01.311Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#f6f6f6" />
   <filteredSearchResultIndication color="#f6f6f6" />
   <occurrenceIndication color="#f6f6f6" underline="true" />
@@ -11,20 +11,20 @@
   <multiLineComment color="#6a737d" italic="true" />
   <commentTaskTag color="#ec081e" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#6a737d" italic="true" />
-  <javadocLink color="#212121" italic="true" underline="true" strikethrough="false" />
+  <javadocLink color="#2527B1" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#0d5fa6" italic="true" />
   <javadocKeyword color="#0d5fa6" italic="true" />
-  <class color="#db974d" bold="false" underline="false" strikethrough="false" />
+  <class color="#C68741" bold="false" underline="false" strikethrough="false" />
   <interface color="#0d5fa6" />
-  <method color="#212121" />
-  <methodDeclaration color="#db974d" />
+  <method color="#2527B1" />
+  <methodDeclaration color="#C68741" />
   <bracket color="#252427" />
   <number color="#4C94D6" />
   <string color="#a61d0d" />
   <operator color="#e53935" />
   <keyword color="#a61d0d" bold="false" />
-  <annotation color="#212121" />
-  <staticMethod color="#db974d" />
+  <annotation color="#2527B1" />
+  <staticMethod color="#C68741" />
   <localVariable color="#252427" />
   <localVariableDeclaration color="#252427" />
   <field color="#252427" bold="true" />
@@ -32,8 +32,8 @@
   <staticFinalField color="#4C94D6" italic="true" />
   <deprecatedMember color="#B7B7B7" underline="false" strikethrough="true" />
   <enum color="#4C94D6" />
-  <inheritedMethod color="#db974d" />
-  <abstractMethod color="#db974d" />
+  <inheritedMethod color="#C68741" />
+  <abstractMethod color="#C68741" />
   <parameterVariable color="#a61d0d" />
   <typeArgument color="#0d5fa6" />
   <typeParameter color="#0d5fa6" />

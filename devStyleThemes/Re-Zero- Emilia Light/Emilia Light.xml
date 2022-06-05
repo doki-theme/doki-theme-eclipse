@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7041" name="Emilia Light" modified="2022-04-04T21:50:53.981Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7047" name="Emilia Light" modified="2022-06-05T22:25:01.309Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#f2e5f6" />
   <filteredSearchResultIndication color="#f2e5f6" />
   <occurrenceIndication color="#f2eaf6" underline="true" />
@@ -11,19 +11,19 @@
   <multiLineComment color="#6a737d" italic="true" />
   <commentTaskTag color="#e984ed" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#6a737d" italic="true" />
-  <javadocLink color="#90468c" italic="true" underline="true" strikethrough="false" />
+  <javadocLink color="#7D2DD2" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#7C75EF" italic="true" />
   <javadocKeyword color="#7C75EF" italic="true" />
   <class color="#cb70a5" bold="false" underline="false" strikethrough="false" />
   <interface color="#7C75EF" />
-  <method color="#90468c" />
+  <method color="#7D2DD2" />
   <methodDeclaration color="#cb70a5" />
   <bracket color="#252427" />
   <number color="#4C94D6" />
-  <string color="#d27f2d" />
-  <operator color="#7B6970" />
-  <keyword color="#C869A3" bold="false" />
-  <annotation color="#90468c" />
+  <string color="#0CA87E" />
+  <operator color="#2925AC" />
+  <keyword color="#90468c" bold="false" />
+  <annotation color="#7D2DD2" />
   <staticMethod color="#cb70a5" />
   <localVariable color="#252427" />
   <localVariableDeclaration color="#252427" />
@@ -34,7 +34,7 @@
   <enum color="#4C94D6" />
   <inheritedMethod color="#cb70a5" />
   <abstractMethod color="#cb70a5" />
-  <parameterVariable color="#d27f2d" />
+  <parameterVariable color="#0CA87E" />
   <typeArgument color="#7C75EF" />
   <typeParameter color="#7C75EF" />
   <constant color="#4C94D6" />

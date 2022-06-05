@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="6982" name="Beatrice" modified="2022-04-04T21:50:53.981Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="6983" name="Beatrice" modified="2022-06-05T22:25:01.309Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#F1E5FA" />
   <filteredSearchResultIndication color="#F1E5FA" />
   <occurrenceIndication color="#FDD8FF" underline="true" />
@@ -7,10 +7,10 @@
   <findScope color="#F1E5FA" />
   <deletionIndication color="#ff5555" />
   <sourceHoverBackground color="#FDD8FF" />
-  <singleLineComment color="#6a737d" italic="true" />
-  <multiLineComment color="#6a737d" italic="true" />
+  <singleLineComment color="#7d6a7d" italic="true" />
+  <multiLineComment color="#7d6a7d" italic="true" />
   <commentTaskTag color="#fbadff" italic="true" underline="true" strikethrough="false" />
-  <javadoc color="#6a737d" italic="true" />
+  <javadoc color="#7d6a7d" italic="true" />
   <javadocLink color="#5c84da" italic="true" underline="true" strikethrough="false" />
   <javadocTag color="#7C75EF" italic="true" />
   <javadocKeyword color="#7C75EF" italic="true" />
@@ -21,7 +21,7 @@
   <bracket color="#000000" />
   <number color="#4C94D6" />
   <string color="#DC872E" />
-  <operator color="#7B6970" />
+  <operator color="#C64EA1" />
   <keyword color="#C869A3" bold="false" />
   <annotation color="#5c84da" />
   <staticMethod color="#df81b8" />

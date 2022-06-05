@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7002" name="Megumin" modified="2022-04-04T21:50:53.973Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7004" name="Megumin" modified="2022-06-05T22:25:01.300Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#33282d" />
   <filteredSearchResultIndication color="#33282d" />
   <occurrenceIndication color="#2f2329" underline="true" />
@@ -12,14 +12,14 @@
   <commentTaskTag color="#ee2e37" italic="true" underline="true" strikethrough="false" />
   <javadoc color="#726868" italic="true" />
   <javadocLink color="#e0474b" italic="true" underline="true" strikethrough="false" />
-  <javadocTag color="#AF5C5A" italic="true" />
-  <javadocKeyword color="#AF5C5A" italic="true" />
+  <javadocTag color="#BA6462" italic="true" />
+  <javadocKeyword color="#BA6462" italic="true" />
   <class color="#dae838" bold="false" underline="false" strikethrough="false" />
-  <interface color="#AF5C5A" />
+  <interface color="#BA6462" />
   <method color="#e0474b" />
   <methodDeclaration color="#dae838" />
   <bracket color="#bbbbbb" />
-  <number color="#86dbfd" />
+  <number color="#FC79BB" />
   <string color="#ffd866" />
   <operator color="#a28a92" />
   <keyword color="#a28a92" bold="false" />
@@ -28,16 +28,16 @@
   <localVariable color="#bbbbbb" />
   <localVariableDeclaration color="#bbbbbb" />
   <field color="#bbbbbb" bold="true" />
-  <staticField color="#86dbfd" />
-  <staticFinalField color="#86dbfd" italic="true" />
+  <staticField color="#FC79BB" />
+  <staticFinalField color="#FC79BB" italic="true" />
   <deprecatedMember color="#72737A" underline="false" strikethrough="true" />
-  <enum color="#86dbfd" />
+  <enum color="#FC79BB" />
   <inheritedMethod color="#dae838" />
   <abstractMethod color="#dae838" />
   <parameterVariable color="#ffd866" />
-  <typeArgument color="#AF5C5A" />
-  <typeParameter color="#AF5C5A" />
-  <constant color="#86dbfd" />
+  <typeArgument color="#BA6462" />
+  <typeParameter color="#BA6462" />
+  <constant color="#FC79BB" />
   <background color="#2c2126" />
   <currentLine color="#31262b" />
   <foreground color="#bbbbbb" />

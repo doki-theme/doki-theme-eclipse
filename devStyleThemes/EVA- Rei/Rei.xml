@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7028" name="Rei" modified="2022-04-04T21:50:53.966Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7033" name="Rei" modified="2022-06-05T22:25:01.295Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#232529" />
   <filteredSearchResultIndication color="#232529" />
   <occurrenceIndication color="#1b242e" underline="true" />
@@ -30,7 +30,7 @@
   <field color="#d2d2d2" bold="true" />
   <staticField color="#86dbfd" />
   <staticFinalField color="#86dbfd" italic="true" />
-  <deprecatedMember color="#3D3D42" underline="false" strikethrough="true" />
+  <deprecatedMember color="#565E56" underline="false" strikethrough="true" />
   <enum color="#86dbfd" />
   <inheritedMethod color="#6AADFF" />
   <abstractMethod color="#6AADFF" />

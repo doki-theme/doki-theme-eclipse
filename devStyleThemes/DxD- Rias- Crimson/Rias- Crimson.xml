@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7029" name="Rias: Crimson" modified="2022-04-04T21:50:53.968Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7034" name="Rias: Crimson" modified="2022-06-05T22:25:01.298Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#491818" />
   <filteredSearchResultIndication color="#491818" />
   <occurrenceIndication color="#491818" underline="true" />
@@ -20,8 +20,8 @@
   <methodDeclaration color="#e03392" />
   <bracket color="#fafafa" />
   <number color="#86dbfd" />
-  <string color="#9EB7D6" />
-  <operator color="#a28a92" />
+  <string color="#9BBEE3" />
+  <operator color="#EA5B7B" />
   <keyword color="#C04750" bold="false" />
   <annotation color="#fbf96e" />
   <staticMethod color="#e03392" />
@@ -34,7 +34,7 @@
   <enum color="#86dbfd" />
   <inheritedMethod color="#e03392" />
   <abstractMethod color="#e03392" />
-  <parameterVariable color="#9EB7D6" />
+  <parameterVariable color="#9BBEE3" />
   <typeArgument color="#eea367" />
   <typeParameter color="#eea367" />
   <constant color="#86dbfd" />
