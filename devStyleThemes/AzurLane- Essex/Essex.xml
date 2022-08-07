@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<colorTheme id="7046" name="Essex" modified="2022-06-05T22:25:01.286Z" author="Alex Simons (Unthrottled)">
+<colorTheme id="7050" name="Essex" modified="2022-08-07T19:04:37.141Z" author="Alex Simons (Unthrottled)">
   <searchResultIndication color="#00274e" />
   <filteredSearchResultIndication color="#00274e" />
   <occurrenceIndication color="#3B1414" underline="true" />
@@ -21,8 +21,8 @@
   <bracket color="#d7d7d7" />
   <number color="#78DBEF" />
   <string color="#f3b085" />
-  <operator color="#D92C3A" />
-  <keyword color="#e83737" bold="false" />
+  <operator color="#DB3B46" />
+  <keyword color="#EE4C4C" bold="false" />
   <annotation color="#2D96EA" />
   <staticMethod color="#B5AAEE" />
   <localVariable color="#d7d7d7" />
