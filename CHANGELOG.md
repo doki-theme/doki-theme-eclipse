@@ -3,6 +3,10 @@ Changelog
 
 # Unreleased
 
+# 88.3-0.1.3 [Works Again]
+
+Fixed the plugin installation errors.
+
 # 88.1-0.1.1 [Darling]
 
 Best Girl just got _better_. ❤️
