@@ -15,7 +15,7 @@ import {
 const syncedAssets: StringDictionary<string> = getSyncedAssets();
 
 function buildKey(filePath: string): string {
-  return `doki-theme/${filePath.substr(assetDirectory.length + 1)}`;
+  return `doki-theme/${filePath.substr(assetDirectory.length + 1).replace('\\','/')}`;
 }
 
 const s3 = buildS3Client();
